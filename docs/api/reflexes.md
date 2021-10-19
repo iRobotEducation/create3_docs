@@ -1,10 +1,10 @@
 # Reflexes
 
-With the word "reflex" we denote a set of autonomous reactive behaviors that the Create3 robot will trigger when it detects obstacles or hazards.
+With the word "reflex" we denote a set of autonomous reactive behaviors that the Create® 3 robot will trigger when it detects obstacles or hazards.
 
 Reflexes are high-priority behaviors and will temporarily override any user-provided command for their short duration.
 
-Reflexes can be enabled or disabled on the Create3 using the corresponding ROS 2 parameters exposed by the `motion_control` ROS 2 node.
+Reflexes can be enabled or disabled on the Create® 3 using the corresponding ROS 2 parameters exposed by the `motion_control` ROS 2 node.
 
 ## Reflex parameters
 

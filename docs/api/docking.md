@@ -1,6 +1,6 @@
-# Create3 Docking
+# Create® 3 Docking
 
-The Create3 robot is equipped with a docking station to recharge it between experiments.
+The Create® 3 robot is equipped with a docking station to recharge it between experiments.
 
 Through the ROS 2 APIs users can command docking and undocking autonomous behaviors.
 
@@ -38,13 +38,13 @@ This action will fail if the robot is already docked.
 
 ## Docking sensor data
 
-The Create3 robot exposes several docking-related information through its ROS 2 publications.
+The Create® 3 robot exposes several docking-related information through its ROS 2 publications.
 These should allow users to write their own algorithms taking into account the presence of the dock in the environment and even to write their own docking and undocking procedures.
 
 #### IR opcodes
 
-The Create3 docking station transmit several IR signals.
-The Create3 robot is equipped with two different sensors that are capable of detecting them.
+The Create® 3 docking station transmit several IR signals.
+The Create® 3 robot is equipped with two different sensors that are capable of detecting them.
 
 ![Docking signals](data/create3_dock_codes.png)
 

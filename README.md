@@ -1,6 +1,6 @@
 # create3_docs
 
-Documentation for the iRobot Create3 robot.
+Documentation for the iRobot® Create® 3 Educational Robot.
 
 ### Build the docs locally
 

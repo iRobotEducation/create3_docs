@@ -1,6 +1,6 @@
-# Create3 Safety Overrides
+# Create® 3 Safety Overrides
 
-By default, the Create3 robot has some safety features enabled.
+By default, the Create® 3 robot has some safety features enabled.
 Their purpose is to make sure that the robot does not get into dangerous sitations and it is able to detect and react properly to cliff hazards.
 
 Safety features are configurable by the user through a ROS 2 parameter.
@@ -22,7 +22,7 @@ The following sections briefly describe what the safety features do.
 
 ## Backup Limit
 
-The Create3 robot is equipped with cliff sensors, but they are located only in the front of the robot.
+The Create® 3 robot is equipped with cliff sensors, but they are located only in the front of the robot.
 This means that the robot is not able to detect cliff hazards while driving backward.
 
 In order to make the robot safe, thus we need to make sure that the robot never moves backward more than what it's safe to do.
@@ -30,7 +30,7 @@ Under standard circumstances, the robot is allowed to briefly move backward only
 
 If the robot is kidnapped (i.e. first lifted by the user and then placed somewhere), the backup limit will immediately trigger.
 
-The Create3 robot signals to the user when the backup limit is about to be triggered in multiple ways:
+The Create® 3 robot signals to the user when the backup limit is about to be triggered in multiple ways:
  
  - Through the `HazardDetectionsVector` ROS 2 message: an hazard of type `BACKUP_LIMIT` will be published in the vector.
  - By logging a warning message.

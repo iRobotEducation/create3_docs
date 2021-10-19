@@ -1,10 +1,10 @@
-# Welcome to iRobot Create3
+# Welcome to the iRobot® Create® 3 Educational Robot
 
 TODO: add pictures and videos
 
 ### Overview
 
-What is Create3?
+What is iRobot® Create® 3?
 
 ### Useful links
 

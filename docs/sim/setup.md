@@ -1,2 +1,2 @@
-# Using the Create3 Simulator
+# Using the iRobot® Create® 3 Simulator
 

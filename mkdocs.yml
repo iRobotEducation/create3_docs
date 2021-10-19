@@ -1,7 +1,7 @@
-site_name: Create3 Docs
-site_description: 'Documentation for the iRobot Create3 robot'
+site_name: Create 3 Docs
+site_description: 'Documentation for the iRobot® Create® 3 robot'
 site_author: 'iRobot'
-#site_url: TODO
+#site_url: http://edu.irobot.com/create3/
 
 repo_name: 'iRobotEducation/create3_docs'
 repo_url: 'https://github.com/iRobotEducation/create3_docs'

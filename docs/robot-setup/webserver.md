@@ -1,6 +1,6 @@
 # Webserver
 
-The Create3 webserver is a web interface for debugging an setting up your robot.
+The iRobot® Create® 3 webserver is a web interface for debugging an setting up your robot.
 
 If the robot is on the same WiFi network as your laptop, then you can access the webserver opening a browser at the following address: `http://irobot-701c264ad869434e8e11deace38d2bb8.local/`.
 Here the string `irobot-701c264ad869434e8e11deace38d2bb8` is the hostname of your robot.
@@ -11,7 +11,7 @@ Provisioning is also required for WiFi ROS 2 connectivity and to have UTC synchr
 
 ## Provisioning 
 
-Provisioning is the procedure that will connect the Create3 robot to your WiFi network.
+Provisioning is the procedure that will connect the Create® 3 robot to your WiFi network.
 
 Press and hold the left ( · ) and right ( · · ) buttons for six seconds.
 The light ring should go cyan.

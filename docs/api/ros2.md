@@ -1,6 +1,6 @@
 # ROS 2 APIs
 
-The Create3 robot is based on ROS 2 and, as such, it exposes all its user-facing APIs through ROS 2 entities (topics, services, actions and parameters).
+The Create® 3 robot is based on ROS 2 and, as such, it exposes all its user-facing APIs through ROS 2 entities (topics, services, actions and parameters).
 
 The purpose of this page is to give a quick overview of these ROS 2 APIs.
 If you are interested in more details, have a look at the other pages in this section.
