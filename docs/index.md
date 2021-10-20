@@ -1,6 +1,12 @@
 # iRobot® Create® 3 Educational Robot
 
-TODO: add pictures and videos
+<h1 align="center">
+    <div>
+    <div style="position: relative; padding-bottom: 0%; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="450" height="300" src="https://bcove.video/3B1Aj7z" frameborder="1" allowfullscreen></iframe>
+    </div>
+    </div>
+</h1>
 
 ### What is iRobot® Create® 3?
 
