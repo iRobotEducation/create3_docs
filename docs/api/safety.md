@@ -7,7 +7,7 @@ Safety features are configurable by the user through a ROS 2 parameter.
 This will allow the more adventurous users to have full control over the robot.
 
 !!! important 
-    The robot will temporarily re-enable safety features whenever it is commanded to execute any of the built-in autonomous behaviors.
+    The robot will temporarily re-enable all safety features whenever it is commanded to execute any of the built-in autonomous behaviors.
 
 The `safety_override` parameter exposed by the `motion_control` ROS 2 node should be used to control and override safety features.
 It's a `string` parameter and it accepts 3 possible values:

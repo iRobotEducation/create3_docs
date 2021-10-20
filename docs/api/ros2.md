@@ -7,7 +7,7 @@ If you are interested in more details, have a look at the other pages in this se
 
 ## ROS 2 Topics
 
-You can see the ROS 2 topics exposed by the robot running the `ros2 topic list` command.
+You can see the ROS 2 topics exposed by the Create® 3 robot running the `ros2 topic list` command.
 
 ```bash
 $ ros2 topic list
@@ -33,9 +33,22 @@ $ ros2 topic list
 /wheel_vels
 ```
 
+Note that the Create® 3 robot will produce data on most of these topics.
+On the other hand, some of them can be used by the user to send commands to the Create® 3 robot.
+In particular, the Create® 3 robot will subscribe to the following topics:
+
+ - `/cmd_lightring`: use this topic to change the color of the light ring.
+ - `/cmd_vel`: use this topic to command velocities in the robot reference frame.
+
+For more details on the content of these topics, please have a look at their corresponding sections.
+
+ - [Hazards](hazards.md)
+ - [Odometry](odometry.md)
+ - [User Interface](ui.md)
+
 ## ROS 2 Services
 
-You can see the ROS 2 services exposed by the robot running the `ros2 service list` command.
+You can see the ROS 2 servers exposed by the Create® 3 robot running the `ros2 service list` command.
 
 ```bash
 $ ros2 service list
@@ -57,7 +70,7 @@ $ ros2 service list
 
 ## ROS 2 Actions
 
-You can see the ROS 2 actions exposed by the robot running the `ros2 action list` command.
+You can see the ROS 2 action servers exposed by the Create® 3 robot running the `ros2 action list` command.
 
 ```bash
 $ ros2 action list
@@ -66,9 +79,13 @@ $ ros2 action list
 /wall_follow
 ```
 
+For more details on how to use these actions, please have a look at their corresponding sections.
+
+ - [Docking](docking.md)
+
 ## ROS 2 Parameters
 
-You can see the ROS 2 parameters exposed by the robot running the `ros2 param list` command.
+You can see the ROS 2 parameters exposed by the Create® 3 robot running the `ros2 param list` command.
 
 ```bash
 $ ros2 param list
@@ -103,3 +120,10 @@ $ ros2 param list
   wheels_encoder_resolution
   wheels_radius
 ```
+
+Morphology parameters such as `wheel_base` and `wheels_encoder_resolution` are read-only parameters that can be used in order to implement your estimation or motion control algorithms.
+
+The `safety_override` parameter allows user to enable/disable safety features.
+For more details, please have a look at the [safety documentation](safety.md).
+
+For more details on how to use and configure reflexes, please have a look at the [reflexes documentation](reflexes.md).

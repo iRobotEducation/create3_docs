@@ -24,10 +24,13 @@ nav:
       - Robot: robot-setup/robot.md
       - Webserver: robot-setup/webserver.md
       - Start your robot: robot-setup/start.md
-    - Create3 APIs:
+    - Create® 3 APIs:
       - ROS 2 Interface: api/ros2.md
       - Docking: api/docking.md
+      - Hazards: api/hazards.md
+      - Odometry: api/odometry.md
       - Reflexes: api/reflexes.md
       - Safety: api/safety.md
-    - Create3 Simulator:
+      - User Interface: api/ui.md
+    - Create® 3 Simulator:
       - Using the Simulator: sim/setup.md

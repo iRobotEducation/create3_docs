@@ -46,6 +46,7 @@ Here you can choose to set a namespace for your ROS 2 application and which RMW 
 
 Moreover, you can set some default ROS 2 parameters through a YAML configuration file.
 
-Note that any of the changes in this tab requires to reboot the robot before being applied.
+!!! important 
+    Any change done here requires you to restart the application before it is applied.
 
 ## Debugging
