@@ -1,4 +1,4 @@
-site_name: Create 3 Docs
+site_name: Create® 3 Docs
 site_description: 'Documentation for the iRobot® Create® 3 robot'
 site_author: 'iRobot'
 #site_url: http://edu.irobot.com/create3/
@@ -34,3 +34,5 @@ nav:
       - User Interface: api/ui.md
     - Create® 3 Simulator:
       - Using the Simulator: sim/setup.md
+    - Examples:
+      - Driving via CLI: examples/driving-cli.md
