@@ -31,4 +31,5 @@ nav:
     - Create® 3 Simulator:
       - Using the Simulator: sim/setup.md
     - Examples:
+      - Overview: examples/overview.md
       - Driving via CLI: examples/driving-cli.md
