@@ -14,8 +14,8 @@
     --md-primary-bg-color:               hsla(0, 0%, 100%, 1);
     --md-primary-bg-color--light:        hsla(0, 0%, 100%, 0.7);
   
-    --md-accent-fg-color:                hsla(#{hex2hsl($clr-indigo-a200)}, 1);
-    --md-accent-fg-color--transparent:   hsla(#{hex2hsl($clr-indigo-a200)}, 0.1);
+    --md-accent-fg-color:                #e95c67;
+    --md-accent-fg-color--transparent:   #e95c67;
     --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
     --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
   
