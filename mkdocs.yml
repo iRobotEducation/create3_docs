@@ -20,10 +20,6 @@ markdown_extensions:
 
 nav:
     - Home: index.md
-    - Robot Setup:
-      - Robot: robot-setup/robot.md
-      - Webserver: robot-setup/webserver.md
-      - Start your robot: robot-setup/start.md
     - Create® 3 APIs:
       - ROS 2 Interface: api/ros2.md
       - Docking: api/docking.md
