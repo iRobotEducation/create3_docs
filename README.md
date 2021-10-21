@@ -1,5 +1,7 @@
 # create3_docs
 
+https://iroboteducation.github.io/create3_docs/
+
 Documentation for the iRobot® Create® 3 Educational Robot.
 
 ### Build the docs locally
