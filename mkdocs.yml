@@ -30,6 +30,10 @@ nav:
       - User Interface: api/ui.md
     - Create® 3 Simulator:
       - Using the Simulator: sim/setup.md
+    - Create® 3 Hardware:
+      - Overview: hw/overview.md
+      - Electrical: hw/electrical.md
+      - Mechanical: hw/mechanical.md
     - Examples:
       - Overview: examples/overview.md
       - Driving via CLI: examples/driving-cli.md
