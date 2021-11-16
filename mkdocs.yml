@@ -34,6 +34,7 @@ nav:
       - Overview: hw/overview.md
       - Electrical: hw/electrical.md
       - Mechanical: hw/mechanical.md
+      - Hookup: hw/hookup.md
     - Examples:
       - Overview: examples/overview.md
       - Driving via CLI: examples/driving-cli.md
