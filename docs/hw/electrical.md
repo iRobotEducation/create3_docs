@@ -1,8 +1,8 @@
 ### iRobot® Create® 3 Electrical System
 
-The iRobot Create® 3 robot has two electrical connections exposed via the Communication Board. The connections are accessible within the robot once the cargo bay is removed. The Communication Board is also visible through the top cover of the robot, where its indicators are visible, and the USB/BLE toggle can be switched.
+The iRobot Create® 3 robot has two electrical connections exposed via the Adapter Board. The connections are accessible within the robot once the cargo bay is removed. The Adapter Board is also visible through the top cover of the robot, where its indicators are visible, and the USB/BLE toggle can be switched.
 
-![Communication Board](data/adapter_out.jpg "Communication Board")
+![Adapter Board](data/adapter_out.jpg "Adapter Board")
 
 The **unregulated battery port** is a JST XH-style connector, with pin 1 as the positive terminal of the battery, and pin 2 is the negative terminal. These terminals are labeled on the bottom side of the board and are visible with the robot on its back and the cargo bay removed. The board is capable of supplying a maximum of 2 A of current at the current battery voltage, enforced by a PTC resettable fuse in the robot. The battery in the robot is a 26 Wh, 4S Lithium Ion smart battery pack, with a nominal voltage of 14.4 V.
 

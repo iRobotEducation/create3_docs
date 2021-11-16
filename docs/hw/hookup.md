@@ -3,13 +3,13 @@
 The iRobot® Create® 3 has a USB C connector implementing a USB 2.0 host capable of 5 V @ 3 A continuous, which can be used to power and communicate with various downstream devices. Here are some hookup examples.
 
 ## Raspberry Pi
-The Raspberry Pi mounting scheme does not match Create 3's faceplate or cargo bay hole pattern; here are two 3D-printable adapters. The larger adapter is more rigid but requires three times as much time to print.
+The Raspberry Pi mounting scheme does not match Create 3's faceplate or cargo bay hole pattern; here are two 3D-printable adapters. The larger mount is more rigid but requires three times as much time to print.
 
 * [Small Mount (128kB)](data/C3-RPi-Mount-Small-20211022.stl)
 * [Large Mount (520kB)](data/C3-RPi-Mount-20211022.stl)
 
 ### Raspberry Pi 4
-Since the Raspberry Pi 4 has a USB C port capable of an OTG connection, a cable with a USB C connector on both ends is all that is required. The Pi is pictured in the cargo bay with the large mount, and the communication board is removed from the robot for clarity.
+Since the Raspberry Pi 4 has a USB C port capable of an OTG connection, a cable with a USB C connector on both ends is all that is required. The Pi is pictured in the cargo bay with the large mount, and the adapter board is removed from the robot for clarity.
 ![Hookup diagram for Raspberry Pi 4](data/hookup_pi4.jpg "Raspberry Pi 4")
 
 ### Raspberry Pi 1-3 Model B
