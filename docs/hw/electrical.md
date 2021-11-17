@@ -4,7 +4,7 @@ The iRobot Create® 3 robot has two electrical connections exposed via the Adapt
 
 ![Adapter Board](data/adapter_out.jpg "Adapter Board")
 
-The **unregulated battery port** is a JST XH-style connector, with pin 1 as the positive terminal of the battery, and pin 2 is the negative terminal. These terminals are labeled on the bottom side of the board and are visible with the robot on its back and the cargo bay removed. The board is capable of supplying a maximum of 2 A of current at the current battery voltage, enforced by a PTC resettable fuse in the robot. The battery in the robot is a 26 Wh, 4S Lithium Ion smart battery pack, with a nominal voltage of 14.4 V.
+The **unregulated battery port** is a JST XH-style connector, with pin 1 as the positive terminal of the battery, and pin 2 is the negative terminal. These terminals are labeled on the bottom side of the board and are visible with the robot on its back and the cargo bay removed. The board is capable of supplying a maximum of 2 A of current at the current battery voltage, enforced by a PTC resettable fuse in the robot. The battery in the robot is a 26 Wh, 4S Lithium Ion smart battery pack, with a nominal voltage of 14.4 V (12 V min, 16.8 V max). Do not attempt to use the robot without its battery installed.
 
 The **USB C connector** provides a USB 2.0 Host connection into the robot with 5.13 V at 3.0 A provided to power downstream connections. The power is disabled on this port unless a proper USB C downstream device is connected. The USB data connection is made only when the USB/BLE toggle switch plunger is slid toward the USB icon.
 
