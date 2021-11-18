@@ -1,5 +1,4 @@
-### iRobot® Create® 3 Hardware Overview
-
+# iRobot® Create® 3 Hardware Overview
 Create® 3 is based on the Roomba i3, a robot vacuum cleaner. Its sensors, actuators, and compact design are capable of navigating and mapping a the whole floor of a home or office space. The robot also ships with an iRobot® Home Base® Charging Station.
 
 ![Create® 3 from its above-front-right, next to its dock.](data/front_iso.jpg "Robot Front")
@@ -13,4 +12,4 @@ There are two cable passthroughs. The rear passthrough is good for quick prototy
 Also visible with the faceplate removed is the adapter board, which is used to interface to external computers either through Bluetooth or via USB C. More information on this board is available on the [Electrical](../electrical/) page.
 
 ![Create® 3 from a bottom view, with the cargo bay removed.](data/bottom.jpg "Robot Bottom")
-The bottom of the robot includes four cliff sensors to keep the robot on solid ground, a caster (by default, the robot's center of gravity is forward of the center axis), charging contacts, two wheels with current sensors and encoders, and an optical odometry sensor. Not visible is the robot's IMU, which is used with the optical odometry sensor and wheel encoders to create a fused odometry estimate.
+The bottom of the robot includes four cliff sensors to keep the robot on solid ground, a caster (by default, the robot's center of gravity is forward of the center axis), charging contacts, two wheels with current sensors and encoders, and an optical odometry sensor. Not visible is the robot's IMU, which is used with the optical odometry sensor and wheel encoders to generate a fused odometry estimate.
