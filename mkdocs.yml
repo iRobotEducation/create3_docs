@@ -20,6 +20,11 @@ markdown_extensions:
 
 nav:
     - Home: index.md
+    - Create® 3 Hardware:
+      - Overview: hw/overview.md
+      - Electrical: hw/electrical.md
+      - Mechanical: hw/mechanical.md
+      - Hookup Examples: hw/hookup.md
     - Create® 3 APIs:
       - ROS 2 Interface: api/ros2.md
       - Docking: api/docking.md
@@ -30,11 +35,6 @@ nav:
       - User Interface: api/ui.md
     - Create® 3 Simulator:
       - Using the Simulator: sim/setup.md
-    - Create® 3 Hardware:
-      - Overview: hw/overview.md
-      - Electrical: hw/electrical.md
-      - Mechanical: hw/mechanical.md
-      - Hookup Examples: hw/hookup.md
     - Software Examples:
       - Overview: examples/overview.md
       - Driving via CLI: examples/driving-cli.md
