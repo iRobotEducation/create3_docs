@@ -1,11 +1,16 @@
 # iRobot® Create® 3 Mechanical System
 
 ## Dimensioned Drawings
-### Top
-### Side
-### Bottom
 ### Faceplate
+![Create 3 Faceplate Drawing](data/faceplate_drawing.svg "Create 3 Faceplate Drawing")
+### Top
+![Create 3 Top Drawing](data/top_drawing.svg "Create 3 Top Drawing")
+### Side
+![Create 3 Side Drawing](data/side_drawing.svg "Create 3 Side Drawing")
+### Bottom
+![Create 3 Bottom Drawing](data/bottom_drawing.svg "Create 3 Bottom Drawing")
 ### Cargo Bay
+![Create 3 Cargo Bay Drawing](data/cargo_bay_drawing.svg "Create 3 Cargo Bay Drawing")
 
 ## Attachment Tips and Tricks
 ### Self-tapping screws with bosses
