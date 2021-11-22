@@ -8,7 +8,7 @@
     </div>
 </h1>
 
-### What is iRobot® Create® 3?
+## What is iRobot® Create® 3?
 
 iRobot® Create® 3 is an affordable, mobile robotics platform for educators, students, and developers.
 
@@ -20,7 +20,15 @@ All these can be triggered and/or configured through ROS 2 actions and parameter
 
 Designed for beginner to advanced ROS 2 users, Create® 3 allows for a variety of programming methods.
 With Wi-fi and Bluetooth capability, Ethernet over USB connections, plus a removable faceplate for attaching payloads, you can start building with your Create® 3 right away.
-### Useful links
+
+More detailed documentation can be accessed using the ☰ menu in the top left corner of this page.
+
+## Key internal docs links
+
+ - [Hardware](/hw/overview)
+ - [ROS 2 API](/api/ros2/)
+
+## Useful external links
 
 Here you can find additional content on the iRobot® Create® 3:
 
