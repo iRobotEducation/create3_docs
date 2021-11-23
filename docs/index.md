@@ -25,8 +25,8 @@ More detailed documentation can be accessed using the ☰ menu in the top left c
 
 ## Key internal docs links
 
- - [Hardware](/hw/overview)
- - [ROS 2 API](/api/ros2/)
+ - [Hardware](hw/overview)
+ - [ROS 2 API](api/ros2/)
 
 ## Useful external links
 
