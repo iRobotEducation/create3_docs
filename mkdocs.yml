@@ -26,7 +26,6 @@ nav:
       - Electrical: hw/electrical.md
       - Hookup Examples: hw/hookup.md
     - Create® 3 Setup:
-      - Powering On: setup/power.md
       - Connect to Wi-Fi: setup/provision.md
       - ROS 2 on a Pi 4: setup/pi4.md
     - Create® 3 APIs:
