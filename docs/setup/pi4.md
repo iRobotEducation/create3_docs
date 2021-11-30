@@ -1,4 +1,4 @@
-# Connect Create® 3 to Raspberry Pi® 4
+# Connect Create® 3 to Raspberry Pi® 4 and set up ROS 2 Galactic
 
 1. Download [Ubuntu® Server 20.04 64-bit](https://ubuntu.com/download/raspberry-pi) and write onto a microSD card.
 1. In the system-boot partition, edit usercfg.txt and add `dtoverlay=dwc2,dr_mode=peripheral`
@@ -11,6 +11,7 @@
                     addresses: [192.168.186.3/24]
 
     Note that the robot uses the default IP address of 192.168.186.2 on its usb0 interface.
+
 1. Insert the microSD card into the Raspberry Pi® 4, and then use a USB-C® to USB-C® cable to connect the Raspberry Pi® 4 to the Create® 3. The first boot may take a few minutes. (It may help to have a monitor and keyboard set up in case of any trouble on the first boot.)
 1. Log in with the default username and password (ubuntu/ubuntu), change your password, and then change your locale to be one that uses UTF-8. For example, in the US, type
 
