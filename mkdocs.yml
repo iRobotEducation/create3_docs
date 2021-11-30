@@ -27,8 +27,8 @@ nav:
       - Hookup Examples: hw/hookup.md
     - Create® 3 Setup:
       - Powering On: setup/power.md
-      - Provisioning: setup/provision.md
-      - Add an SBC: setup/SBC.md
+      - Connect to Wi-Fi: setup/provision.md
+      - ROS 2 on a Pi 4: setup/pi4.md
     - Create® 3 APIs:
       - ROS 2 Interface: api/ros2.md
       - Docking: api/docking.md
