@@ -1,8 +1,16 @@
 # Connect Create® 3 to Raspberry Pi® 4 and set up ROS 2 Galactic
 
+## Before you start
+Warning: these directions are written for someone with experience with embedded Linux and basic embedded computers. It is highly recommended to read through the following documents before beginning:
+
+* [How to install Ubuntu Server on your Raspberry Pi](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi) - official Canonical documentation
+* [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Binary.html) - official Open Robotics documentation
+
+## Step-by-step
+
 1. Download [Ubuntu® Server 20.04 64-bit](https://ubuntu.com/download/raspberry-pi) and write onto a microSD card.
-1. In the system-boot partition, edit usercfg.txt and add `dtoverlay=dwc2,dr_mode=peripheral`
-1. In the system-boot partition, edit cmdline.txt to add `modules-load=dwc2,g_ether` after `rootwait`
+1. In the system-boot partition, edit usercfg.txt and add `dtoverlay=dwc2,dr_mode=peripheral`. For convenience, [here's a copy of this file](data/usercfg.txt).
+1. In the system-boot partition, edit cmdline.txt to add `modules-load=dwc2,g_ether` after `rootwait`. For convenience, [here's a copy of this file](data/cmdline.txt).
 1. In the system-boot partition, edit network-config to optionally add information about your Wi-Fi connection, and also add the following under `ethernets`
 
                 usb0:
@@ -10,6 +18,7 @@
                     optional: true
                     addresses: [192.168.186.3/24]
 
+    For convenience, [here's a copy of this file](data/network-config.txt). Be sure to remove the `.txt` extension.
     Note that the robot uses the default IP address of 192.168.186.2 on its usb0 interface.
 
 1. Insert the microSD card into the Raspberry Pi® 4, and then use a USB-C® to USB-C® cable to connect the Raspberry Pi® 4 to the Create® 3. The first boot may take a few minutes. (It may help to have a monitor and keyboard set up in case of any trouble on the first boot.)
@@ -21,7 +30,7 @@
 
 1. Then, execute the following commands:
 
-        sudo apt update && sudo apt install curl gnupg2 lsb-release build-essential
+        sudo apt update && sudo apt install curl gnupg2 lsb-release build-essential git
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
         sudo apt update
