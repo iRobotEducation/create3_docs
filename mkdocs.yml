@@ -27,6 +27,7 @@ nav:
       - Hookup Examples: hw/hookup.md
     - Create® 3 Setup:
       - Connect to Wi-Fi: setup/provision.md
+      - Multi-Robot Setup: setup/multi-robot.md
       - ROS 2 on a Pi 4: setup/pi4.md
     - Create® 3 APIs:
       - ROS 2 Interface: api/ros2.md

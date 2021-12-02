@@ -10,3 +10,8 @@ This can be found in the Application &rarr; Configuration menu in the Create® 3
 
 The default RMW for ROS 2 Galactic is Cyclone DDS.
 Be sure to click "save" after making any changes, and then restart the application.
+
+## Using Multiple Robots
+
+!!! important 
+    If you plan to use multiple Create® 3 robots connected to the same Wi-Fi network, then **you must follow the [Multi-Robot Setup documentation](multi-robot.md)**

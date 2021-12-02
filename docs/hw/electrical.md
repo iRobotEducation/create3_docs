@@ -35,7 +35,7 @@ The USB data connection is made only when the USB/BLE toggle switch plunger is s
 A note about total power consumption: the USB-C® port draws its power from the unregulated battery connection from the robot.
 This means that if a full 5 V @ 3 A are drawn from the port, that's power that cannot be taken from the unregulated battery port.
 As an example, say that the battery is currently measuring 14.4 V and the full 5 V @ 3 A are drawn continuously, and the switching regulator is 90% efficient.
-In this case, a maximum of (5 V * 3 A / 0.90 / 14.4 V =) 1.16 A can be drawn from the unregulated battery port before the resettable fuse will trip (and depending on ambient temperature, even more margin may be necessary).
+In this case, a maximum of (2 A - (5 V * 3 A / 0.90 / 14.4 V) =) 0.84 A can be drawn from the unregulated battery port before the resettable fuse will trip (and depending on ambient temperature, even more margin may be necessary).
 
 ## USB/BLE Toggle
 The **USB/BLE toggle** routes the robot's single USB Host connection either to the USB-C® port (useful for connecting to single-board computers with OTG or device ports) or to the on-board BLE module.
