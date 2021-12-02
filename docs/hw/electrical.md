@@ -2,6 +2,10 @@
 
 ## Robot Battery
 The iRobot® Create® 3 robot uses a standard [Lithium Ion Battery for Roomba® e & i series](https://store.irobot.com/default/parts-and-accessories/roomba-batteries/) robots.
+The battery shipping with the robot is a 26 Wh, 4S Lithium Ion smart battery pack, with a nominal voltage of 14.4 V (12 V min, 16.8 V max).
+It will report a 0% state of charge when the total voltage of the pack reaches 12.0 V.
+It will self-protect and disconnect from any load at 10.8 V.
+
 Do not attempt to use the robot without its battery installed.
 
 ## Adapter Board Overview
@@ -16,12 +20,15 @@ The Adapter Board is also visible through the top cover of the robot, where its 
 The **unregulated battery port** is a JST XH-style connector, with pin 1 as the positive terminal of the battery, and pin 2 is the negative terminal.
 These terminals are labeled on the bottom side of the board and are visible with the robot on its back and the cargo bay removed.
 The board is capable of supplying a maximum of 2 A of current at the current battery voltage, enforced by a PTC resettable fuse in the robot.
-The battery in the robot is a 26 Wh, 4S Lithium Ion smart battery pack, with a nominal voltage of 14.4 V (12 V min, 16.8 V max).
+This port is always on when the battery is powered on.
+Be careful not to back-feed the robot through this port.
+
 Do not attempt to use the robot without its battery installed.
 
 ### USB-C® Connector
 The **USB-C® connector** provides a USB 2.0 Host connection into the robot with 5.13 V at 3.0 A provided to power downstream connections.
 The power is disabled on this port unless a proper USB-C® downstream device is connected.
+The 5 V source powering this port will shut off when the battery voltage falls below approximately 11.8 V.
 The USB data connection is made only when the USB/BLE toggle switch plunger is slid toward the USB icon.
 
 ### Total Power Output
