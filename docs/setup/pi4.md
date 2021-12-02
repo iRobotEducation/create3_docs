@@ -21,6 +21,7 @@ It is highly recommended to read through the following documents before beginnin
 
     For convenience, [here's a copy of this file](data/network-config.txt). Be sure to remove the `.txt` extension.
     Note that the robot uses the default IP address of 192.168.186.2 on its usb0 interface.
+    Please note also that after initial boot, editing `network-config` in the boot partition will not do anything; instead, the file to edit can be found at `/etc/netplan/50-cloud-init.yaml`.
 
 1. Insert the microSD card into the Raspberry Pi® 4, and then use a USB-C® to USB-C® cable to connect the Raspberry Pi® 4 to the Create® 3.
 A photo of this connection can be found [here](../../hw/hookup/#raspberry-pi-4).
