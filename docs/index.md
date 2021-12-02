@@ -21,7 +21,7 @@ All these can be triggered and/or configured through ROS 2 actions and parameter
 Designed for beginner to advanced ROS 2 users, Create® 3 allows for a variety of programming methods.
 With Wi-fi and Bluetooth capability, Ethernet over USB connections, plus a removable faceplate for attaching payloads, you can start building with your Create® 3 right away.
 
-More detailed documentation can be accessed using the ☰ menu in the top left corner of this page.
+More detailed documentation can be accessed using the left navigation bar, or if it is collapsed, the ☰ menu in the top left corner of this page.
 
 ## Key internal docs links
 

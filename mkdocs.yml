@@ -25,6 +25,9 @@ nav:
       - Mechanical: hw/mechanical.md
       - Electrical: hw/electrical.md
       - Hookup Examples: hw/hookup.md
+    - Create® 3 Setup:
+      - Connect to Wi-Fi: setup/provision.md
+      - ROS 2 on a Pi 4: setup/pi4.md
     - Create® 3 APIs:
       - ROS 2 Interface: api/ros2.md
       - Docking: api/docking.md
