@@ -3,7 +3,9 @@
 ## Robot Battery
 The iRobot® Create® 3 robot uses a standard [Lithium Ion Battery for Roomba® e & i series](https://store.irobot.com/default/parts-and-accessories/roomba-batteries/) robots.
 The battery shipping with the robot is a 26 Wh, 4S Lithium Ion smart battery pack, with a nominal voltage of 14.4 V (12 V min, 16.8 V max).
-The battery will self-protect and disconnect from any load at around 10 V.
+It will report a 0% state of charge when the total voltage of the pack reaches 12.0 V.
+It will self-protect and disconnect from any load at 10.8 V.
+
 Do not attempt to use the robot without its battery installed.
 
 ## Adapter Board Overview
