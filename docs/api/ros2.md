@@ -29,6 +29,7 @@ $ ros2 topic list
 /stop_status
 /tf
 /tf_static
+/wheel_status
 /wheel_ticks
 /wheel_vels
 ```
@@ -73,15 +74,21 @@ $ ros2 service list
 You can see the ROS 2 action servers exposed by the Create® 3 robot running the `ros2 action list` command.
 
 ```bash
-$ ros2 action list
-/dock
-/undock
-/wall_follow
+$ ros2 action list -t
+/dock [irobot_create_msgs/action/DockServo]
+/drive_arc [irobot_create_msgs/action/DriveArc]
+/drive_distance [irobot_create_msgs/action/DriveDistance]
+/led_animation [irobot_create_msgs/action/LedAnimation]
+/navigate_to_position [irobot_create_msgs/action/NavigateToPosition]
+/rotate_angle [irobot_create_msgs/action/RotateAngle]
+/undock [irobot_create_msgs/action/Undock]
+/wall_follow [irobot_create_msgs/action/WallFollow]
 ```
 
 For more details on how to use these actions, please have a look at their corresponding sections.
 
  - [Docking](docking.md)
+ - [Drive Goals](drive-goals.md)
 
 ## ROS 2 Parameters
 
@@ -107,6 +114,7 @@ $ ros2 param list
   reflexes_enabled
   safety_override
   use_sim_time
+  wheel_accel_limit
 /static_transform:
   qos_overrides./parameter_events.publisher.depth
   qos_overrides./parameter_events.publisher.durability
@@ -119,11 +127,15 @@ $ ros2 param list
   wheel_base
   wheels_encoder_resolution
   wheels_radius
+/ui_mgr:
+  lightring_led_brightness
 ```
 
 Morphology parameters such as `wheel_base` and `wheels_encoder_resolution` are read-only parameters that can be used in order to implement your estimation or motion control algorithms.
 
 The `safety_override` parameter allows user to enable/disable safety features.
 For more details, please have a look at the [safety documentation](safety.md).
+
+The `lightring_led_brightness` parameter allows user to increase/decrease the brightness of the lightring.
 
 For more details on how to use and configure reflexes, please have a look at the [reflexes documentation](reflexes.md).
