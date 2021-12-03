@@ -62,3 +62,20 @@ By fully disabling safety features, i.e. setting `safety_override = full` the ro
 
 !!! attention 
     The robot may not be able to stop in time if driving at full speed if a cliff is detected!
+
+## Acceleration Limits
+
+The robot exposes its commanding acceleration limits through the `wheel_accel_limit` parameter on the `motion_control` node.
+The velocity commands sent to the wheels will be ramped with the acceleration profile associated with this value.
+The value defaults to its maximum settable `900 mm/s^2`.  If using heavier payloads, it is advisable to decrease acceleration limits.
+
+## E-Stop
+
+The robot exposes a service with name `e_stop` that when sent `e_stop_on` true will turn off the robot's wheels.
+The robot will not respond to velocity commands when `e_stop_on` is true.
+See [EStop.srv](https://github.com/iRobotEducation/irobot_create_msgs/blob/main/srv/EStop.srv)
+
+## Wheel Status
+
+There is a `wheel_status` topic which publishes [WheelStatus.msg](https://github.com/iRobotEducation/irobot_create_msgs/blob/main/msg/WheelStatus.msg)
+exposing whether the wheels are enabled (disabled if E-Stop is engaged) and the present PWM duty cycle and current through each wheel.
