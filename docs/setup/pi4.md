@@ -1,7 +1,8 @@
 # Connect Create® 3 to Raspberry Pi® 4 and set up ROS 2 Galactic
 
 ## Before you start
-Warning: these directions are written for someone with experience with embedded Linux and basic embedded computers.
+!!! attention
+    **These directions are written for someone with experience with embedded Linux and basic embedded computers.**
 It is highly recommended to read through the following documents before beginning:
 
 * [How to install Ubuntu Server on your Raspberry Pi](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi) - official Canonical documentation
