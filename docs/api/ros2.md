@@ -3,6 +3,7 @@
 The Create® 3 robot is based on ROS 2 and, as such, it exposes all its user-facing APIs through ROS 2 entities (topics, services, actions and parameters).
 
 The purpose of this page is to give a quick overview of these ROS 2 APIs.
+The robot uses standard ROS 2 messages when available and implements custom messages in [irobot_create_msgs](https://github.com/iRobotEducation/irobot_create_msgs) for data not represented by standard messages.
 If you are interested in more details, have a look at the other pages in this section.
 
 ## ROS 2 Topics
@@ -10,28 +11,27 @@ If you are interested in more details, have a look at the other pages in this se
 You can see the ROS 2 topics exposed by the Create® 3 robot running the `ros2 topic list` command.
 
 ```bash
-$ ros2 topic list
-/battery_state
-/cmd_lightring
-/cmd_vel
-/dock
-/hazard_detection
-/imu
-/interface_buttons
-/ir_intensity
-/ir_opcode
-/kidnap_status
-/mouse
-/odom
-/parameter_events
-/rosout
-/slip_status
-/stop_status
-/tf
-/tf_static
-/wheel_status
-/wheel_ticks
-/wheel_vels
+$ ros2 topic list -t
+/battery_state [sensor_msgs/msg/BatteryState]
+/cmd_lightring [irobot_create_msgs/msg/LightringLeds]
+/cmd_vel [geometry_msgs/msg/Twist]
+/dock [irobot_create_msgs/msg/Dock]
+/hazard_detection [irobot_create_msgs/msg/HazardDetectionVector]
+/imu [sensor_msgs/msg/Imu]
+/interface_buttons [irobot_create_msgs/msg/InterfaceButtons]
+/ir_intensity [irobot_create_msgs/msg/IrIntensityVector]
+/ir_opcode [irobot_create_msgs/msg/IrOpcode]
+/kidnap_status [irobot_create_msgs/msg/KidnapStatus]
+/mouse [irobot_create_msgs/msg/Mouse]
+/odom [nav_msgs/msg/Odometry]
+/parameter_events [rcl_interfaces/msg/ParameterEvent]
+/rosout [rcl_interfaces/msg/Log]
+/slip_status [irobot_create_msgs/msg/SlipStatus]
+/stop_status [irobot_create_msgs/msg/StopStatus]
+/tf_static [tf2_msgs/msg/TFMessage]
+/wheel_status [irobot_create_msgs/msg/WheelStatus]
+/wheel_ticks [irobot_create_msgs/msg/WheelTicks]
+/wheel_vels [irobot_create_msgs/msg/WheelVels]
 ```
 
 Note that the Create® 3 robot will produce data on most of these topics.
@@ -136,6 +136,6 @@ Morphology parameters such as `wheel_base` and `wheels_encoder_resolution` are r
 The `safety_override` parameter allows user to enable/disable safety features.
 For more details, please have a look at the [safety documentation](safety.md).
 
-The `lightring_led_brightness` parameter allows user to increase/decrease the brightness of the lightring.
+The `lightring_led_brightness` parameter allows user to increase/decrease the brightness of the light ring.
 
 For more details on how to use and configure reflexes, please have a look at the [reflexes documentation](reflexes.md).
