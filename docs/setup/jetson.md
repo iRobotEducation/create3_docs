@@ -74,9 +74,8 @@ The recommended way to run ROS2 on Jetson is to use a pre-built Docker container
 
 2. Use `jetson-containers`' script to simplify the inovocation of `docker run` command.
 
-```
-git clone https://github.com/dusty-nv/jetson-containers/
-cd jetson-containers
-scripts/docker_run.sh -c dustynv/ros:galactic-ros-base-l4t-r32.6.1
-```
+        git clone https://github.com/dusty-nv/jetson-containers/
+        cd jetson-containers
+        scripts/docker_run.sh -c dustynv/ros:galactic-ros-base-l4t-r32.6.1
+
 
