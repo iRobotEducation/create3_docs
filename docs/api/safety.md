@@ -16,11 +16,20 @@ It's a `string` parameter and it accepts 3 possible values:
  - `backup_only` Overrides the robot backup limit safety feature, disabling it.
  - `full` Safety features are fully disabled.
 
+For example, in order to completely disable safety mechanisms:
+
+```bash
+ros2 param set /motion_control safety_override full
+```
+
 Note that the parameter server will reject changes if there are typos in the new safety value set by the users.
 
 The following sections briefly describe what the safety features do.
 
 ## Backup Limit
+
+!!! attention 
+    **If you disable the backup limit the robot will not stop if there are cliffs when driving backward!**
 
 The Create® 3 robot is equipped with cliff sensors, but they are located only in the front of the robot.
 This means that the robot is not able to detect cliff hazards while driving backward.
@@ -45,11 +54,10 @@ This moment will be identified by the `BACKUP_LIMIT` hazard disappearing from th
 
 The backup limit and its related alerts are active only when `safety_override = none`.
 
-!!! attention 
-    The robot will not stop if there are cliffs when driving backward!
-
-
 ## Maximum speed
+
+!!! attention
+    **If you increase the speed above the default one, the robot may not be able to stop in time when a cliff is detected!**
 
 In order to stop when a cliff hazards is detected, it is also necessary to make sure that the robot is not driving too fast.
 Safety features will thus limit the robot speed.
@@ -59,9 +67,6 @@ You can check the current maximum robot speed through the read-only parameter `m
 When `safety_override = none` or `safety_override = backup_only` the maximum speed will be limited to 0.306 m/s.
 
 By fully disabling safety features, i.e. setting `safety_override = full` the robot will be allowed to drive at its true maximum speed of 0.460 m/s.
-
-!!! attention 
-    The robot may not be able to stop in time if driving at full speed if a cliff is detected!
 
 ## Acceleration Limits
 
@@ -74,6 +79,12 @@ The value defaults to its maximum settable `900 mm/s^2`.  If using heavier paylo
 The robot exposes a service with name `e_stop` that when sent `e_stop_on` true will turn off the robot's wheels.
 The robot will not respond to velocity commands when `e_stop_on` is true.
 See [EStop.srv](https://github.com/iRobotEducation/irobot_create_msgs/blob/main/srv/EStop.srv)
+
+For example, in order to enable the E-Stop:
+
+```bash
+ros2 service call /e_stop "{e_stop_on: true}"
+```
 
 ## Wheel Status
 

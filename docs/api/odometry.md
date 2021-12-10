@@ -7,6 +7,18 @@ In particular you will find:
  - Optical mouse
  - Wheel encoders
 
+### Raw sensors topics
+
+If you want to implement your own algorithms using the raw sensor readings, you can read them from the following topics:
+
+```bash
+/imu
+/mouse
+/wheel_status
+/wheel_ticks
+/wheel_vels
+```
+
 ### The `odom` topic
 
 The Create® 3 robot fuses the reading from its various sensors in order to produce a dead reckoning estimate of its pose on the `odom` topic.
@@ -24,14 +36,3 @@ Note that the optical mouse sensor is not affected by slippage.
 ### The `stop_status` topic
 
 The Create® 3 robot will periodically publish a boolean estimate of whether it is currently moving or not on the `stop_status` topic.
-
-### Raw sensors topics
-
-If you want to implement your own algorithms using the raw sensor readings, you can read them from the following topics:
-
-```bash
-/imu
-/mouse
-/wheel_ticks
-/wheel_vels
-```
