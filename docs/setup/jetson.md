@@ -79,3 +79,71 @@ The recommended way to run ROS2 on Jetson is to use a pre-built Docker container
         scripts/docker_run.sh -c dustynv/ros:galactic-ros-base-l4t-r32.6.1
 
 
+3. Set the default network interface by setting Cyclone DDS configuration.
+
+        export CYCLONEDDS_URI='<CycloneDDS><Domain><General><NetworkInterfaceAddress>l4tbr0</NetworkInterfaceAddress></General></Domain></CycloneDDS>'
+
+4. Check if it now sees all the ROS2 topic for Create3
+
+        ros2 topic list
+
+    You should get
+
+        /battery_state
+        /cmd_lightring
+        /cmd_vel
+        /dock
+        /hazard_detection
+        /imu
+        /interface_buttons
+        /ir_intensity
+        /ir_opcode
+        /kidnap_status
+        /mouse
+        /odom
+        /parameter_events
+        /rosout
+        /slip_status
+        /stop_status
+        /tf
+        /tf_static
+        /wheel_ticks
+        /wheel_vels
+
+    Check if it read a message on a topic
+
+        ros2 topic echo odom
+
+    You should see continuous repition of output like following.
+
+        ---
+        header:
+        stamp:
+            sec: 1639388519
+            nanosec: 209038110
+        frame_id: odom
+        child_frame_id: base_link
+        pose:
+        pose:
+            position:
+            x: -0.04380033165216446
+            y: -0.005811699666082859
+            z: 0.0
+            orientation:
+            x: 0.0037933308631181717
+            y: 0.0016814800910651684
+            z: 0.03521127253770828
+            w: 0.999371349811554
+        covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        twist:
+        twist:
+            linear:
+            x: 0.0
+            y: 4.972387477511303e-07
+            z: -5.194771269447518e-09
+            angular:
+            x: -0.0006566781590969611
+            y: -0.0019107190640370627
+            z: 0.0
+        covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
