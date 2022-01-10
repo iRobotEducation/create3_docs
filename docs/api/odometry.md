@@ -7,7 +7,7 @@ In particular you will find:
  - Optical mouse
  - Wheel encoders
 
-### Raw sensors topics
+### Raw sensor topics
 
 If you want to implement your own algorithms using the raw sensor readings, you can read them from the following topics:
 
