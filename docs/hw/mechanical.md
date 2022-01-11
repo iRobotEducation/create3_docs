@@ -15,6 +15,9 @@ IMPORTANT: Always remove the Create® 3 robot’s battery prior to dismantling, 
 ### Cargo Bay - Top
 ![The Create® 3 Cargo Bay Drawing](data/cargo_bay_drawing.svg "Create® 3 Cargo Bay Drawing")
 
+## Downloadable 3D Model
+Download this [STEP model (17.7 MB)](data/iRobot_Create_3_Public_Model.step) to help design attachments or payloads for Create® 3.
+
 ## Attachment Tips and Tricks
 ### Self-tapping screws with bosses
 The Create® 3 robot's holes are sized for M3 or #4 screws.
