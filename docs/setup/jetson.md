@@ -14,6 +14,8 @@
 # limitations under the License.
 -->
 
+# For other Jetson platforms
+
 ## Before you start
 !!! attention
     **These directions are written for someone with experience with embedded Linux and basic embedded computers.**
@@ -67,7 +69,7 @@ For other Jetson platform:
         sudo mv /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf.bak
 
 
-### Start ROS2 Galactic container
+### Start ROS 2 Galactic container
 
 The recommended way to run ROS2 on Jetson is to use a pre-built Docker containers.
 
@@ -97,7 +99,7 @@ The recommended way to run ROS2 on Jetson is to use a pre-built Docker container
 
         export CYCLONEDDS_URI='<CycloneDDS><Domain><General><NetworkInterfaceAddress>l4tbr0</NetworkInterfaceAddress></General></Domain></CycloneDDS>'
 
-4. Check if it now sees all the ROS2 topic for Create3
+4. Check to ensure Create® 3 topics appear
 
         ros2 topic list
 
