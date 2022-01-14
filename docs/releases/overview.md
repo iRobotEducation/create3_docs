@@ -14,6 +14,9 @@ Increments to major release imply API breaking changes or significant new featur
 The second number corresponds with a minor release number within the major release number.
 Increments to the minor release imply bug fixes or small feature additions that should be backwards compatible with code that currently integrates with the major release number.
 
+The latest release can be found at:
+[http://edu.irobot.com/create3-latest-fw](http://edu.irobot.com/create3-latest-fw)
+
 ## Releases:
 
 - [G.1.1](../g_1_1)
