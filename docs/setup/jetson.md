@@ -14,19 +14,16 @@
 # limitations under the License.
 -->
 
-# For other Jetson platforms
+# Connect Create® 3 to NVIDIA® Jetson and set up ROS 2 Galactic
 
 ## Before you start
 !!! attention
     **These directions are written for someone with experience with embedded Linux and basic embedded computers.**
-It is highly recommended to read through the following documents before beginning:
+It is highly recommended to read through the getting started document for your Jetson platform before beginning:
 
-* [Getting Started with Jetson Nano 2GB Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit)
-
-For other Jetson platform:
-
-* [Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 * [Getting Started With Jetson Xavier NX Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-xavier-nx-devkit)
+* [Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
+* [Getting Started with Jetson Nano 2GB Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit)
 
 
 ## Step-by-step
