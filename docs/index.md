@@ -27,6 +27,7 @@ More detailed documentation can be accessed using the left navigation bar, or if
 
  - [Hardware](hw/overview)
  - [ROS 2 API](api/ros2/)
+ - [Software Releases](releases/overview)
 
 ## Useful external links
 
