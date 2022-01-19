@@ -1,7 +1,9 @@
 # iRobot® Create® 3 Mechanical System
-IMPORTANT: Always remove the Create® 3 robot’s faceplate prior to dismantling, adjusting, altering, or affecting the faceplate at the risk of damaging the robot.
+!!! attention "Notice"
+    Always remove the Create® 3 robot’s faceplate prior to dismantling, adjusting, altering, or affecting the faceplate at the risk of damaging the robot.
 
-IMPORTANT: Always remove the Create® 3 robot’s battery prior to dismantling, adjusting, altering, or affecting the robot’s chassis at the risk of damaging the battery, robot, or both.
+!!! attention "Notice"
+    Always remove the Create® 3 robot’s battery prior to dismantling, adjusting, altering, or affecting the robot’s chassis at the risk of damaging the battery, robot, or both.
 
 ## Dimensioned Drawings
 ### Top with Faceplate Attached
