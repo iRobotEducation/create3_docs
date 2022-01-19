@@ -5,7 +5,7 @@ The robot also ships with an iRobot® Home Base® Charging Station.
 
 ![Create® 3 from its above-front-right, next to its dock.](data/front_iso.jpg "Robot Front")
 The front of the robot features a multizone bumper with six pairs of IR obstacle sensors.
-The top of the robot contains three buttons which can all be overloaded by a ROS 2 application (only the 1 and 2 buttons can be overloaded in the iRobot Coding app.)
+The top of the robot contains three buttons which can all be overloaded by a ROS 2 application (only the • and •• buttons can be overloaded in the iRobot Coding app.)
 The power button features a ring of six RGB LEDs for indication.
 
 ![Create® 3 from its above-rear-left, with the top cover and cargo bay removed.](data/rear_iso.jpg "Robot Rear")
