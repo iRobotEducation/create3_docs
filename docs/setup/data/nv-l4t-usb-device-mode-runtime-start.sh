@@ -35,7 +35,7 @@ if [ -f "${script_dir}/IP_ADDRESS_FOR_CREATE3_ROBOT.conf" ]; then
 fi
 
 /sbin/ifconfig l4tbr0 up
-# The interface might lose the address when down. Add it here to make sure
+# The interface might lose the address when down. Add it here to make sur
 # it's configured.
 /sbin/ifconfig l4tbr0 ${net_ip} netmask ${net_mask}
 /sbin/ifconfig l4tbr0 add ${net_ipv6}

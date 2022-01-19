@@ -68,9 +68,9 @@ It is highly recommended to read through the getting started document for your J
 
 ### Start ROS 2 Galactic container
 
-The recommended way to run ROS2 on Jetson is to use a pre-built Docker containers.
+The recommended way to run ROS2 on Jetson is to use pre-built Docker container images.
 
-1. Enable NVIDIA runtime for docker, if this is the first time running Docker containers on Jetson, to allow access to GPU from containers.
+1. Enable NVIDIA Container Runtime with Docker integration, if this is the first time running containers on Jetson, to allow access to GPU from containers.
 
     Edit `/etc/docker/daemon.json` to be following.
 
@@ -85,7 +85,7 @@ The recommended way to run ROS2 on Jetson is to use a pre-built Docker container
         }
 
 
-2. Use `jetson-containers`' script to simplify the inovocation of `docker run` command.
+2. Use `jetson-containers`' script to simplify the invocation of `docker run` command.
 
         git clone https://github.com/dusty-nv/jetson-containers/
         cd jetson-containers
@@ -127,7 +127,7 @@ The recommended way to run ROS2 on Jetson is to use a pre-built Docker container
 
         ros2 topic echo odom
 
-    You should see continuous repition of output like following.
+    You should see continuous repetition of output like following.
 
         ---
         header:
