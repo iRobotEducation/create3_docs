@@ -40,7 +40,7 @@ fi
 /sbin/ifconfig l4tbr0 ${net_ip} netmask ${net_mask}
 /sbin/ifconfig l4tbr0 add ${net_ipv6}
 
-# IF the config file for iRobot Create3 (IP_ADDRESS_FOR_CREATE3_ROBOT.conf) exists, 
+# IF the config file for iRobot Create® 3 (IP_ADDRESS_FOR_CREATE3_ROBOT.conf) exists, 
 # then apply the static IP address (192.168.186.3), instead of enabling DHCP server
 if [ -n "$robot_ip_conf_file" ]; then
     static_ip_for_robot=`cat $robot_ip_conf_file`

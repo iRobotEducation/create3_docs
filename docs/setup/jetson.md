@@ -45,7 +45,7 @@ It is highly recommended to read through the getting started document for your J
     2. Then, modify the "nv-l4t-device-mode-runtime" service script (`/opt/nvidia/l4t-usb-device-mode/nv-l4t-usb-device-mode-runtime-start.sh`). The complete file is [here](data/nv-l4t-usb-device-mode-runtime-start.sh).
      <br>
 
-2. Connect micro-B end of the USB cable from Create3 robot to the micro-B USB port of Jetson. Then check if the static IP address is set by issuing `ifconfig` command.
+2. Connect micro-B end of the USB cable from Create® 3 robot to the micro-B USB port of Jetson. Then check if the static IP address is set by issuing `ifconfig` command.
 
         $ ifconfig l4tbr0
 
@@ -61,7 +61,7 @@ It is highly recommended to read through the getting started document for your J
 
 
 !!! note
-    If you ever want to stop using the Jetson device for Create3 and re-enable the original USB Device Mode feature (so that you can connect to your Windows PC in headless style), you can simply remove the flag file, or execute the following.
+    If you ever want to stop using the Jetson device for Create® 3 and re-enable the original USB Device Mode feature (so that you can connect to your Windows PC in headless style), you can simply remove the flag file, or execute the following.
 
         sudo mv /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf.bak
 

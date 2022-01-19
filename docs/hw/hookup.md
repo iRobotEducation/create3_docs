@@ -41,7 +41,7 @@ The data connection is established by using a USB Micro B to USB-C® cable.
 You can 3d print the [mount adapter](data/C3-JetsonXavierNX-Mount.3mf) to place the Jetson Xavier NX Developer Kit in the cargo bay or on the faceplate.
 
 !!! note
-    - If you are 3d printing the above mount adapter, use **support** to surport overhang areas. ([slicing example](data/C3-JetsonXavierNX-Mount_slice-example.png))
+    - If you are 3d printing the above mount adapter, use **support** to support overhang areas. ([slicing example](data/C3-JetsonXavierNX-Mount_slice-example.png))
     - You need four (4) M3 - 6mm screws, like [these](https://www.amazon.com/dp/B089KR3XHR/).
 
 <sub><sup>USB-C® is a trademark of USB Implementers Forum. Raspberry Pi is a trademark of Raspberry Pi Trading. NVIDIA and Jetson Nano are trademarks or registered trademarks of NVIDIA Corporation. All other trademarks mentioned are the property of their respective owners.</sup></sub>
