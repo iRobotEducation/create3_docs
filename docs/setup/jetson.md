@@ -87,7 +87,7 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
 
 1. Enable NVIDIA Container Runtime with Docker integration, if this is the first time running containers on Jetson, to allow access to GPU from containers.
 
-    Edit `/etc/docker/daemon.json` to be following.
+    Edit `/etc/docker/daemon.json` to be the following.
 
         {
             "runtimes": {
