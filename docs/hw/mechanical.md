@@ -19,6 +19,7 @@
 ![The Create® 3 Cargo Bay Drawing](data/cargo_bay_drawing.svg "Create® 3 Cargo Bay Drawing")
 
 ## Downloadable 3D Model
+![Create® 3 Model](data/3d_model.jpg "3D Model of Create® 3")
 Download this [STEP model (17.7 MB)](data/iRobot_Create_3_Public_Model.step) to help design attachments or payloads for Create® 3.
 
 ## Attachment Tips and Tricks
