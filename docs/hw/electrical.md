@@ -42,16 +42,16 @@ The **USB/BLE toggle** routes the robot's single USB Host connection either to t
 This module can be used to interact with the [iRobot Coding app](https://code.irobot.com).
 
 ## Indicators
-### Orange Indicator
+### 🟠 Orange Indicator
 The **orange indicator (D3)** is illuminated when the USB-C® port is powering a downstream device, whether or not a data connection is being made.
 
-### Yellow Indicator
+### 🟡 Yellow Indicator
 The **yellow indicator (D2)** is illuminated when the robot's internal 5 V bus is enabled. There is an error if this LED is extinguished.
 
-### Green Indicator
+### 🟢 Green Indicator
 The **green indicator (D300)** is illuminated when the robot's battery is switched on.
 
-### Blue Indicator
+### 🔵 Blue Indicator
 The **blue indicator (D6)** is illuminated when the BLE radio is turned on. It flashes when it is connected to a host.
 
 <sub><sup>The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by iRobot is under license. USB-C® is a trademark of USB Implementers Forum. All other trademarks mentioned are the property of their respective owners.</sup></sub>
