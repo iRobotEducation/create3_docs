@@ -6,6 +6,8 @@ site_author: 'iRobot'
 repo_name: 'iRobotEducation/create3_docs'
 repo_url: 'https://github.com/iRobotEducation/create3_docs'
 
+edit_uri: 'edit/main/docs/'
+
 docs_dir: docs/
 
 theme:
