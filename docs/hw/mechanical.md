@@ -12,6 +12,7 @@
 ![The Create® 3 Top Drawing](data/top_drawing.svg "Create® 3 Top Drawing")
 ### Side View
 ![The Create® 3 Side Drawing](data/side_drawing.svg "Create® 3 Side Drawing")
+<sup>Wheel travel is approximately 30 mm.</sup>
 ### Bottom View
 ![The Create® 3 Bottom Drawing](data/bottom_drawing.svg "Create® 3 Bottom Drawing")
 ### Cargo Bay - Top
