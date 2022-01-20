@@ -12,7 +12,7 @@
 ![The Create® 3 Top Drawing](data/top_drawing.svg "Create® 3 Top Drawing")
 ### Side View
 ![The Create® 3 Side Drawing](data/side_drawing.svg "Create® 3 Side Drawing")
-<sup>Wheel travel is approximately 30 mm.</sup>
+<sub>Wheel travel is approximately 30 mm.</sub>
 ### Bottom View
 ![The Create® 3 Bottom Drawing](data/bottom_drawing.svg "Create® 3 Bottom Drawing")
 ### Cargo Bay - Top
@@ -31,6 +31,8 @@ The Create® 3 robot's holes are sized for M3 or #4 screws.
 ### Cable ties
 Cable ties (also known as zip ties) can be threaded through the 3 mm holes.
 2.5 mm widths are common and fit nicely.
+### Twist ties
+Twist ties are a quick, cheap, and reusable way for holding wires or other non-structural pieces. 
 ### Plastic Rivets
 Push-in, split-shank plastic rivets (either for M3 or 0.115" holes) are fast and inexpensive ways to mount thin stock to the Create® 3 robot's faceplate.
 ### Highly sophisticated interlocking brick system
