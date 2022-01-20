@@ -12,6 +12,7 @@ theme:
   name: material
   custom_dir: theme_overrides
   logo: assets/irobot_symbol_white.png
+  favicon: assets/irobot_symbol_green.png
 
 extra_css:
   - stylesheets/irobot-palette.css
