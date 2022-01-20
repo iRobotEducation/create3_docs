@@ -7,7 +7,7 @@
 
 ## Downloadable 3D Model
 ![Create® 3 Model](data/3d_model.jpg "3D Model of Create® 3")
-Download this [STEP model (17.7 MB)](data/iRobot_Create_3_Public_Model.step)[^1] to help design attachments or payloads for Create® 3.
+Download this [STEP model (17.8 MB)](data/iRobot_Create_3_Public_Model.step)[^1] to help design attachments or payloads for Create® 3.
 [^1]: Copyright © 2021-22 iRobot Corporation. ​​All Rights Reserved.
 
 ## Attachment Tips and Tricks
