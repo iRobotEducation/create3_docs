@@ -1,14 +1,26 @@
 # iRobot® Create® 3 Mechanical System
-!!! attention "Notice"
-    Always remove the Create® 3 robot’s faceplate prior to dismantling, adjusting, altering, or affecting the faceplate at the risk of damaging the robot.
+
+The Create® 3 is a differential drive robot designed for traversing relatively-flat, indoor environments.
+The drive wheels feature independent suspensions to help the robot overcome typical carpet or door thresholds.
+
+## Payload
+Sensors or accessories can be attached to the faceplate or internal cargo bay, both of which feature a regular grid of 3 mm diameter mounting holes.
+The maximum recommended payload weight (without changing acceleration limits) is 9 kg directly above the center of gravity of the chassis.
+The robot can handle more weight with reduced acceleration limits or careful management of the load.
 
 !!! attention "Notice"
-    Always remove the Create® 3 robot’s battery prior to dismantling, adjusting, altering, or affecting the robot’s chassis at the risk of damaging the battery, robot, or both.
+    To prevent damage to the robot or payload, ensure the faceplate and/or payload are well secured to the chassis before use.
 
 ## Downloadable 3D Model
 ![Create® 3 Model](data/3d_model.jpg "3D Model of Create® 3")
 Download this [STEP model (17.8 MB)](data/iRobot_Create_3_Public_Model.step)[^1] to help design attachments or payloads for Create® 3.
 [^1]: Copyright © 2021-22 iRobot Corporation. ​​All Rights Reserved.
+
+!!! attention "Notice"
+    Always remove the Create® 3 robot’s faceplate prior to dismantling, adjusting, altering, or affecting the faceplate at the risk of damaging the robot.
+
+!!! attention "Notice"
+    Always remove the Create® 3 robot’s battery prior to dismantling, adjusting, altering, or affecting the robot’s chassis at the risk of damaging the battery, robot, or both.
 
 ## Attachment Tips and Tricks
 ### Self-tapping screws with bosses
