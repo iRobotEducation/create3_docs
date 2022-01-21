@@ -29,6 +29,7 @@ nav:
       - Connect to Wi-Fi: setup/provision.md
       - Multi-Robot Setup: setup/multi-robot.md
       - ROS 2 on a Pi 4: setup/pi4.md
+      - ROS 2 on a NVIDIA Jetson: setup/jetson.md
     - Create® 3 APIs:
       - ROS 2 Interface: api/ros2.md
       - Docking: api/docking.md
