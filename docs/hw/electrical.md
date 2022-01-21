@@ -29,7 +29,7 @@ These terminals are labeled on the bottom side of the board and are visible with
 The board is capable of supplying a **maximum of 2 A** of current at the current battery voltage (14.4 V nominal, 12 V min, 16.8 V max), enforced by a PTC resettable fuse in the robot.
 This port is always on when the battery is powered on.
 !!! attention "Notice"
-    Do not to back-feed power into the robot through this port, and do not attempt to use the robot without its battery installed.
+    Do not back-feed power into the robot through this port, and do not attempt to use the robot without its battery installed.
 
 ### USB-C® Connector
 The **USB-C® connector**[^1] provides a USB 2.0 Host connection into the robot with 5.13 V at 3.0 A provided to power downstream connections.
