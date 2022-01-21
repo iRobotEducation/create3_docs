@@ -32,7 +32,7 @@ This can be connected to the Create 3 most simply using a USB-C® hub and two ca
 ![Hookup diagram for Jetson Nano™](data/hookup_nano2gb.jpg "Jetson Nano™ 2GB")
 
 ## NVIDIA® Jetson Xavier NX™ Developer Kit
-The [Jetson Xavier NX™ Developer Kit](https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit) has a 5.5mm x 2.5mm barrel connector jack (`J16`) for power (9V to 20V) and a USB Micro-B port (`J5`) for downstream data.<br>
+The [Jetson Xavier NX™ Developer Kit](https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit) has a 5.5mm x 2.5mm barrel connector jack (J16) for power (9 V to 20 V) and a USB Micro-B port (J5) for downstream data.<br>
 This can be powered from the unregulated battery port of the Create® 3  adapter board by using a JST-XH female connector to DC barrel plug cable.
 The data connection is established by using a USB Micro B to USB-C® cable.
 ![Hookup diagram for Jetson Xavier NX™ Developer Kit](data/hookup_jetson_xavier_nx.jpg "Jetson Xavier NX™ Developer Kit")
@@ -42,6 +42,6 @@ You can 3d print the [mount adapter](data/C3-JetsonXavierNX-Mount.3mf) to place 
 
 !!! note
     - If you are 3d printing the above mount adapter, use **support** to support overhang areas. ([slicing example](data/C3-JetsonXavierNX-Mount_slice-example.png))
-    - You need four (4) M3 - 6mm screws, like [these](https://www.amazon.com/dp/B089KR3XHR/).
+    - You need four (4) M3 x 6mm screws; cap head is suggested.
 
 <sub><sup>USB-C® is a trademark of USB Implementers Forum. Raspberry Pi is a trademark of Raspberry Pi Trading. NVIDIA and Jetson Nano are trademarks or registered trademarks of NVIDIA Corporation. All other trademarks mentioned are the property of their respective owners.</sup></sub>
