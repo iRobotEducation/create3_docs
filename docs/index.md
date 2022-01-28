@@ -33,6 +33,7 @@ More detailed documentation can be accessed using the left navigation bar, or if
 
 Here you can find additional content on the iRobot® Create® 3:
 
+ - [Create® 3 Discussion Forum](https://github.com/iRobotEducation/create3_docs/discussions)
  - [Create® ROS 2 Messages Definitions](https://github.com/iRobotEducation/irobot_create_msgs)
  - [Create® 3 Gazebo Simulator](https://github.com/iRobotEducation/create3_sim)
  - [Create® 3 Examples](https://github.com/iRobotEducation/create3_examples)
