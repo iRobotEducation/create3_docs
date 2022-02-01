@@ -1,5 +1,6 @@
 <!--
 # SPDX-FileCopyrightText: Copyright (c) 2022 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-FileCopyrightText: Additions copyright (c) 2022 iRobot Corporation. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause
 # 
 # Redistribution and use in source and binary forms, with or without
@@ -74,6 +75,8 @@ It is highly recommended to read through the getting started document for your N
                 TX packets 1644  bytes 213306 (213.3 KB)
                 TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
+!!! warning
+    Be sure that the [USB/BLE toggle on the robot's adapter board](../../hw/electrical/#adapter-board-overview) is set to the USB position.
 
 !!! note
     If you ever want to stop using the Jetson device for Create® 3 and re-enable the original USB Device Mode feature (so that you can connect to your Windows PC in headless style), you can simply remove the flag file, or execute the following.

@@ -24,6 +24,7 @@ It is highly recommended to read through the following documents before beginnin
     Note that the robot uses the default IP address of 192.168.186.2 on its usb0 interface.
     Please note also that after initial boot, editing `network-config` in the boot partition will not do anything; instead, the file to edit can be found at `/etc/netplan/50-cloud-init.yaml`.
 
+1. If you would like your Raspberry Pi® 4 to communicate with the Create® 3 over its USB-C® port (and not just to power it), be sure that the [USB/BLE toggle on the robot's adapter board](../../hw/electrical/#adapter-board-overview) is set to the USB position.
 1. Insert the microSD card into the Raspberry Pi® 4, and then use a USB-C® to USB-C® cable to connect the Raspberry Pi® 4 to the Create® 3.
 A photo of this connection can be found [here](../../hw/hookup/#raspberry-pi-4).
 The first boot may take a few minutes. (It may help to have a monitor and keyboard set up in case of any trouble on the first boot.)
