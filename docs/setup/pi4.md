@@ -24,6 +24,7 @@ It is highly recommended to read through the following documents before beginnin
     Note that the robot uses the default IP address of 192.168.186.2 on its usb0 interface.
     Please note also that after initial boot, editing `network-config` in the boot partition will not do anything; instead, the file to edit can be found at `/etc/netplan/50-cloud-init.yaml`.
 
+1. If you would like your Raspberry Pi® 4 to communicate with the Create® 3 over its USB-C® port (and not just to power it), be sure that the [USB/BLE toggle on the robot's adapter board](../../hw/electrical/#adapter-board-overview) is set to the USB position.
 1. Insert the microSD card into the Raspberry Pi® 4, and then use a USB-C® to USB-C® cable to connect the Raspberry Pi® 4 to the Create® 3.
 A photo of this connection can be found [here](../../hw/hookup/#raspberry-pi-4).
 The first boot may take a few minutes. (It may help to have a monitor and keyboard set up in case of any trouble on the first boot.)
@@ -42,7 +43,7 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
         sudo apt update
-        sudo apt install -y ros-galactic-ros-base python3-colcon-common-extensions python3-rosdep
+        sudo apt install -y ros-galactic-ros-base python3-colcon-common-extensions python3-rosdep ros-galactic-rmw-fastrtps-cpp
 
         echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
         echo "export _colcon_cd_root=/opt/ros/galactic/" >> ~/.bashrc
