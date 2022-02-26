@@ -35,7 +35,7 @@ A ROS 2 process will automatically use all the interfaces that were available wh
 
 #### Disable Multicast
 
-Some networks (e.g. corporate WiFi) may block the multicast packets used by ROS 2 by default.
+Some networks (e.g., academic or corporate Wi-Fi) may block the multicast packets used by ROS 2 by default.
 The following XML profile can be used on your laptop (or compute board) to force using unicast and directly connect to the IP address of your robot.
 
 The file must be edited replacing `ROBOT_IP` with the actual IP value.
