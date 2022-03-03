@@ -37,6 +37,7 @@ nav:
       - Setup Compute Boards:
         - ROS 2 on an NVIDIA Jetson: setup/jetson.md
         - ROS 2 on a Pi 4: setup/pi4.md
+        - NTP on Compute Board: setup/compute-ntp.md
     - APIs:
       - ROS 2 Interface: api/ros2.md
       - Docking: api/docking.md
