@@ -13,6 +13,7 @@ You can see the ROS 2 topics exposed by the Create® 3 robot running the `ros2 t
 ```bash
 $ ros2 topic list -t
 /battery_state [sensor_msgs/msg/BatteryState]
+/cmd_audio [irobot_create_msgs/msg/AudioNoteVector]
 /cmd_lightring [irobot_create_msgs/msg/LightringLeds]
 /cmd_vel [geometry_msgs/msg/Twist]
 /dock [irobot_create_msgs/msg/Dock]
@@ -38,6 +39,7 @@ Note that the Create® 3 robot will produce data on most of these topics.
 On the other hand, some of them can be used by the user to send commands to the Create® 3 robot.
 In particular, the Create® 3 robot will subscribe to the following topics:
 
+ - `/cmd_audio`: use this topic to play specified notes from the robot speaker.
  - `/cmd_lightring`: use this topic to change the color of the light ring.
  - `/cmd_vel`: use this topic to command velocities in the robot reference frame.
 
