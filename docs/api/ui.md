@@ -43,7 +43,10 @@ ros2 topic pub --once /cmd_audio irobot_create_msgs/msg/AudioNoteVector "{append
 ```
 
 This example command will play 2 notes at the given frequencies back to back with the given 1 second length for each note.
+
 `append` is used to dictate the policy if an audio sequence is already playing when a new value comes in on the topic.
-`append: true` tells the sound manager to play this audio sequence after the current sequence finishes playing.
-`append: false` tell the sound manager to override any currently playing sequence with the new sequence.
+
+* `append: true` tells the sound manager to play this audio sequence after the current sequence finishes playing.
+* `append: false` tell the sound manager to override any currently playing sequence with the new sequence.
+
 Publishing an empty `notes` vector with `append: false` will stop any currently playing audio sequences.

@@ -49,8 +49,8 @@ For more details on the content of these topics, please have a look at their cor
  - [Odometry](odometry.md)
  - [User Interface](ui.md)
 
-If you have trouble seeing the topics using `ros2 topic list`, ensure that the robot's `RMW_IMPLEMENTATION` matches the one on your machine, see [Network Configuration](../setup/xml-config.md).
-Additionally, the command line `ros2 topic` utility can cache old information, try running it with additional arguments `ros2 topic list --no-daemon --spin-time 10`
+If you have trouble seeing the topics using `ros2 topic list`, ensure that the robot's `RMW_IMPLEMENTATION` matches the one on your machine; see [Network Configuration](../setup/xml-config.md) for more information about <ins>R</ins>OS <ins>m</ins>iddle<ins>w</ins>are (RMW).
+Additionally, the command line `ros2 topic` utility can cache old information; try running it with additional arguments `ros2 topic list --no-daemon --spin-time 10`
 
 ## ROS 2 Services
 
@@ -163,7 +163,7 @@ The `/tf` tree from the robot exposes ROS 2 standard transforms `odom->base_foot
 `base_link` is defined to be at the center of rotation of the robot with z height intersecting the floor.
 `base_footprint` is the 2D planar representation `base_link` with the pitch and roll factors removed from the transform, this can be useful for applications like 2D planar mapping.
 The `/odom` publication contains the same position and orientation as `base_link` in the form of a `nav_msgs/msg/Odometry` message with velocity additionally populated.
-The robot's coordinate system is right-hand rule x forward, y left, z up.
+The robot's coordinate system is right-handed, with x forward, y left, and z up.
 
 ```bash
 $ ros2 topic echo /tf
