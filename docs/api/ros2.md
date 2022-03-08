@@ -50,7 +50,7 @@ For more details on the content of these topics, please have a look at their cor
  - [User Interface](ui.md)
 
 If you have trouble seeing the topics using `ros2 topic list`, ensure that the robot's `RMW_IMPLEMENTATION` matches the one on your machine; see [Network Configuration](../setup/xml-config.md) for more information about <ins>R</ins>OS <ins>m</ins>iddle<ins>w</ins>are (RMW).
-Additionally, the command line `ros2 topic` utility can cache old information; try running it with additional arguments `ros2 topic list --no-daemon --spin-time 10`
+Additionally, the command line `ros2 topic` utility could use stale cached discovery information; try running it with additional arguments `ros2 topic list --no-daemon --spin-time 10` to not use the cached information.
 
 ## ROS 2 Services
 
