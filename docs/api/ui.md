@@ -39,11 +39,14 @@ ros2 action send_goal led_animation irobot_create_msgs/action/LedAnimation "{ani
 You can play sound out of your Create® 3 robot speakers by publishing a corresponding message on the `cmd_audio` topic.
 
 ```bash
-ros2 topic pub /cmd_audio irobot_create_msgs/msg/AudioNoteVector "{append: false, notes: [{frequency: 100, max_runtime: {sec: 1,nanosec: 0}}, {frequency: 50, max_runtime: {sec: 1,nanosec: 0}}]}"
+ros2 topic pub --once /cmd_audio irobot_create_msgs/msg/AudioNoteVector "{append: false, notes: [{frequency: 100, max_runtime: {sec: 1,nanosec: 0}}, {frequency: 50, max_runtime: {sec: 1,nanosec: 0}}]}"
 ```
 
 This example command will play 2 notes at the given frequencies back to back with the given 1 second length for each note.
+
 `append` is used to dictate the policy if an audio sequence is already playing when a new value comes in on the topic.
-`append: true` tells the sound manager to play this audio sequence after the current sequence finishes playing.
-`append: false` tell the sound manager to override any currently playing sequence with the new sequence.
+
+* `append: true` tells the sound manager to play this audio sequence after the current sequence finishes playing.
+* `append: false` tell the sound manager to override any currently playing sequence with the new sequence.
+
 Publishing an empty `notes` vector with `append: false` will stop any currently playing audio sequences.
