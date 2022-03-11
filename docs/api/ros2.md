@@ -90,6 +90,7 @@ You can see the ROS 2 action servers exposed by the Create® 3 robot running the
 
 ```bash
 $ ros2 action list -t
+/audio_note_sequence [irobot_create_msgs/action/AudioNoteSequence]
 /dock [irobot_create_msgs/action/DockServo]
 /drive_arc [irobot_create_msgs/action/DriveArc]
 /drive_distance [irobot_create_msgs/action/DriveDistance]
@@ -144,6 +145,11 @@ $ ros2 param list
   wheels_radius
 /ui_mgr:
   lightring_led_brightness
+  qos_overrides./parameter_events.publisher.depth
+  qos_overrides./parameter_events.publisher.durability
+  qos_overrides./parameter_events.publisher.history
+  qos_overrides./parameter_events.publisher.reliability
+  use_sim_time
 ```
 
 Morphology parameters such as `wheel_base` and `wheels_encoder_resolution` are read-only parameters that can be used in order to implement your estimation or motion control algorithms.
