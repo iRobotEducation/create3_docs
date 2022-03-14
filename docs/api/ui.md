@@ -50,3 +50,15 @@ This example command will play 2 notes at the given frequencies back to back wit
 * `append: false` tell the sound manager to override any currently playing sequence with the new sequence.
 
 Publishing an empty `notes` vector with `append: false` will stop any currently playing audio sequences.
+
+Additionally, an action server named `audio_note_sequence` can take an AudioNoteVector and a number of iterations to play it.
+See [AudioNoteSequence.action](https://github.com/iRobotEducation/irobot_create_msgs/blob/main/action/AudioNoteSequence.action).
+
+The action goal will succeed when the sequence has finished playing so you can coordinate audio runtime with other actions.
+If you set iterations to -1, it will play until it is canceled.
+
+For example you can run the following:
+
+```bash
+ros2 action send_goal /audio_note_sequence irobot_create_msgs/action/AudioNoteSequence "{iterations: 3,note_sequence:{append: false, notes: [{frequency: 100, max_runtime: {sec: 1,nanosec: 0}}, {frequency: 50, max_runtime: {sec: 1,nanosec: 0}}]}}"
+```
