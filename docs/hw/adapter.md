@@ -4,7 +4,7 @@ The iRobot® Create® 3 robot has two electrical connections exposed via the Ada
 The connections are accessible within the robot once the cargo bay is removed.
 The Adapter Board is also visible through the top cover of the robot, where its indicators are visible, and the USB/BLE toggle can be switched.
 
-![Adapter Board](data/adapter_out.jpg "Adapter Board")
+![Adapter Board](data/adapter_out.jpg)
 
 ## Power Connections
 ### Unregulated Battery Port

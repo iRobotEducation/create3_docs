@@ -22,6 +22,7 @@ extra_css:
 markdown_extensions:
   - admonition
   - footnotes
+  - attr_list
 
 nav:
     - Home: index.md
