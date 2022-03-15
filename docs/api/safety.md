@@ -83,7 +83,7 @@ See [EStop.srv](https://github.com/iRobotEducation/irobot_create_msgs/blob/main/
 For example, in order to enable the E-Stop:
 
 ```bash
-ros2 service call /e_stop "{e_stop_on: true}"
+ros2 service call /e_stop irobot_create_msgs/srv/EStop "{e_stop_on: true}"
 ```
 
 ## Wheel Status
