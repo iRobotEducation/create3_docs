@@ -39,15 +39,15 @@ The LEDs expose internal state information about the robot, but can also be over
 |  Robot is booting up.<br>Wait for "happy sound" to play.  |  Robot is powered on  |  Battery <10%. Place on charger.  |  Robot error. Cycle power.  |
 
 ### While Connecting to Robot Access Point
-|  Spinning Blue  |  Solid Cyan  |
+|  Spinning Cyan  |  Solid Cyan  |
 | ----- | ----- |
-|  ![Spinning blue](data/lightring/blue_spinning.gif){: style="height:100px;width:100px"}  |  ![Solid cyan](data/lightring/cyan_solid.jpg){: style="height:100px;width:100px"}  |
+|  ![Spinning cyan](data/lightring/cyan_spinning.gif){: style="height:100px;width:100px"}  |  ![Solid cyan](data/lightring/cyan_solid.jpg){: style="height:100px;width:100px"}  |
 |  Access Point is active. <br> Select robot from device’s <br> Wi-Fi menu.  |  Device is connected to <br> robot’s Access Point page.  |
 
 ### While Connecting to Wi-Fi
-|  Solid Cyan  |  Spinning Blue  |  Quick Green Flash  |  Solid White  |
+|  Solid Cyan  |  Spinning Cyan  |  Quick Green Flash  |  Solid White  |
 | ----- | ----- | ----- | ----- |
-|  ![Solid cyan](data/lightring/cyan_solid.jpg){: style="height:100px;width:100px"}  |  ![Spinning blue](data/lightring/blue_spinning.gif){: style="height:100px;width:100px"}  |  ![Green Flash](data/lightring/green_solid.jpg){: style="height:100px;width:100px"}  |  ![Solid White](data/lightring/white_solid.jpg){: style="height:100px;width:100px"}  |
+|  ![Solid cyan](data/lightring/cyan_solid.jpg){: style="height:100px;width:100px"}  |  ![Spinning cyan](data/lightring/cyan_spinning.gif){: style="height:100px;width:100px"}  |  ![Green Flash](data/lightring/green_solid.jpg){: style="height:100px;width:100px"}  |  ![Solid White](data/lightring/white_solid.jpg){: style="height:100px;width:100px"}  |
 |  Device is connected to <br> robot’s Access Point page.  |  Robot attempting to <br> connect to Wi-Fi  |  Success connecting to Wi-Fi  |  Robot successfully <br> disconnected from <br> Access Point page  |
 
 |  Yellow with Red  |  Yellow with Green  |  Yellow with Blue  |  Yellow with White  |  Solid Yellow  |
