@@ -22,13 +22,17 @@ extra_css:
 markdown_extensions:
   - admonition
   - footnotes
+  - attr_list
 
 nav:
     - Home: index.md
     - Hardware:
       - Overview: hw/overview.md
       - Mechanical: hw/mechanical.md
-      - Electrical: hw/electrical.md
+      - Electrical:
+        - Electrical Overview: hw/electrical.md
+        - Buttons and Light Ring: hw/face.md
+        - Adapter Board: hw/adapter.md
       - Hookup Examples: hw/hookup.md
     - Setup:
       - Connect to Wi-Fi: setup/provision.md
