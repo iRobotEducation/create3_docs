@@ -63,5 +63,10 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
 
 1. Log out and log back in. Once you do, test things out with a `ros2 topic list`.
 A full Create® 3 API description can be found [here](../../api/ros2).
+!!! attention
+    **If you are using CycloneDDS (Galactic default), your Pi is running with multiple network interfaces (usb0 to talk to robot and wlan0 to talk to laptop).**
+    **You will need to export a path on the Pi to an xml config file that registers those interfaces in the CYCLONEDDS_URI.**
+    **See [CycloneDDS Multiple Network Interfaces](../xml-config/#cyclonedds).**
 
+**
 <sub><sup>Ubuntu is a registered trademark of Canonical Ltd. USB-C® is a trademark of USB Implementers Forum. Raspberry Pi is a trademark of Raspberry Pi Trading. All other trademarks mentioned are the property of their respective owners.</sup></sub>

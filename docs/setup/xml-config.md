@@ -90,6 +90,18 @@ For example `usb0` and `wlan0` in this example.
 
 Note that the specified network interfaces must be already active when the ROS 2 process is started.
 
+!!! attention
+    **If the robot is running with a Compute Board like a [Raspberry Pi®](../pi4) or an [NVIDIA® Jetson™](../jetson) connected, then the robot is using a multiple interface CycloneDDS config file to communicate both over usb0 and wlan0.**
+    **We have found that with CycloneDDS version 0.8.1, for an Ubuntu laptop to see the robot topics with CycloneDDS when running multiple interfaces, the laptop must use the configuration option:**
+```
+<CycloneDDS>
+   <Domain>
+     <General>
+        <DontRoute>true</DontRoute>
+    </General>
+   </Domain>
+</CycloneDDS>
+```
 #### Disable Multicast
 
 Some networks (e.g. corporate WiFi) may block the multicast packets used by ROS 2 by default.
