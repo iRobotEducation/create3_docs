@@ -1,4 +1,5 @@
 # iRobot® Create® 3 Buttons and Light Ring
+![Button diagram](data/buttons.png)
 
 ## Buttons
 The iRobot® Create® 3 has three buttons on its top face.

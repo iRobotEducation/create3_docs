@@ -18,7 +18,7 @@ This port is always on when the battery is powered on.
 ### USB-C® Connector
 The **USB-C® connector**[^1] provides a USB 2.0 Host connection into the robot with 5.13 V at 3.0 A provided to power downstream connections.
 The power is disabled on this port unless a proper USB-C® downstream device is connected.
-The 5 V source powering this port will shut off when the battery voltage falls below approximately 11.8 V.
+The 5 V source powering this port is not guaranteed to stay enabled when the battery reports 0% state of charge (below 12.0 V).
 The USB data connection is made only when the USB/BLE toggle switch plunger is slid toward the USB icon.
 
 ### Total Power Output
