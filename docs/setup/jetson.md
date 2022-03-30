@@ -75,11 +75,11 @@ It is highly recommended to read through the getting started document for your N
                 TX packets 1644  bytes 213306 (213.3 KB)
                 TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
-!!! warning
-    Be sure that the [USB/BLE toggle on the robot's adapter board](../../hw/electrical/#adapter-board-overview) is set to the USB position.
+    !!! warning
+        Be sure that the [USB/BLE toggle on the robot's adapter board](../../hw/electrical/#adapter-board-overview) is set to the USB position.
 
-!!! note
-    If you ever want to stop using the Jetson device for Create® 3 and re-enable the original USB Device Mode feature (so that you can connect to your Windows PC in headless style), you can simply remove the flag file, or execute the following.
+    !!! note
+        If you ever want to stop using the Jetson device for Create® 3 and re-enable the original USB Device Mode feature (so that you can connect to your Windows PC in headless style), you can simply remove the flag file, or execute the following.
 
         sudo mv /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf.bak
 
@@ -113,6 +113,11 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
 3. Set the default network interface by setting Cyclone DDS configuration.
 
         export CYCLONEDDS_URI='<CycloneDDS><Domain><General><NetworkInterfaceAddress>l4tbr0</NetworkInterfaceAddress></General></Domain></CycloneDDS>'
+    !!! attention
+        **If you are using CycloneDDS (Galactic default) and want the Jetson to talk to the robot over USB and a laptop via Wi-Fi, you will need to take extra steps to setup CycloneDDS to use multiple interfaces.**
+        **You will need to create a CycloneDDS XML configuration file with both USB and Wi-Fi interfaces and then set the CYCLONEDDS_URI environment variable to its path.**
+        **See [CycloneDDS Multiple Network Interfaces](../xml-config/#cyclonedds).**
+        **Note the differences in Jetson USB and Wi-Fi interface names from the documentation.**
 
 4. Check to ensure Create® 3 topics appear
 
@@ -121,6 +126,7 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
     You should get
 
         /battery_state
+        /cmd_audio
         /cmd_lightring
         /cmd_vel
         /dock
@@ -138,6 +144,7 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
         /stop_status
         /tf
         /tf_static
+        /wheel_status
         /wheel_ticks
         /wheel_vels
 
