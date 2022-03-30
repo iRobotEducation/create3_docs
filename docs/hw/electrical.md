@@ -17,7 +17,7 @@ The light ring will show the state of charge and animate while the battery is ch
 
 ## Buttons and Light Ring Overview
 The iRobot® Create® 3 has three buttons on its top face.
-The center button is marked with a power icon, while the flaking buttons are marked with one or two dots.
+The center button is marked with a power icon, while the flanking buttons are marked with one or two dots.
 The center button also contains a ring of six RGB LEDs.
 [Detailed information about the use of these buttons and LEDs can be found here.](../hw/face.md)
 
