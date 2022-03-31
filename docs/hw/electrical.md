@@ -7,7 +7,7 @@ It will report a 0% state of charge when the total voltage of the pack reaches 1
 It will self-protect and disconnect from any load at 10.8 V or lower.
 
 !!! attention "Notice"
-    It is recommended not to run the robot for extended periods below 10% charge. When not overridden, the robot's light ring will flash red to indicate this low battery state.
+    When not overridden, the robot's light ring will flash red to indicate low battery state, at about 10% state of charge. It is recommended not to run the robot for extended periods of time in this state.
 
 Charge the battery by placing Create® 3 on the included iRobot® Home Base™ Charging Station.
 The light ring will show the state of charge and animate while the battery is charging.
