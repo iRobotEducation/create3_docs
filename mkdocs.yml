@@ -19,6 +19,19 @@ theme:
 extra_css:
   - stylesheets/irobot-palette.css
 
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/iRobotEducation
+    - icon: fontawesome/brands/github
+      link: https://github.com/iRobotEducation
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/iRobotEducation
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/irobot/
+
+copyright: Copyright &copy; 2021-2022 iRobot Corporation. ​​All Rights Reserved.
+
 markdown_extensions:
   - admonition
   - footnotes
