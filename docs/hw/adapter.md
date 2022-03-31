@@ -26,7 +26,7 @@ The USB-C® port draws its power from the unregulated battery connection which, 
 This means there is only around 28.8 W total power shared between both power outputs (assuming the battery is at 14.4 V).
 If power is drawn through the USB-C® connector, then less power is available through the unregulated battery port and vice versa.
 !!! example
-    As an example, if a full 5 V @ 3 A are drawn from the USB-C® port, the battery is currently measuring 14.4 V, and the switching regulator is 90% efficient, then a maximum of (2 A - (5 V * 3 A / 0.90 / 14.4 V) =) 0.84 A can be drawn from the unregulated battery port before the resettable fuse will trip (and depending on ambient temperature, even more margin may be necessary).
+    As an example, if a full 5 V @ 3 A are drawn from the USB-C® port, the battery is currently measuring 14.4 V, and the switching regulator is 90% efficient, then a maximum of (2 A - (5 V * 3 A / 0.90 / 14.4 V)) = 0.84 A can be drawn from the unregulated battery port before the resettable fuse will trip (and depending on ambient temperature, even more margin may be necessary).
 
 ## USB/BLE Toggle
 The **USB/BLE toggle** routes the robot's single USB Host connection either to the USB-C® port (useful for connecting to single-board computers with OTG or device ports) or to the on-board Bluetooth® Low Energy[^2] module.
