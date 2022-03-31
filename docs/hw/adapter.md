@@ -26,10 +26,10 @@ The USB-C® port draws its power from the unregulated battery connection which, 
 This means there is only around 28.8 W total power shared between both power outputs (assuming the battery is at 14.4 V).
 If power is drawn through the USB-C® connector, then less power is available through the unregulated battery port and vice versa.
 !!! example
-    As an example, if a full 5 V @ 3 A are drawn from the USB-C® port, the battery is currently measuring 14.4 V, and the switching regulator is 90% efficient, then a maximum of (2 A - (5 V * 3 A / 0.90 / 14.4 V) =) 0.84 A can be drawn from the unregulated battery port before the resettable fuse will trip (and depending on ambient temperature, even more margin may be necessary).
+    As an example, if a full 5 V @ 3 A are drawn from the USB-C® port, the battery is currently measuring 14.4 V, and the switching regulator is 90% efficient, then a maximum of 0.84 A[^2] can be drawn from the unregulated battery port before the resettable fuse will trip (and depending on ambient temperature, even more margin may be necessary).
 
 ## USB/BLE Toggle
-The **USB/BLE toggle** routes the robot's single USB Host connection either to the USB-C® port (useful for connecting to single-board computers with OTG or device ports) or to the on-board Bluetooth® Low Energy[^2] module.
+The **USB/BLE toggle** routes the robot's single USB Host connection either to the USB-C® port (useful for connecting to single-board computers with OTG or device ports) or to the on-board Bluetooth® Low Energy[^3] module.
 This module can be used to interact with the [iRobot Coding app](https://code.irobot.com).
 
 ## Indicators
@@ -46,5 +46,6 @@ The **green indicator (D300)** is illuminated when the robot's battery is switch
 The **blue indicator (D6)** is illuminated when the BLE radio is turned on. It flashes when it is connected to a host.
 
 [^1]: USB-C® is a trademark of USB Implementers Forum.
-[^2]: The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by iRobot is under license.
-[^3]: All other trademarks mentioned are the property of their respective owners.
+[^2]: Maximum current computed as: 2 A - (5 V * 3 A / 0.90 / 14.4 V) = 0.84 A
+[^3]: The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by iRobot is under license.
+[^4]: All other trademarks mentioned are the property of their respective owners.
