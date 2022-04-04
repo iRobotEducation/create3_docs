@@ -61,6 +61,13 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
         colcon build
         echo "source /home/ubuntu/ros2_ws/install/setup.bash" >> ~/.bashrc
 
+1. At this point, we recommend setting your default RMW. The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Right now, the Create® 3 robot supports `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. The default for Galactic is `rmw_cyclonedds_cpp`. Depending on your robot's RMW implementation, type one of the following:
+
+        echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
+or
+
+        echo "export RMW_IMPLEMENTATION=rmw_fastrtps_cpp" >> ~/.bashrc
+
 1. Log out and log back in. Once you do, test things out with a `ros2 topic list`.
 A full Create® 3 API description can be found [here](../../api/ros2).
 
