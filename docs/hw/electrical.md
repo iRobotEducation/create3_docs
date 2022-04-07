@@ -7,6 +7,13 @@ It will report a 0% state of charge when the total voltage of the pack reaches 1
 It will self-protect and disconnect from any load at 10.8 V or lower.
 
 !!! attention "Notice"
+    If the robot is approaching a 0% state of charge and the application does not believe it will make it to the dock, the robot should be powered down using the `/robot_power` service.
+
+If the battery self-protects, its internal management system may refuse to charge until it is reset.
+Resetting the battery is accomplished by removing the battery from the robot for at least fifteen minutes, at which point it should be reinstalled in the robot and the robot placed on the charger.
+
+
+!!! attention "Notice"
     When not overridden, the robot's light ring will flash red to indicate low battery state, at about 10% state of charge. It is recommended not to run the robot for extended periods of time in this state.
 
 Charge the battery by placing Create® 3 on the included iRobot® Home Base™ Charging Station.
