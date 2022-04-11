@@ -16,6 +16,9 @@ The locating pins on the top cover are used to install and retain the faceplate.
 !!! attention "Notice"
     To prevent damage to the robot or payload, ensure the faceplate and/or payload are well secured to the chassis before use.
 
+### Locking the faceplate
+If you would like to lock the faceplate and prevent it from rotating, you may use an M3 screw or pin in the faceplate hole marked with the image of a screw.
+
 ## Attachment Tips and Tricks
 ### Self-tapping screws with bosses
 The Create® 3 robot's holes are sized for M3 or #4 screws.
