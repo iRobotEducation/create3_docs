@@ -8,6 +8,11 @@ Sensors or accessories can be attached to the faceplate or internal cargo bay, b
 The maximum recommended payload weight (without changing acceleration limits) is 9 kg directly above the center of gravity of the chassis.
 The robot can handle more weight with reduced acceleration limits or careful management of the load.
 
+## Removing or attaching the faceplate
+The faceplate is removed by rotating it on the center axis of the robot using the thumb rests.
+The locating pins on the top cover are used to install and retain the faceplate.
+![How to Remove or Attach Create® 3 Faceplate](data/remove_faceplate.svg "How to Remove Create® 3 Faceplate")
+
 !!! attention "Notice"
     To prevent damage to the robot or payload, ensure the faceplate and/or payload are well secured to the chassis before use.
 
