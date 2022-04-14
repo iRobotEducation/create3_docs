@@ -18,6 +18,7 @@ The locating pins on the top cover are used to install and retain the faceplate.
 
 ### Locking the faceplate
 If you would like to lock the faceplate and prevent it from rotating, you may use an M3 screw or pin in the faceplate hole marked with the image of a screw.
+![How to Lock Create® 3 Faceplate](data/lock_faceplate.svg "How to Lock Create® 3 Faceplate")
 
 ## Attachment Tips and Tricks
 ### Self-tapping screws with bosses
