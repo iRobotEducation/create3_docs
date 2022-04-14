@@ -48,9 +48,6 @@ We recommend printing at 100% infill.
 Download this [STEP model (17.8 MB)](data/iRobot_Create_3_Public_Model.step)[^1] to help design attachments or payloads for Create® 3.
 [^1]: Copyright © 2021-22 iRobot Corporation. All Rights Reserved.
 
-!!! attention "Notice"
-    Always remove the Create® 3 robot’s battery prior to dismantling, adjusting, altering, or affecting the robot’s chassis at the risk of damaging the battery, robot, or both.
-
 ## Dimensioned Drawings
 ### Top with Faceplate Attached
 ![The Create® 3 Faceplate Drawing](data/faceplate_drawing.svg "Create® 3 Faceplate Drawing")

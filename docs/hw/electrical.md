@@ -22,6 +22,9 @@ The light ring will show the state of charge and animate while the battery is ch
 !!! attention "Notice"
     Do not attempt to use the robot without its battery installed.
 
+!!! attention "Notice"
+    Always remove the Create® 3 robot’s battery prior to dismantling, adjusting, altering, or affecting the robot’s chassis at the risk of damaging the battery, robot, or both.
+
 !!! tip
     Keep the robot on the Home Base™ charging station (or power down the robot by holding down the power button for 10 seconds) when not in use to prevent the battery from discharging.
 
