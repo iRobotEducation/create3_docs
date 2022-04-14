@@ -17,6 +17,9 @@ The faceplate is removed by rotating it on the center axis of the robot using th
 Four locating pins on the top cover are used to install and retain the faceplate.
 ![How to Remove or Attach Create® 3 Faceplate](data/remove_faceplate.svg "How to Remove Create® 3 Faceplate")
 
+!!! attention "Notice"
+    Always remove the Create® 3 robot’s faceplate prior to dismantling, adjusting, altering, or affecting the faceplate at the risk of damaging the robot.
+
 ### Locking the faceplate
 If you would like to lock the faceplate and prevent it from rotating, you may use an M3 screw or pin in the faceplate hole marked with the image of a screw.
 ![How to Lock Create® 3 Faceplate](data/lock_faceplate.svg "How to Lock Create® 3 Faceplate")
@@ -44,9 +47,6 @@ We recommend printing at 100% infill.
 ![Create® 3 Model](data/3d_model.jpg "3D Model of Create® 3")
 Download this [STEP model (17.8 MB)](data/iRobot_Create_3_Public_Model.step)[^1] to help design attachments or payloads for Create® 3.
 [^1]: Copyright © 2021-22 iRobot Corporation. All Rights Reserved.
-
-!!! attention "Notice"
-    Always remove the Create® 3 robot’s faceplate prior to dismantling, adjusting, altering, or affecting the faceplate at the risk of damaging the robot.
 
 !!! attention "Notice"
     Always remove the Create® 3 robot’s battery prior to dismantling, adjusting, altering, or affecting the robot’s chassis at the risk of damaging the battery, robot, or both.
