@@ -21,7 +21,7 @@ Four locating pins on the top cover are used to install and retain the faceplate
     Always remove the Create® 3 robot’s faceplate prior to dismantling, adjusting, altering, or affecting the faceplate at the risk of damaging the robot.
 
 ### Locking the faceplate
-If you would like to lock the faceplate and prevent it from rotating, you may use an M3 screw or pin in the faceplate hole marked with the image of a screw.
+If you would like to lock the faceplate and prevent it from rotating, you may insert an M3 self-tapping screw or pin in the faceplate hole marked with the image of a screw (while the faceplate is attached).
 ![How to Lock Create® 3 Faceplate](data/lock_faceplate.svg "How to Lock Create® 3 Faceplate")
 
 ## Attachment Tips and Tricks
