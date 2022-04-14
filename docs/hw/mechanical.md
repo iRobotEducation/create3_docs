@@ -4,7 +4,8 @@ The Create® 3 is a differential drive robot designed for traversing relatively-
 The drive wheels feature independent suspensions to help the robot overcome typical carpet or door thresholds.
 
 ## Payload
-Sensors or accessories can be attached to the faceplate or internal cargo bay, both of which feature a regular grid of 3 mm diameter mounting holes.
+![Payload attachment surfaces](data/payload_surfaces.svg "Payload attachment surfaces")
+Sensors or accessories can be attached to the faceplate or internal cargo bay, both of which feature a regular 12 mm grid of 3 mm diameter mounting holes.
 The maximum recommended payload weight (without changing acceleration limits) is 9 kg directly above the center of gravity of the chassis.
 The robot can handle more weight with reduced acceleration limits or careful management of the load.
 
