@@ -11,6 +11,7 @@ The power button features a ring of six RGB LEDs for indication.
 ![Create® 3 from its above-rear-left, with the top cover and cargo bay removed.](data/rear_iso.jpg "Robot Rear")
 The faceplate and cargo bay of the robot feature a regular hole pattern for attaching payloads and can be removed without tools for quick prototyping.
 There are two cable passthroughs: one on the top edge of the cargo bay which is good for quick prototyping and one that penetrates the top cover and faceplate which is useful for keeping wires within the radius of the robot.
+More information on these features can be found on the [Mechanical](../mechanical/) page.
 
 Also visible with the faceplate removed is the adapter board, which is used to interface to external computers either through Bluetooth®[^1] or via USB-C®[^2].
 More information on this board is available on the [Electrical](../electrical/) page.
