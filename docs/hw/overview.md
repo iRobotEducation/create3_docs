@@ -9,19 +9,15 @@ The top of the robot contains three buttons which can all be overloaded by a ROS
 The power button features a ring of six RGB LEDs for indication.
 
 ![Create® 3 from its above-rear-left, with the top cover and cargo bay removed.](data/rear_iso.jpg "Robot Rear")
-The faceplate and cargo bay of the robot can be removed for quick prototyping.
-The faceplate is removed by rotating it on the center axis of the robot using the thumb rests, while the cargo bay is removed by simply pulling on the handle.
-The locating pins on the top cover are used to install and retain the faceplate.
-![How to Remove or Attach Create® 3 Faceplate](data/remove_faceplate.svg "How to Remove Create® 3 Faceplate")
-
-There are two cable passthroughs.
-The rear passthrough is good for quick prototyping while the one that penetrates the top cover and faceplate is useful to keep wires within the radius of the robot.
+The faceplate and cargo bay of the robot feature a regular hole pattern for attaching payloads and can be removed without tools for quick prototyping.
+There are two cable passthroughs: one on the top edge of the cargo bay which is good for quick prototyping and one that penetrates the top cover and faceplate which is useful for keeping wires within the radius of the robot.
+More information on these features can be found on the [Mechanical](../mechanical/) page.
 
 Also visible with the faceplate removed is the adapter board, which is used to interface to external computers either through Bluetooth®[^1] or via USB-C®[^2].
 More information on this board is available on the [Electrical](../electrical/) page.
 
 ![Create® 3 from a bottom view, with the cargo bay removed.](data/bottom.jpg "Robot Bottom")
-The bottom of the robot includes four cliff sensors to keep the robot on solid ground, a caster (by default, the robot's center of gravity is forward of the center axis), charging contacts, two wheels with current sensors and encoders, and an optical odometry sensor.
+The bottom of the robot includes four cliff sensors to keep the robot on solid ground, a front caster (by default, the robot's center of gravity is forward of the center axis), charging contacts, two wheels with current sensors and encoders, and an optical odometry sensor.
 Not visible is the robot's IMU, which is used with the optical odometry sensor and wheel encoders to generate a fused odometry estimate.
 
 [^1]: The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by iRobot is under license.

@@ -20,6 +20,7 @@ Charge the battery by placing Create® 3 on the included iRobot® Home Base™ C
 The light ring will show the state of charge and animate while the battery is charging.
 
 !!! attention "Notice"
+    Always remove the Create® 3 robot’s battery prior to dismantling, adjusting, altering, or affecting the robot’s chassis at the risk of damaging the battery, robot, or both.
     Do not attempt to use the robot without its battery installed.
 
 !!! tip
