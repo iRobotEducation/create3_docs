@@ -1,5 +1,6 @@
-# iRobot® Create® 3 Releases Overview
+# iRobot® Create® 3 Releases
 
+## Overview
 Create® 3 releases take the version schema
 
 <ROS 2 letter\>.<major number\>.<minor number\>
@@ -17,6 +18,6 @@ Increments to the minor release imply bug fixes or small feature additions that 
 The latest release can be found at:
 [http://edu.irobot.com/create3-latest-fw](http://edu.irobot.com/create3-latest-fw)
 
-## Releases:
-
-- [G.1.1](../g_1_1)
+## Releases
+* [G.2.2](../g_2_2) (latest)
+* [G.1.1](../g_1_1)
