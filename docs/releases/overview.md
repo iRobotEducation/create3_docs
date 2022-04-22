@@ -20,3 +20,4 @@ The latest release can be found at:
 ## Releases:
 
 - [G.1.1](../g_1_1)
+- [G.2.2](../g_2_2)
