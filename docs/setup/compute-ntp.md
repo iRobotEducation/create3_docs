@@ -35,7 +35,6 @@ If your Create® 3 and compute board have an internet connection, this is not re
 
         sudo service chrony restart
 
-
 1. Verify compute NTP server is talking to the Create® 3
 
         sudo chronyc clients
