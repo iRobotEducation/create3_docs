@@ -43,7 +43,7 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
         sudo apt update
-        sudo apt install -y ros-galactic-ros-base python3-colcon-common-extensions python3-rosdep ros-galactic-rmw-fastrtps-cpp
+        sudo apt install -y ros-galactic-ros-base python3-colcon-common-extensions python3-rosdep ros-galactic-rmw-fastrtps-cpp ros-galactic-rmw-cyclonedds-cpp ros-galactic-irobot-create-msgs
 
         echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
         echo "export _colcon_cd_root=/opt/ros/galactic/" >> ~/.bashrc
@@ -51,15 +51,6 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
         echo "source /opt/ros/galactic/setup.bash" >> ~/.bashrc
 
         source ~/.bashrc
-        mkdir -p ~/ros2_ws/src
-        cd ~/ros2_ws/src
-        git clone https://github.com/iRobotEducation/irobot_create_msgs.git
-        cd ..
-        sudo rosdep init
-        rosdep update
-        rosdep install -i --from-path src --rosdistro galactic -y
-        colcon build
-        echo "source /home/ubuntu/ros2_ws/install/setup.bash" >> ~/.bashrc
 
 1. At this point, we recommend setting your default RMW. The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Right now, the Create® 3 robot supports `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. The default for Galactic is `rmw_cyclonedds_cpp`. Depending on your robot's RMW implementation, type one of the following:
 
