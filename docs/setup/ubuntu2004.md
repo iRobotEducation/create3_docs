@@ -9,7 +9,9 @@ These directions should work in a virtualized container within another operating
 1. If you haven't already, download and install [Ubuntu® Server 20.04 64-bit](https://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso)[^1].
 
 1. Once logged in, check to ensure that you are using a UTF-8 locale by typing
+
         echo $LANG
+   and ensuring "UTF-8" is at the end of the returned string.
 
 1. Execute the following commands to install ROS 2[^2]:
 
