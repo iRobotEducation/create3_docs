@@ -33,13 +33,8 @@ or
 
         echo "export RMW_IMPLEMENTATION=rmw_fastrtps_cpp" >> ~/.bashrc
 
-1. You should now be able to test things out with a `ros2 topic list`.
+1. If both your computer and robot are on the same network, you should now be able to test things out with a `ros2 topic list`.
 A full Create® 3 API description can be found [here](../../api/ros2).
-
-    !!! attention
-        **If you are using CycloneDDS (Galactic default), your Raspberry Pi® may be running with multiple network interfaces (usb0 to talk to robot and wlan0 to talk to laptop).**
-        **You will need to export a path on the Raspberry Pi® to an xml config file that registers those interfaces in the CYCLONEDDS_URI.**
-        **See [CycloneDDS Multiple Network Interfaces](../xml-config/#cyclonedds).**
 
 [^1]: Ubuntu is a registered trademark of Canonical Ltd.
 [^2]: ROS 2 is governed by Open Robotics
