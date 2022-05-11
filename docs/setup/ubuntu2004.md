@@ -1,12 +1,12 @@
 # Install ROS 2 Galactic with Create 3 Messages on an Ubuntu 20.04 Machine
 
 ## Before you start
-If you are running Ubuntu 20.04 natively on a machine, there is no setup required.
+If you are running Ubuntu 20.04 natively on your machine, there is no extra setup required.
 These directions should work in a virtualized container within another operating system, as well.
 
 ## Step-by-step
 
-1. Download and install [Ubuntu® Server 20.04 64-bit](https://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso)[^1] (if you haven't already.)
+1. If you haven't already, download and install [Ubuntu® Server 20.04 64-bit](https://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso)[^1].
 
 1. Once logged in, check to ensure that you are using a UTF-8 locale by typing
         echo $LANG
