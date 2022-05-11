@@ -3,7 +3,7 @@
 Follow the main guide for getting started [here](https://edu.irobot.com/create3-setup).
 
 ## Select RMW Implementation
-If you are planning to use ROS 2, make sure you have selected the matching RMW implementation as the rest of the nodes in your system.
+If you are planning to use ROS 2[^1], make sure you have selected the matching RMW implementation as the rest of the nodes in your system.
 This can be found in the Application &rarr; Configuration menu in the Create® 3 robot's web server, shown in the below image.
 
 ![Application Configuration Detail](data/appconfig.png)
@@ -19,3 +19,5 @@ See [ROS 2 Network Config](xml-config.md) for more information about RMW specifi
 
 !!! important
     If you plan to use multiple Create® 3 robots connected to the same Wi-Fi network, then **you must follow the [Multi-Robot Setup documentation](multi-robot.md)**
+
+[^1]: ROS 2 is governed by Open Robotics

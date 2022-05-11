@@ -1,9 +1,9 @@
 # ROS 2 Network Configuration
 
-The ROS 2 DDS middleware allows advanced network configurations.
+The ROS 2[^1] DDS middleware allows advanced network configurations.
 This page contains some examples that may be useful when interacting with the iRobot® Create® 3.
 
-!!! important 
+!!! important
     Depending on the ROS 2 RMW used, the syntax for configuring the network will be different. We recommend to visit the RMW vendor documentation for more details.
 
 You can choose a RMW implementation on your machine using
@@ -14,7 +14,7 @@ export RMW_IMPLEMENTATION=name-of-the-rmw
 
 On the robot the same can be controlled through the Create® 3 webserver.
 
-!!! important 
+!!! important
     Always make sure that all the ROS 2 processes you are using have selected the same RMW implementation.
 
 ## Fast-DDS
@@ -23,7 +23,7 @@ Fast-DDS allows to specify DDS configuration through an XML file.
 In order to apply a configuration, the path to the XML file must be provided through the following environment variable:
 
 ```sh
-export FASTRTPS_DEFAULT_PROFILES_FILE=/path/to/the/xml/profile 
+export FASTRTPS_DEFAULT_PROFILES_FILE=/path/to/the/xml/profile
 ```
 
 Detailed network configurations are described in the [Fast-DDS documentation](https://fast-dds.docs.eprosima.com/en/latest/).
@@ -67,7 +67,7 @@ CycloneDDS allows to specify DDS configuration through an XML file.
 In order to apply a configuration, the path to the XML file must be provided through the following environment variable:
 
 ```sh
-export CYCLONEDDS_URI=/path/to/the/xml/profile 
+export CYCLONEDDS_URI=/path/to/the/xml/profile
 ```
 
 Detailed network configurations are described in the [CycloneDDS documentation](https://github.com/eclipse-cyclonedds/cyclonedds#configuration).
@@ -127,3 +127,5 @@ The file must be edited replacing `${ROBOT_IP}` with the actual IP value, or exp
   </Domain>
 </CycloneDDS>
 ```
+
+[^1]: ROS 2 is governed by Open Robotics

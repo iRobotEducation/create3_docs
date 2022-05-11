@@ -8,7 +8,7 @@ Note that if you have multiple robots, but they are not on the same network, the
 
 ## Basic Concepts on ROS 2 Communication
 
-ROS 2 communication is based on the underlying DDS middleware.
+ROS 2[^1] communication is based on the underlying DDS middleware.
 After two ROS processes discover each other, they will automatically start to communicate if their topics, services, or actions match.
 
 The default discovery protocol used by ROS 2 is based on broadcast.
@@ -90,3 +90,5 @@ Note that a ROS 2 process can only use one domain ID at a time.
 If needed you can always have multiple robots under the same domain ID and then also add namespaces to prevent them from communicating.
 
 Using a custom ROS 2 domain ID for your robots is the recommended solution when you have a large number of robots and you want your tools to communicate only with a subset of them.
+
+[^1]: ROS 2 is governed by Open Robotics
