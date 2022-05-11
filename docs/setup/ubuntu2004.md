@@ -3,10 +3,11 @@
 ## Before you start
 If you are running Ubuntu 20.04 natively on your machine, there is no extra setup required.
 These directions should work in a virtualized container within another operating system, as well.
+Note that there might be some network setup required if in a virtualized container; for example, RMWs seem to like running in a bridged network configuration rather than a NATted one.
 
 ## Step-by-step
 
-1. If you haven't already, download and install [Ubuntu® Server 20.04 64-bit](https://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso)[^1].
+1. If you haven't already, download and install [Ubuntu® Server 20.04 64-bit](https://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso)[^1] onto your machine.
 
 1. Once logged in, check to ensure that you are using a UTF-8 locale by typing
 
