@@ -5,6 +5,8 @@ If you are running Ubuntu 20.04 natively on your machine, there is no extra setu
 These directions should work in a virtualized container within another operating system, as well.
 Note that there might be some network setup required if in a virtualized container; for example, RMWs seem to like running in a bridged network configuration rather than a NATted one.
 
+These directions follow Open Robotics' official documentation on [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Binary.html), and more detailed information about what the commands below do can be found there.
+
 ## Step-by-step
 
 1. If you haven't already, download and install [Ubuntu® Server 20.04 64-bit](https://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso)[^1] onto your machine.
@@ -37,6 +39,7 @@ or
         echo "export RMW_IMPLEMENTATION=rmw_fastrtps_cpp" >> ~/.bashrc
 
 1. If both your computer and robot are on the same network, you should now be able to test things out with a `ros2 topic list`.
+If this does not work, please refer to [ROS 2 Network Configuration](../xml-config/) for further configuration ideas.
 A full Create® 3 API description can be found [here](../../api/ros2).
 
 [^1]: Ubuntu is a registered trademark of Canonical Ltd.
