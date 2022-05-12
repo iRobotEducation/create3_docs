@@ -37,7 +37,7 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
         sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
         export LANG=en_US.UTF-8
 
-1. Then, execute the following commands:
+1. Then, execute the following commands to install ROS 2[^4]:
 
         sudo apt update && sudo apt install -y curl gnupg2 lsb-release build-essential git cmake
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
@@ -70,3 +70,4 @@ A full Create® 3 API description can be found [here](../../api/ros2).
 [^1]: Ubuntu is a registered trademark of Canonical Ltd.
 [^2]: USB-C® is a trademark of USB Implementers Forum.
 [^3]: Raspberry Pi® is a trademark of Raspberry Pi Trading. All other trademarks mentioned are the property of their respective owners.
+[^4]: ROS 2 is governed by Open Robotics

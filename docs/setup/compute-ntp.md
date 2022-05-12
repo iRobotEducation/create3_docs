@@ -2,7 +2,7 @@
 
 ## Why should I do this?
 
-ROS 2 is dependent upon synchronized clocks between nodes to have all data in the same reference time.
+ROS 2[^1] is dependent upon synchronized clocks between nodes to have all data in the same reference time.
 When the Create® 3 is publishing on topics, it is publishing its data with the timestamp of its system clock, which synchronizes with an NTP server.
 If the Create® 3's Wi-Fi is connected to a network with internet connection, it will sync to a global time NTP server.
 The Create® 3 NTP config is also set to listen for servers on USB IP address 192.168.186.1 and 192.168.186.3.
@@ -51,3 +51,5 @@ If your Create® 3 and compute board have an internet connection, this is not re
 
         user.notice ntpd: ntpd: reply from 192.168.186.3: delay ### is too high, ignoring
     If this happens, simply restart the robot (not just the application) via the webserver over the USB network connection.
+
+[^1]: ROS 2 is governed by Open Robotics
