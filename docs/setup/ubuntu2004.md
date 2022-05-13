@@ -1,7 +1,7 @@
 # Install ROS 2 Galactic with Create 3 Messages on an Ubuntu 20.04 Machine
 
 ## Before you start
-If you are running Ubuntu 20.04 natively on your machine, there is no extra setup required.
+If you are running Ubuntu[^1] 20.04 natively on your machine, there is no extra setup required.
 These directions should work in a virtualized container within another operating system, as well.
 Note that there might be some network setup required if in a virtualized container; for example, RMWs seem to like running in a bridged network configuration rather than a NATted one.
 
@@ -9,7 +9,7 @@ These directions follow Open Robotics' official documentation on [Installing ROS
 
 ## Step-by-step
 
-1. If you haven't already, download and install [Ubuntu® Server 20.04 64-bit](https://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso)[^1] onto your machine.
+1. If you haven't already, download and install [Ubuntu® Server 20.04 64-bit](https://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso) onto your machine.
 
 1. Once logged in, check to ensure that you are using a UTF-8 locale by typing
 
@@ -29,14 +29,16 @@ These directions follow Open Robotics' official documentation on [Installing ROS
         echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
         echo "source /opt/ros/galactic/setup.bash" >> ~/.bashrc
 
-        source ~/.bashrc
-
 1. At this point, we recommend setting your default RMW. The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Right now, the Create® 3 robot supports `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. The default for Galactic is `rmw_cyclonedds_cpp`. Depending on your robot's RMW implementation, type one of the following:
 
         echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
 or
 
         echo "export RMW_IMPLEMENTATION=rmw_fastrtps_cpp" >> ~/.bashrc
+
+1. Finally, either log out and log back in, or simply
+
+        source ~/.bashrc
 
 1. If both your computer and robot are on the same network, you should now be able to test things out with a `ros2 topic list`.
 If this does not work, please refer to [ROS 2 Network Configuration](../xml-config/) for further configuration ideas.
