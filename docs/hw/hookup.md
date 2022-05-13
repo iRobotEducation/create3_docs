@@ -7,8 +7,8 @@ Here are some hookup examples.
 The Raspberry Pi®[^2] mounting scheme does not match Create® 3's faceplate or cargo bay hole pattern; here are two 3D-printable mounts.
 The larger mount is more rigid but requires three times as much time to print.
 
-* [Small Mount (128kB)](data/C3-RPi-Mount-Small-20211022.stl)
-* [Large Mount (520kB)](data/C3-RPi-Mount-20211022.stl)
+* [Small Mount (128kB)](data/brackets/C3-RPi-Mount-Small-20211022.stl)
+* [Large Mount (520kB)](data/brackets/C3-RPi-Mount-20211022.stl)
 
 ### Raspberry Pi® 4
 Since the Raspberry Pi®[^2] 4 has a USB-C® port capable of an OTG connection, a cable with a USB-C® connector on both ends is all that is required.
@@ -38,10 +38,10 @@ The data connection is established by using a USB Micro B to USB-C® cable.
 ![Hookup diagram for Jetson Xavier NX™ Developer Kit](data/hookup_jetson_xavier_nx.jpg "Jetson Xavier NX™ Developer Kit")
 
 ### Mounting NVIDIA® Jetson Xavier NX™ Developer Kit
-You can 3d print the [mount adapter](data/C3-JetsonXavierNX-Mount.3mf) to place the Jetson Xavier NX Developer Kit in the cargo bay or on the faceplate.
+You can 3d print the [mount adapter](data/brackets/C3-JetsonXavierNX-Mount.3mf) to place the Jetson Xavier NX Developer Kit in the cargo bay or on the faceplate.
 
 !!! note
-    - If you are 3d printing the above mount adapter, use **support** to support overhang areas. ([slicing example](data/C3-JetsonXavierNX-Mount_slice-example.png))
+    - If you are 3d printing the above mount adapter, use **support** to support overhang areas. ([slicing example](data/brackets/C3-JetsonXavierNX-Mount_slice-example.png))
     - You need four (4) M3 x 6mm screws; cap head is suggested.
 
 [^1]: USB-C® is a trademark of USB Implementers Forum.
