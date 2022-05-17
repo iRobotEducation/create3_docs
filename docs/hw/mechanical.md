@@ -43,6 +43,9 @@ The typical toy brick has its studs spaced at 8 mm, while Create® 3's holes are
 It is possible to place an [adapter (576 kB)](data/brackets/C3-Stud-Mount.stl) into every other hole in order to connect toy bricks to the Create® 3.
 We recommend printing at 100% infill.
 
+## Adding sensors
+A growing library of brackets for attaching sensors to the Create 3 robot using its 12 mm grid of 3 mm holes is available [here](https://github.com/iRobotEducation/create3_docs/tree/main/docs/hw/data/brackets).
+
 ## Adding a rear caster
 Out of the box, Create® 3  has a center of gravity in front of the two drive wheels and features an integrated front caster to act as a third point of contact.
 If you add a payload that is heavy and/or causes the robot center of gravity to move behind the drive wheels, you may want to add a second caster wheel in the rear to prevent sliding along the back edge.
