@@ -52,8 +52,6 @@ finally
         echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
         echo "source /opt/ros/galactic/setup.bash" >> ~/.bashrc
 
-        source ~/.bashrc
-
 1. At this point, we recommend setting your default RMW. The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Right now, the Create® 3 robot supports `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. The default for Galactic is `rmw_cyclonedds_cpp`. Depending on your robot's RMW implementation, type one of the following:
 
         echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
