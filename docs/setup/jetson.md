@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: Copyright (c) 2022 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 # SPDX-FileCopyrightText: Additions copyright (c) 2022 iRobot Corporation. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause
-# 
+#
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
 #
@@ -32,6 +32,9 @@
 
 # Connect Create® 3 to NVIDIA® Jetson™ and set up ROS 2 Galactic
 
+!!! important
+    **This is community-submitted content. Please feel welcome to submit PRs for additions or corrections.**
+
 ## Before you start
 !!! attention
     **These directions are written for someone with experience with embedded Linux and basic embedded computers.**
@@ -50,7 +53,7 @@ It is highly recommended to read through the getting started document for your N
 
 2. Complete the getting started guide (listed above) until you complete the initial setup.
 
-### Alter "USB Device Mode" to apply static IP 
+### Alter "USB Device Mode" to apply static IP
 
 1. To alter the Jetson's "USB Device Mode" feature (specifically, disabling DHCP server and self-assign a static IP address);
 
