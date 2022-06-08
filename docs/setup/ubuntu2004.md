@@ -16,13 +16,15 @@ These directions follow Open Robotics' official documentation on [Installing ROS
         echo $LANG
    and ensuring "UTF-8" is at the end of the returned string.
 
-1. Execute the following commands to install ROS 2[^2]:
+1. Execute the following blocks of commands to install ROS 2[^2]:
 
         sudo apt update && sudo apt install -y curl gnupg2 lsb-release build-essential git cmake
+then
+
         sudo curl -ksSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-        sudo apt update
-        sudo apt install -y ros-galactic-ros-base python3-colcon-common-extensions python3-rosdep ros-galactic-rmw-fastrtps-cpp ros-galactic-rmw-cyclonedds-cpp ros-galactic-irobot-create-msgs
+        sudo apt update && sudo apt install -y ros-galactic-ros-base python3-colcon-common-extensions python3-rosdep ros-galactic-rmw-fastrtps-cpp ros-galactic-rmw-cyclonedds-cpp ros-galactic-irobot-create-msgs
+finally
 
         echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
         echo "export _colcon_cd_root=/opt/ros/galactic/" >> ~/.bashrc
