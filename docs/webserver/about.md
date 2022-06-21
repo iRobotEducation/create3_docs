@@ -36,5 +36,9 @@ Note that `wlan0` and `wlan1` are the same physical device, except that `wlan0` 
 Output of the `hciconfig` command, including information for all available Bluetooth®[^1] interfaces.
 This will be blank when the USB/BLE toggle on the [adapter board](../hw/adapter.md) is set to USB.
 
+## Factory Reset
+A hyperlink to factory reset the robot will appear when the robot is in access point mode.
+This will remove all user configuration, but the firmware version will not change.
+
 [^1]: The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by iRobot is under license.
 [^2]: All other trademarks mentioned are the property of their respective owners.
