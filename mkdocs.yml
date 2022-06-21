@@ -49,6 +49,12 @@ nav:
       - Hookup Examples: hw/hookup.md
     - Webserver:
       - Overview: webserver/overview.md
+      - Home: webserver/home.md
+      - Connect: webserver/connect.md
+      - Update: webserver/update.md
+      - Logs: webserver/logs.md
+      - Application: webserver/application.md
+      - About: webserver/about.md
     - Setup:
       - Connect to Wi-Fi: setup/provision.md
       - Multi-Robot Setup: setup/multi-robot.md
