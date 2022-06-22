@@ -15,6 +15,8 @@ Be sure to click "save" after making any changes, and then restart the applicati
 
 See [ROS 2 Network Config](xml-config.md) for more information about RMW specific choices and configuration requirements.
 
+A detailed rundown of the features of the robot webserver can be found on the [Application](../webserver/application.md) page.
+
 ## Using Multiple Robots
 
 !!! important

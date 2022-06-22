@@ -5,7 +5,7 @@ When the robot is acting as an access point, a third option, "Reboot robot," app
 ## Restart Application
 Clicking "Restart Application" will restart the robot's ROS 2[^1] application.
 This will take a few seconds to complete.
-Restarting the application is necesssary after modifying ROS 2 configuration settings.
+Restarting the application is necessary after modifying ROS 2 configuration settings.
 Restarting the application will not restart the webserver; they are separate applications.
 
 ## Reboot Robot

@@ -12,4 +12,13 @@ If a particular firmware version is needed, there is a hyperlink which will expa
 
 Clicking the "choose file" button will allow the user to select a local firmware file; once selected, click "upload file and update" to begin the process.
 
+This video outlines the steps in detail:
+<h1 align="center">
+    <div>
+    <div style="position: relative; padding-bottom: 0%; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="450" height="300" src="https://bcove.video/3OejOg5" frameborder="1" allowfullscreen></iframe>
+    </div>
+    </div>
+</h1>
+
 [^1]: All trademarks mentioned are the property of their respective owners.
