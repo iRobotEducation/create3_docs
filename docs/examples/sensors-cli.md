@@ -9,8 +9,9 @@ ros2 topic echo {topic}
 ```
 where {topic} is the topic of interest. If you're not sure what topics are available, you can type
 ```sh
-ros2 topic list
+ros2 topic list --no-daemon --spin-time 10
 ```
+The --no-daemon and --spin-time arguments are not strictly necessary, but they may help with initial discovery.
 
 ## A non-exhaustive set of examples
 These are relatively straighforward, but for fun:
