@@ -6,14 +6,19 @@ This page describes how to use the the Create® 3 robot's actuators using the RO
 
 ### Play a sequence of notes
 
-Good times:
+Play a happy sequence once:
 ```sh
 ros2 topic pub /cmd_audio irobot_create_msgs/msg/AudioNoteVector "{append: false, notes: [{frequency: 392, max_runtime: {sec: 0,nanosec: 177500000}}, {frequency: 523, max_runtime: {sec: 0,nanosec: 355000000}}, {frequency: 587, max_runtime: {sec: 0,nanosec: 177500000}}, {frequency: 784, max_runtime: {sec: 0,nanosec: 533000000}}]}" -1
 ```
 
-Bad times:
+Play a sad sequence once:
 ```sh
 ros2 topic pub /cmd_audio irobot_create_msgs/msg/AudioNoteVector "{append: false, notes: [{frequency: 369, max_runtime: {sec: 0,nanosec: 355000000}}, {frequency: 300, max_runtime: {sec: 0,nanosec: 533000000}}]}" -1
+```
+
+Play a scary sequence forever:
+```sh
+ros2 action send_goal /audio_note_sequence irobot_create_msgs/action/AudioNoteSequence "{iterations: -1, note_sequence: {append: false, notes: [{frequency: 82, max_runtime: {sec: 1,nanosec: 0}}, {frequency: 87, max_runtime: {sec: 1,nanosec: 0}}]}}"
 ```
 
 ## Driving
@@ -36,6 +41,18 @@ ros2 action send_goal /drive_distance irobot_create_msgs/action/DriveDistance "{
 The Rotate Angle action takes a turn angle in radians and maximum angular speed in radians per second.
 ```sh
 ros2 action send_goal /rotate_angle irobot_create_msgs/action/RotateAngle "{angle: 1.57,max_rotation_speed: 0.5}"
+```
+
+### Drive an arc
+The Drive Arc action takes a arc angle in radians, arc radius in meters, translate direction (1 for forward and -1 for rearward) and and maximum translation speed in meters per second.
+```sh
+$ ros2 action send_goal /drive_arc irobot_create_msgs/action/DriveArc "{angle: 1.57,radius: 0.3,translate_direction: 1,max_translation_speed: 0.3}"
+```
+
+### Navigate to position
+The Navigate to Position action takes a goal position (in meters) and orientation (in radians). The orientation must be specified as part of the message, but it can be ignored by setting `achieve_goal_heading` to `false`.
+```sh
+$ ros2 action send_goal /navigate_to_position irobot_create_msgs/action/NavigateToPosition "{achieve_goal_heading: true,goal_pose:{pose:{position:{x: 1,y: 0.2,z: 0.0}, orientation:{x: 0.0,y: 0.0, z: 0.0, w: 1.0}}}}"
 ```
 
 ### Docking
