@@ -76,7 +76,8 @@ nav:
     - Simulator:
       - Using the Simulator: sim/setup.md
     - Software Examples:
-      - Driving via CLI: examples/driving-cli.md
+      - Actuators via CLI: examples/actuators-cli.md
+      - Sensors via CLI: examples/sensors-cli.md
       - Navigation Apps: examples/create3_examples.md
     - Software Releases:
       - Overview: releases/overview.md
