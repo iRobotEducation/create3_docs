@@ -23,8 +23,21 @@ Fast-DDS allows to specify DDS configuration through an XML file.
 In order to apply a configuration, the path to the XML file must be provided through the following environment variable:
 
 ```sh
-export FASTRTPS_DEFAULT_PROFILES_FILE=/path/to/the/xml/profile
+export FASTRTPS_DEFAULT_PROFILES_FILE='/path/to/the/xml/profile'
 ```
+Then run 
+
+```sh
+sudo nano ~/.bashrc
+```
+And check to make sure the above line of code is in the bottom of the file. If it isn't there, add it and save the document. 
+
+Then run 
+```sh
+source ~/.bashrc
+```
+
+Finally restart your machine. 
 
 Detailed network configurations are described in the [Fast-DDS documentation](https://fast-dds.docs.eprosima.com/en/latest/).
 
