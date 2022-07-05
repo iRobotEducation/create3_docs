@@ -10,7 +10,7 @@ It is highly recommended to read through the following documents before beginnin
 
 ## Step-by-step
 
-1. Download [Ubuntu® Server 20.04 64-bit](https://ubuntu.com/download/raspberry-pi)[^1] and write onto a microSD card.
+1. Download [Ubuntu® Server 20.04 64-bit](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview)[^1] and write onto a microSD card.
 1. In the system-boot partition, edit usercfg.txt and add `dtoverlay=dwc2,dr_mode=peripheral`. For convenience, [here's a copy of this file](data/usercfg.txt).
 1. In the system-boot partition, edit cmdline.txt to add `modules-load=dwc2,g_ether` after `rootwait`. For convenience, [here's a copy of this file](data/cmdline.txt).
 1. In the system-boot partition, edit network-config to optionally add information about your Wi-Fi connection, and also add the following under `ethernets`
