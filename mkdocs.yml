@@ -74,7 +74,7 @@ nav:
       - Reflexes: api/reflexes.md
       - Safety: api/safety.md
       - User Interface: api/ui.md
-      - Wall-Follow: api/wall-follow.md
+      - Wall Follow: api/wall-follow.md
     - Simulator:
       - Using the Simulator: sim/setup.md
     - Software Examples:
