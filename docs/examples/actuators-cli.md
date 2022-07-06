@@ -49,6 +49,12 @@ The Drive Arc action takes a arc angle in radians, arc radius in meters, transla
 $ ros2 action send_goal /drive_arc irobot_create_msgs/action/DriveArc "{angle: 1.57,radius: 0.3,translate_direction: 1,max_translation_speed: 0.3}"
 ```
 
+### Wall Follow
+The WallFollow action takes a side (1=left, -1=right) and a maximum duration.
+```sh
+ros2 action send_goal /wall_follow irobot_create_msgs/action/WallFollow "{follow_side: 1, max_runtime: {sec: 1, nanosec: 0}}"
+```
+
 ### Navigate to position
 The Navigate to Position action takes a goal position (in meters) and orientation (in radians). The orientation must be specified as part of the message, but it can be ignored by setting `achieve_goal_heading` to `false`.
 ```sh
