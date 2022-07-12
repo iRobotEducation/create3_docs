@@ -13,6 +13,8 @@ ros2 topic list --no-daemon --spin-time 10
 ```
 The --no-daemon and --spin-time arguments are not strictly necessary, but they may help with initial discovery.
 
+A detailed API description for each sensor can be found [here](../../api/ros2/).
+
 ## A non-exhaustive set of examples
 These are relatively straighforward, but for fun:
 
