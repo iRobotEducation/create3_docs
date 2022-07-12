@@ -2,14 +2,14 @@
 
 The Create® 3 robot can interact with the user through its buttons and its light ring.
 
-### Responding to buttons presses
+### Responding to button presses
 
 Whenever a button on the Create® 3 robot is pressed, its information will be published on the `interface_buttons` topic.
 By subscribing to this topic, you will be able to detect when to start your custom policies.
 
 ### Changing the light ring colors
 
-!!! attention 
+!!! attention
     **The Create® 3 robot uses its light ring to notify the user about critical events. If you override its color, you may not notice these events.**
 
 You can change the color of the light ring on your Create® 3 robot by publishing a corresponding message on the `cmd_lightring` topic.
