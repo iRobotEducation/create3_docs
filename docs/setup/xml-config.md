@@ -1,6 +1,7 @@
 # ROS 2 Network Configuration
 
-The ROS 2[^1] DDS middleware allows advanced network configurations.
+The ROS 2[^1] is built on top of DDS/RTPS as its middleware, which provides advanced networking features such as: discovery, serialization and transportation.  This **R**OS 2 **M**iddle**w**are is abbreviated **RMW** for short.
+
 This page contains some examples that may be useful when interacting with the iRobot® Create® 3.
 
 !!! important
@@ -11,6 +12,7 @@ You can choose a RMW implementation on your machine using
 ```sh
 export RMW_IMPLEMENTATION=name-of-the-rmw
 ```
+Currently, the only supported RMW implementations are: `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`.  See [here](https://docs.ros.org/en/rolling/Concepts/About-Different-Middleware-Vendors.html) for more info on the different RMW vendors.
 
 On the robot the same can be controlled through the Create® 3 webserver.
 
