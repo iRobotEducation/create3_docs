@@ -1,6 +1,6 @@
 # ROS 2 Network Configuration
 
-The ROS 2[^1] is built on top of DDS/RTPS as its middleware, which provides advanced networking features such as: discovery, serialization and transportation.  This **R**OS 2 **M**iddle**w**are is abbreviated **RMW** for short.
+ROS 2[^1] is built on top of DDS/RTPS as its middleware, which provides advanced networking features such as: discovery, serialization and transportation.  This **R**OS 2 **m**iddle**w**are is abbreviated **RMW** for short.
 
 This page contains some examples that may be useful when interacting with the iRobot® Create® 3.
 
