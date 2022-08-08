@@ -6,7 +6,7 @@
 It is highly recommended to read through the following documents before beginning:
 
 * [How to install Ubuntu Server on your Raspberry Pi](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi)[^1] - official Canonical documentation
-* [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Binary.html)[^1] - official Open Robotics documentation
+* [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html)[^1] - official Open Robotics documentation
 
 ## Step-by-step
 

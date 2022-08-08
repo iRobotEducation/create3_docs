@@ -5,7 +5,7 @@ If you are running Ubuntu[^1] 20.04 natively on your machine, there is no extra 
 These directions should work in a virtualized container within another operating system, as well.
 Note that there might be some network setup required if in a virtualized container; for example, RMWs seem to like running in a bridged network configuration rather than a NATted one.
 
-These directions follow Open Robotics' official documentation on [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Binary.html), and more detailed information about what the commands below do can be found there.
+These directions follow Open Robotics' official documentation on [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html), and more detailed information about what the commands below do can be found there.
 
 ## Step-by-step
 
