@@ -30,7 +30,7 @@ If power is drawn through the USB-C® connector, then less power is available th
 
 ## USB/BLE Toggle
 The **USB/BLE toggle** routes the robot's single USB Host connection either to the USB-C® port (useful for connecting to single-board computers with OTG or device ports) or to the on-board Bluetooth® Low Energy[^3] module.
-This module can be used to interact with the [iRobot Coding app](https://code.irobot.com).
+This module can be used to interact with the [iRobot Education Python Web Playground](https://python.irobot.com/) or [iRobot Coding app](https://code.irobot.com).
 
 ## Indicators
 ### Orange Indicator
