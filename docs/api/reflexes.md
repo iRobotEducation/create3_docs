@@ -11,7 +11,7 @@ Reflexes can be enabled or disabled on the Create® 3 using the corresponding RO
 The `reflexes_enabled` parameter controls whether reflexes should be executed or not. It accepts boolean values.
 When this parameter is set to `false`, no reflexes will be enabled, regardless of their specific parameters values.
 
-Reflexes are enabled by default.
+This parameter is set to true by default, so reflexes are generally enabled, but note that individual reflexes can be enabled or disabled via their specific parameters described below.
 
 ### Bumps reflex
 
@@ -46,7 +46,7 @@ This reflex is enabled by default.
 
 ### Panic reflex
 
-The `reflex.REFLEX_PANIC` ROS 2 parameter enables (`true`) or disables (`false`) the dock avoidance reflex.
+The `reflex.REFLEX_PANIC` ROS 2 parameter enables (`true`) or disables (`false`) the panic reflex.
 It will trigger when the robot is trapped and unable to clear obstacles or hazards.
 The reflex will try more aggressive maneuvers to allow the robot to recover from this situation
 
@@ -54,7 +54,7 @@ This reflex is enabled by default.
 
 ### Proximity slowdown reflex
 
-The `reflex.REFLEX_PROXIMITY_SLOWDOWN` ROS 2 parameter enables (`true`) or disables (`false`) the dock avoidance reflex.
+The `reflex.REFLEX_PROXIMITY_SLOWDOWN` ROS 2 parameter enables (`true`) or disables (`false`) the proximity slowdown reflex.
 It will trigger when the robot's IR sensors detect an obstacle in close proximity.
 The reflex will reduce the robot movement speed in order to better prepare for an eventual impact.
 
@@ -62,7 +62,7 @@ This reflex is enabled by default.
 
 ### Stuck reflex
 
-The `reflex.REFLEX_STUCK` ROS 2 parameter enables (`true`) or disables (`false`) the dock avoidance reflex.
+The `reflex.REFLEX_STUCK` ROS 2 parameter enables (`true`) or disables (`false`) the stuck reflex.
 It will trigger when the robot is stuck, i.e. it's pushing against an obstacle and its wheels are losing traction.
 The reflex will try aggressive maneuvers to allow the robot to recover from this situation
 
@@ -70,7 +70,7 @@ This reflex is enabled by default.
 
 ### Virtual Wall reflex
 
-The `reflex.REFLEX_VIRTUAL_WALL` ROS 2 parameter enables (`true`) or disables (`false`) the cliff reflex.
+The `reflex.REFLEX_VIRTUAL_WALL` ROS 2 parameter enables (`true`) or disables (`false`) the virtual wall reflex.
 It will trigger as soon as the robot detects an iRobot virtual wall it will move the robot away from it.
 The reflex will continue until the robot has cleared the virtual wall.
 
@@ -78,7 +78,7 @@ This reflex is enabled by default.
 
 ### Wheel drop reflex
 
-The `reflex.REFLEX_WHEEL_DROP` ROS 2 parameter enables (`true`) or disables (`false`) the cliff reflex.
+The `reflex.REFLEX_WHEEL_DROP` ROS 2 parameter enables (`true`) or disables (`false`) the wheel drop reflex.
 It will trigger as soon as the robot detects that one of its wheels is fully extended (dropped).
 The robot will drive the other wheel in order to return to a flat surface.
 
