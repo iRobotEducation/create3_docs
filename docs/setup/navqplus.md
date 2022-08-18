@@ -1,5 +1,8 @@
 # Connect Create® 3 to NavQ+ and set up ROS 2 Galactic
 
+!!! important
+This is community-submitted content. Please feel welcome to submit PRs for additions or corrections.
+
 ## Before you start
 !!! attention
     **These directions are written for someone with experience with embedded Linux and basic embedded computers.**
