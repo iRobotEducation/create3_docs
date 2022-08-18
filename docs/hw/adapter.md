@@ -49,4 +49,4 @@ The **blue indicator (D6)** is illuminated when the BLE radio is turned on. It f
 [^2]: USB-C® is a trademark of USB Implementers Forum.
 [^3]: Maximum current computed as: 2 A - (5 V * 3 A / 0.90 / 14.4 V) = 0.84 A
 [^4]: The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by iRobot is under license.
-All other trademarks mentioned are the property of their respective owners.
+[^5]: All other trademarks mentioned are the property of their respective owners.
