@@ -30,7 +30,7 @@
 #
 -->
 
-# Connect Create® 3 to NVIDIA® Jetson™ and set up ROS 2 Galactic
+# How to Connect Create® 3 to NVIDIA® Jetson™ and set up ROS 2 Galactic
 
 !!! important
     **This is community-submitted content. Please feel welcome to submit PRs for additions or corrections.**
@@ -106,17 +106,17 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
         }
 
 
-1. Use `jetson-containers`' script to simplify the invocation of `docker run` command.
+2. Use `jetson-containers`' script to simplify the invocation of `docker run` command.
 
         git clone https://github.com/dusty-nv/jetson-containers/
         cd jetson-containers
         scripts/docker_run.sh -c dustynv/ros:galactic-ros-base-l4t-r32.6.1
 
-1. Install additional ROS 2 packages
+3. Install additional ROS 2 packages
 
         sudo apt update && sudo apt install -y ros-galactic-ros-base python3-colcon-common-extensions python3-rosdep ros-galactic-rmw-fastrtps-cpp ros-galactic-rmw-cyclonedds-cpp ros-galactic-irobot-create-msgs
 
-1. Set the default network interface by setting Cyclone DDS configuration.
+4. Set the default network interface by setting Cyclone DDS configuration.
 
         export CYCLONEDDS_URI='<CycloneDDS><Domain><General><NetworkInterfaceAddress>l4tbr0</NetworkInterfaceAddress></General></Domain></CycloneDDS>'
     !!! attention
@@ -125,7 +125,7 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
         **See [CycloneDDS Multiple Network Interfaces](../xml-config/#cyclonedds).**
         **Note the differences in Jetson USB and Wi-Fi interface names from the documentation.**
 
-1. Check to ensure Create® 3 topics appear
+5. Check to ensure Create® 3 topics appear
 
         ros2 topic list
 

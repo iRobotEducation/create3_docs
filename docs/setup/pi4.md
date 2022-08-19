@@ -1,4 +1,4 @@
-# Connect Create® 3 to Raspberry Pi® 4 and set up ROS 2 Galactic
+# How to Connect Create® 3 to Raspberry Pi® 4 and set up ROS 2 Galactic
 
 ## Before you start
 !!! attention
