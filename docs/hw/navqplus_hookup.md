@@ -1,12 +1,12 @@
 # iRobot® Create® 3 Hookup Guide for NavQ+ by NXP
 
-The iRobot® Create® 3 has a USB-C®[^1] connector implementing a USB 2.0 host capable of 5 V @ 3 A continuous, which can be used to power and communicate with various downstream devices.
+The iRobot® Create® 3 robot has a USB-C®[^1] connector implementing a USB 2.0 host capable of 5 V @ 3 A continuous, which can be used to power and communicate with various downstream devices.
 
 NavQ+ is an open source reference design provided by NXP and manufacturable by anyone.
 Since NavQ+ has USB-C® ports capable of being configured as a USB Ethernet Gadget, a cable with a USB-C® connector on both ends is all that is required.
 
 !!! note
-    - Unless set otherwise, the default USB-C® port for use as an Ethernet Gadget device is configured to only the centermost (USB 2) USB-C® as shown in the example pictures.
+    - Unless set otherwise, the default USB-C® port for use as an Ethernet Gadget device is configured to only the centermost USB-C® port (labeled USB 2) as shown in the example pictures.
 
 The NavQ+ is pictured in the cargo bay using the 3D-printed [adapter](#adapter) plate and on top of the faceplate using the 3D-printed [case](#case-top).
 ![Hookup diagram for NavQ+ with adapter mount in cargo bay](data/hookup_navqplus_adapter_mount_bay.jpg "NavQ+ in Cargo Bay")

@@ -1,11 +1,11 @@
 # iRobot® Create® 3 Hookup Guide for NVIDIA® Jetson™
 
-The iRobot® Create® 3 has a USB-C®[^1] connector implementing a USB 2.0 host capable of 5 V @ 3 A continuous, which can be used to power and communicate with various downstream devices.
+The iRobot® Create® 3 robot has a USB-C®[^1] connector implementing a USB 2.0 host capable of 5 V @ 3 A continuous, which can be used to power and communicate with various downstream devices.
 Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
 
 ## NVIDIA® Jetson Nano™ 2GB
 The Jetson Nano™ 2GB has a USB-C® port (J2) for power and a USB Micro-B port (J13) for downstream data.
-This can be connected to the Create 3 most simply using a USB-C® hub and two cables -- USB A to Micro-B and USB A to USB-C®.
+This can be connected to the Create 3 robot most simply using a USB-C® hub and two cables -- USB A to Micro-B and USB A to USB-C®.
 ![Hookup diagram for Jetson Nano™](data/hookup_nano2gb.jpg "Jetson Nano™ 2GB")
 
 ## NVIDIA® Jetson Xavier NX™ Developer Kit

@@ -1,9 +1,11 @@
 # iRobot® Create® 3 Hardware Hookup Overview
-The Create® 3 is based on the Roomba®, a robot vacuum cleaner.
+The Create® 3 robot is based on the Roomba®, a robot vacuum cleaner.
 Its sensors, actuators, and compact design are capable of navigating and mapping a the whole floor of a home or office space.
-The robot also ships with an iRobot® Home Base™ Charging Station.
+The robot also ships with an iRobot® Home Base™ Charging Station. 
 
-## Currently documented hookup options:
+It is possible to directly connect various single board computers to the Create 3 robot in order to provide on-board intelligence. Here are a few examples.
+
+## Currently documented hookup examples:
 
 ### NavQ+ by NXP
 * [NavQ+ by NXP Hookup Guide](../navqplus_hookup/)

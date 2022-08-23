@@ -1,6 +1,6 @@
 # iRobot® Create® 3 Hookup Guide for Raspberry Pi®
 
-The iRobot® Create® 3 has a USB-C®[^1] connector implementing a USB 2.0 host capable of 5 V @ 3 A continuous, which can be used to power and communicate with various downstream devices.
+The iRobot® Create® 3 robot has a USB-C®[^1] connector implementing a USB 2.0 host capable of 5 V @ 3 A continuous, which can be used to power and communicate with various downstream devices.
 Here are some hookup examples for Raspberry Pi®[^2] computers.
 
 ## Raspberry Pi® 4
