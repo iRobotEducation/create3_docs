@@ -22,10 +22,26 @@ The base of the case attaches to the NavQ+ using the existing four (4) M2.5-0.45
     - For best results, it is suggested to tap/thread the M3-0.5 (Create® 3 mounting/case fastening) and M2.5-0.45 (SOM) holes.
 
 ### Case Top
+<details>
+  <summary>3D-Rendering</summary>
+
+  <script src="https://embed.github.com/view/3d/iRobotEducation/create3_docs/main/docs/hw/data/cases/C3-NavQPlus-Top.stl"></script>
+
+</details>
+
+
 * [Case Top STL (170.5 kB)](data/cases/C3-NavQPlus-Top.stl)
 * [Case Top STEP (413.5 kB)](data/cases/C3-NavQPlus-Top.stp)
 
 ### Case Bottom
+<details>
+  <summary>3D-Rendering</summary>
+
+  <script src="https://embed.github.com/view/3d/iRobotEducation/create3_docs/main/docs/hw/data/cases/C3-NavQPlus-Base.stl"></script>
+
+</details>
+
+
 * [Case Base STL (150.7 kB)](data/cases/C3-NavQPlus-Base.stl)
 * [Case Base STEP (130.2 kB)](data/cases/C3-NavQPlus-Base.stp)
 
@@ -41,6 +57,15 @@ If a more minimal mount is desired instead of a case, an adapter plate using the
     - For best results, it is suggested to tap/thread the M3-0.5 (Create® 3 mounting) and M2.5-0.45 (SOM) holes.
 
 ### Adapter
+
+<details>
+  <summary>3D-Rendering</summary>
+
+  <script src="https://embed.github.com/view/3d/iRobotEducation/create3_docs/main/docs/hw/data/brackets/C3-RudisLabs-NavQPlus-Adapter.stl"></script>
+
+</details>
+
+
 * [Adapter STL (1.2 MB)](data/brackets/C3-RudisLabs-NavQPlus-Adapter.stl)
 * [Adapter STEP (3.4 MB)](data/brackets/C3-RudisLabs-NavQPlus-Adapter.stp)
 

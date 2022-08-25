@@ -17,6 +17,14 @@ The data connection is established by using a USB Micro B to USB-C® cable.
 ### NVIDIA® Jetson Xavier NX™ Developer Kit Printable Adapter Mount
 You can 3d print the mount adapter to place the Jetson Xavier NX Developer Kit in the cargo bay or on the faceplate.
 
+<details>
+  <summary>3D-Rendering</summary>
+
+  <script src="https://embed.github.com/view/3d/iRobotEducation/create3_docs/main/docs/hw/data/brackets/data/brackets/C3-JetsonXavierNX-Mount.stl"></script>
+
+</details>
+
+
 * [Adapter Mount STL (338.4 kB)](data/brackets/C3-JetsonXavierNX-Mount.stl)
 * [Adapter Mount 3MF (95.9 kB)](data/brackets/C3-JetsonXavierNX-Mount.3mf)
 

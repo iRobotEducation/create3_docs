@@ -46,6 +46,7 @@ nav:
         - Electrical Overview: hw/electrical.md
         - Buttons and Light Ring: hw/face.md
         - Adapter Board: hw/adapter.md
+      - Mounts, Cases, Adapters: hw/mounts_cases_adapters.md
     - Webserver:
       - Overview: webserver/overview.md
       - Home: webserver/home.md

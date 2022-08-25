@@ -24,10 +24,28 @@ The Raspberry Pi® mounting scheme does not match Create® 3's faceplate or carg
 The larger mount is more rigid but requires three times as much time to print.
 
 ### Small Mount
+
+<details>
+  <summary>3D-Rendering</summary>
+
+  <script src="https://embed.github.com/view/3d/iRobotEducation/create3_docs/main/docs/hw/data/brackets/C3-RPi-Mount-Small-20211022.stl"></script>
+
+</details>
+
+
 * [Small Mount STL (130.1 kB)](data/brackets/C3-RPi-Mount-Small-20211022.stl)
 
 
 ### Large Mount
+
+<details>
+  <summary>3D-Rendering</summary>
+
+  <script src="https://embed.github.com/view/3d/iRobotEducation/create3_docs/main/docs/hw/data/brackets/C3-RPi-Mount-20211022.stl"></script>
+
+</details>
+
+
 * [Large Mount STL (532.9 kB)](data/brackets/C3-RPi-Mount-20211022.stl)
 
 [^1]: USB-C® is a trademark of USB Implementers Forum.
