@@ -46,7 +46,6 @@ nav:
         - Electrical Overview: hw/electrical.md
         - Buttons and Light Ring: hw/face.md
         - Adapter Board: hw/adapter.md
-      - Hookup Examples: hw/hookup.md
     - Webserver:
       - Overview: webserver/overview.md
       - Home: webserver/home.md
@@ -58,14 +57,21 @@ nav:
     - Setup:
       - Connect to Wi-Fi: setup/provision.md
       - Multi-Robot Setup: setup/multi-robot.md
-      - ROS 2 Network Config: setup/xml-config.md
-      - Setup Compute Boards:
-        - ROS 2 on Ubuntu 20.04: setup/ubuntu2004.md
-        - ROS 2 on a NavQ+: setup/navqplus.md
-        - ROS 2 on a Pi 4: setup/pi4.md
-        - ROS 2 on an NVIDIA Jetson: setup/jetson.md
-        - NTP on Compute Board: setup/compute-ntp.md
-        - Desktop Docker: setup/docker.md
+      - ROS 2 Setup:
+        - Install on Ubuntu: setup/ubuntu2004.md
+        - Run with Docker: setup/docker.md
+        - Network Config: setup/xml-config.md
+      - Add a Compute Board: 
+        - NavQ+ by NXP:
+          - Hookup Guide: hw/navqplus_hookup.md
+          - Software Config: setup/navqplus.md
+        - NVIDIA® Jetson™:
+          - Hookup Guide: hw/jetson_hookup.md
+          - Software Config: setup/jetson.md
+        - Raspberry Pi®:
+          - Hookup Guide: hw/rpi_hookup.md
+          - Software Config: setup/pi4.md
+        - Network Time Protocol: setup/compute-ntp.md
     - APIs:
       - ROS 2 Interface: api/ros2.md
       - Docking: api/docking.md
