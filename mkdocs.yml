@@ -37,6 +37,10 @@ markdown_extensions:
   - footnotes
   - attr_list
 
+plugins:
+  - search
+  - macros
+
 nav:
     - Home: index.md
     - Hardware:
