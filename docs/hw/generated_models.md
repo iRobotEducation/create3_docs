@@ -12,12 +12,12 @@
 <details>
   <summary>3D-Rendering</summary>
 
-  <script src="https://embed.github.com/view/3d/{{ repo }}/create3_docs/{{ branch }}/{{ file.path }}"></script>
+  <script src="https://embed.github.com/view/3d/{{ repo }}/create3_docs/{{ branch }}/docs/{{ file.path }}"></script>
 
 </details>
 
 
-* [STL ({{ file.size }})]({{ file.path }})
+* [STL ({{ file.size }})](../{{ file.path }})
 {% endfor %}
 {% endfor %}
 {% endfor %}

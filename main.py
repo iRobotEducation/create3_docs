@@ -25,7 +25,7 @@ def define_env(env):
                         root_str=os.path.dirname(root_str)
                         
                     entry={"stl-name": file,
-                        "path": os.path.join(root,file),
+                        "path": os.path.join(root.replace('docs/',''),file),
                         "size": fileSize_str}
                     
                     if len(dirDepth) == 1:
