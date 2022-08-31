@@ -1,12 +1,13 @@
 # iRobot® Create® 3 Mounts, Cases, and Adapters
 {% set repo = 'rudislabs' %}
-{% set repo = 'jinja-ninja' %}
+{% set branch = 'jinja-ninja' %}
 {% set data = listfiles("docs/hw/data/models") %}
-{% for key0, val0 in data.items() %}
+
+{% for key0, val0 in data|dictsort %}
 ## {{ key0 }}
-  {% for key1, val1 in val0.items() %}
+  {% for key1, val1 in val0|dictsort %}
 ### {{ key1 }}
-    {% for keys, file in val1.items() %}
+    {% for keys, file in val1|dictsort %}
 #### {{ keys }}
 <details>
   <summary>3D-Rendering</summary>
@@ -20,5 +21,6 @@
 {% endfor %}
 {% endfor %}
 {% endfor %}
+
 
 [^1]: All trademarks mentioned are the property of their respective owners.
