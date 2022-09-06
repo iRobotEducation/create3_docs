@@ -29,6 +29,9 @@ extra:
       link: https://www.facebook.com/iRobotEducation
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/irobot/
+  analytics:
+    provider: google
+    property: G-9QX6GHMSD7
 
 copyright: Copyright &copy; 2021-2022 iRobot Corporation. ​​All Rights Reserved.
 
