@@ -49,16 +49,32 @@ Currently using details in local .git to generate branch and org names.
 '''
 import os
 
-# Begining of optional block and can be commented out if setting variables manually
-from git import Repo 
-repo = Repo(os.getcwd())
-assert not repo.bare
-currentGitOrg = repo.remotes.origin.url.split('.git')[0].replace('git@github.com:','').replace('https://github.com/','').split('/')[-2]
-currentGitBranch = repo.active_branch.name
-print('INFO\t -  Using github organization in main.py: {:s}'.format(currentGitOrg))
-print('INFO\t -  Using git branch in main.py: {:s}'.format(currentGitBranch))
-# End of optional block
+class cl:
+    GRN = '\033[92m'
+    WARN = '\033[93m'
+    FAIL = '\033[91m'
+    END = '\033[0m'
+    BOLD = '\033[1m'
 
+# Begining of optional block and can be commented out if setting env.variables manually
+try:
+    from git import Repo                    
+except ImportError:
+    print('\n\n{:s}{:s}ERROR\t -  Unable to import Python module "git", check to see if GitPython is installed.{:s}\n\n'.format(cl.FAIL,cl.BOLD,cl.END))
+    currentGitBranch = 'main'
+    currentGitOrg = 'iRobotEducation'
+    print('\n{:s}WARN\t -  Using github organization in main.py:{:s} {:s}'.format(cl.WARN,cl.END,currentGitOrg))
+    print('{:s}WARN\t -  Using git branch in main.py:{:s} {:s}\n'.format(cl.WARN,cl.END,currentGitBranch))
+else:
+    repo = Repo(os.getcwd())
+    assert not repo.bare
+    currentGitOrg = repo.remotes.origin.url.split('.git')[0].replace('git@github.com:','').replace('https://github.com/','').split('/')[-2]
+    currentGitBranch = repo.active_branch.name
+    print('INFO\t -  {:s}Using github organization in main.py:{:s} {:s}'.format(cl.GRN,cl.END,currentGitOrg))
+    print('INFO\t -  {:s}Using git branch in main.py:{:s} {:s}'.format(cl.GRN,cl.END,currentGitBranch))
+
+
+# End of optional block
 
 def define_env(env):
     env.variables['branch'] = currentGitBranch
