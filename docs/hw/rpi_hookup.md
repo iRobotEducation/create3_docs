@@ -5,7 +5,7 @@ Here are some hookup examples for Raspberry Pi®[^2] computers.
 
 ## Raspberry Pi® 4
 Since the Raspberry Pi® 4 has a USB-C® port capable of an OTG connection, a cable with a USB-C® connector on both ends is all that is required.
-The Raspberry Pi® is pictured in the cargo bay with the [large mount](#large-mount), and the Adapter Board is removed from the robot for clarity.
+The Raspberry Pi® is pictured in the cargo bay with the [large mount](../print_compute/#large-mount), and the Adapter Board is removed from the robot for clarity.
 ![Hookup diagram for Raspberry Pi® 4](data/hookup_pi4.jpg "Raspberry Pi® 4")
 
 ## Raspberry Pi® 1-3 Model B
@@ -20,33 +20,9 @@ The Micro-USB connector labeled "USB" is an OTG port capable of being an Etherne
 ![Hookup diagram for Raspberry Pi® Zero](data/hookup_piZ.jpg "Raspberry Pi® Zero")
 
 ## Raspberry Pi® Printable Mounts
-The Raspberry Pi® mounting scheme does not match Create® 3's faceplate or cargo bay hole pattern; here are two 3D-printable mounts.
-The larger mount is more rigid but requires three times as much time to print.
+The Raspberry Pi® mounting scheme does not match Create® 3's faceplate or cargo bay hole pattern; here are two [3D-printable mounts](../print_compute/#raspberry-pi).
+The [larger mount](../print_compute/#large-mount) is more rigid but requires three times as much time to print in comparison to the [smaller mount](../print_compute/#small-mount).
 
-### Small Mount
-
-<details>
-  <summary>3D-Rendering</summary>
-
-  <script src="https://embed.github.com/view/3d/iRobotEducation/create3_docs/main/docs/hw/data/brackets/C3-RPi-Mount-Small-20211022.stl"></script>
-
-</details>
-
-
-* [Small Mount STL (130.1 kB)](data/brackets/C3-RPi-Mount-Small-20211022.stl)
-
-
-### Large Mount
-
-<details>
-  <summary>3D-Rendering</summary>
-
-  <script src="https://embed.github.com/view/3d/iRobotEducation/create3_docs/main/docs/hw/data/brackets/C3-RPi-Mount-20211022.stl"></script>
-
-</details>
-
-
-* [Large Mount STL (532.9 kB)](data/brackets/C3-RPi-Mount-20211022.stl)
 
 [^1]: USB-C® is a trademark of USB Implementers Forum.
 [^2]: Raspberry Pi® is a trademark of Raspberry Pi Trading.

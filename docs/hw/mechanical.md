@@ -40,11 +40,11 @@ Twist ties are a quick, cheap, and reusable way for holding wires or other non-s
 Push-in, split-shank plastic rivets (either for M3 or 0.115" holes) are fast and inexpensive ways to mount thin stock to the Create® 3 robot's faceplate.
 ### Highly sophisticated interlocking brick system
 The typical toy brick has its studs spaced at 8 mm, while Create® 3's holes are spaced at 12 mm.
-It is possible to place an [adapter (576 kB)](data/brackets/C3-Stud-Mount.stl) into every other hole in order to connect toy bricks to the Create® 3.
+It is possible to place an [stud adapter mount](../print_generic/#stud-mount) into every other hole in order to connect toy bricks to the Create® 3.
 We recommend printing at 100% infill.
 
 ## Adding sensors
-A growing library of brackets for attaching sensors to the Create 3 robot using its 12 mm grid of 3 mm holes is available [here](https://github.com/iRobotEducation/create3_docs/tree/main/docs/hw/data/brackets).
+A growing library of printable mounts for attaching sensors to the Create 3 robot using its 12 mm grid of 3 mm holes is available [here](../print_sensor_mounts/).
 
 ## Adding a rear caster
 Out of the box, Create® 3  has a center of gravity in front of the two drive wheels and features an integrated front caster to act as a third point of contact.
@@ -64,9 +64,9 @@ If the caster does not rotate freely, sand or file the bearing surface along the
 | Part | Quantity |
 | --- | --- |
 | [Roomba® caster wheel](https://store.irobot.com/default/parts-and-accessories/roomba-accessories/700-series/roomba-front-caster-wheel/4624869.html) | 1 |
-| [Rear caster attachment](data/brackets/C3-Rear-Caster-Attachment.stl) | 1 |
-| [Caster lock](data/brackets/C3-Caster-Lock.stl) | 1 |
-| [Top latch](data/brackets/C3-Rear-Caster-Attachment-Latch.stl) | 1 |
+| [Rear caster attachment](../print_casters/#rear-caster-attachment) | 1 |
+| [Caster lock](../print_casters/#caster-lock) | 1 |
+| [Top latch](../print_casters/#rear-caster-attachment-latch) | 1 |
 | M3 or #4 self-tapping screw | 3 |
 
 ### Cargo bay with integrated caster
@@ -82,8 +82,8 @@ Depending on your payload weight and distribution, you may also want to transfer
 | Part | Quantity |
 | --- | --- |
 | [Roomba® caster wheel](https://store.irobot.com/default/parts-and-accessories/roomba-accessories/700-series/roomba-front-caster-wheel/4624869.html) | 1 |
-| [Cargo bay with caster](data/brackets/C3-Cargo-Bay-With-Caster.stl) | 1 |
-| [Caster lock](data/brackets/C3-Caster-Lock.stl) | 1 |
+| [Cargo bay with caster](../print_casters/#cargo-bay-with-caster) | 1 |
+| [Caster lock](../print_casters/#caster-lock) | 1 |
 | Ballast and M2.6X6 screw from Create® 3 Cargo Bay | 2 |
 | M3 or #4 self-tapping screw | 1 |
 

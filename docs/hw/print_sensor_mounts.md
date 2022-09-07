@@ -5,9 +5,9 @@
 {% set render_size_limit = "5000" %}
 
 {% for key0, val0 in data|dictsort %}
-## {{ key0|replace("IntelRealSense", "Intel® RealSense™") }}
+## {{ key0|replace("IntelRealSense", "Intel® RealSense™")|replace("SLAMTEC", "SLAMTEC®")|replace("Luxonis", "Luxonis®") }}
   {% for keys, file in val0|dictsort %}
-### {{ keys }}
+### {{ keys|replace("Oak-D", "Oak-D®") }}
 {% if file.size_raw_kb|float() < render_size_limit|float() %}
 <details>
   <summary>3D-Rendering</summary>
