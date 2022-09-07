@@ -1,8 +1,5 @@
 # iRobot® Create® 3 Printable Sensor Mount Parts
-{% set repo = 'rudislabs' %}
-{% set branch = 'jinja-ninja' %}
 {% set data = listfiles("docs/hw/data/models/Sensors") %}
-{% set render_size_limit = "5000" %}
 
 {% for key0, val0 in data|dictsort %}
 ## {{ key0|replace("IntelRealSense", "Intel® RealSense™")|replace("SLAMTEC", "SLAMTEC®")|replace("Luxonis", "Luxonis®") }}
@@ -12,7 +9,7 @@
 <details>
   <summary>3D-Rendering</summary>
 
-  <script src="https://embed.github.com/view/3d/{{ repo }}/create3_docs/{{ branch }}/docs/{{ file.path }}/{{ file.name }}"></script>
+  <script src="https://embed.github.com/view/3d/{{ repo }}/create3_docs/{{ org }}/docs/{{ file.path }}/{{ file.name }}"></script>
 
 </details>
 {% else %}

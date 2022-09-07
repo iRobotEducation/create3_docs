@@ -40,12 +40,20 @@ print_generic.md
 print_sensor_mounts.md
 
 Generates in those files a 3D viewable tree structure of model files.
+
+Set env.variables['branch'] to the branch with your updated file structures pushed, ex: "jinja-ninja".
+Set env.variables['org'] to your github organization name, ex: "rudislabs".
+Set env.variables['render_size_limit'] to max size in kB of stl file for 3D viewing, if above set size include a png image in file structure for viewer to use.
 '''
 
 
 import os
 
 def define_env(env):
+    env.variables['branch'] = "jinja-ninja"
+    env.variables['org'] = "rudislabs"
+    env.variables['render_size_limit'] = "5000"
+
     @env.macro
     def listfiles(path):
         fileDetails={}
