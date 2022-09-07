@@ -44,14 +44,25 @@ Generates in those files a 3D viewable tree structure of model files.
 Set env.variables['branch'] to the branch with your updated file structures pushed, ex: "jinja-ninja".
 Set env.variables['org'] to your github organization name, ex: "rudislabs".
 Set env.variables['render_size_limit'] to max size in kB of stl file for 3D viewing, if above set size include a png image in file structure for viewer to use.
+
+Currently using details in local .git to generate branch and org names.
 '''
-
-
 import os
 
+# Begining of optional block and can be commented out if setting variables manually
+from git import Repo 
+repo = Repo(os.getcwd())
+assert not repo.bare
+currentGitOrg = repo.remotes.origin.url.split('.git')[0].replace('git@github.com:','').replace('https://github.com/','').split('/')[-2]
+currentGitBranch = repo.active_branch.name
+print('INFO\t -  Using github organization in main.py: {:s}'.format(currentGitOrg))
+print('INFO\t -  Using git branch in main.py: {:s}'.format(currentGitBranch))
+# End of optional block
+
+
 def define_env(env):
-    env.variables['branch'] = "jinja-ninja"
-    env.variables['org'] = "rudislabs"
+    env.variables['branch'] = currentGitBranch
+    env.variables['org'] = currentGitOrg
     env.variables['render_size_limit'] = "5000"
 
     @env.macro
