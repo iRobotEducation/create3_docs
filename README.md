@@ -10,6 +10,7 @@ Install required dependencies:
 ```bash
 pip3 install mkdocs
 pip3 install mkdocs-material
+pip3 install mkdocs-macros-plugin
 ```
 
 Build the documentation locally:
