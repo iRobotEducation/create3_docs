@@ -50,7 +50,11 @@ nav:
         - Electrical Overview: hw/electrical.md
         - Buttons and Light Ring: hw/face.md
         - Adapter Board: hw/adapter.md
-      - Mounts, Cases, Adapters: hw/mounts_cases_adapters.md
+      - Printable Accessories:
+        - Compute Boards: hw/print_compute.md
+        - Create® 3 Caster: hw/print_casters.md
+        - Generic Mounts: hw/print_generic.md
+        - Sensor Mounts: hw/print_sensor_mounts.md
     - Webserver:
       - Overview: webserver/overview.md
       - Home: webserver/home.md

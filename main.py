@@ -24,9 +24,11 @@ def define_env(env):
                         dirDepth.append(os.path.basename(os.path.dirname(root_str)).replace('_',' '))
                         root_str=os.path.dirname(root_str)
                         
-                    entry={"stl-name": file,
-                        "path": os.path.join(root.replace('docs/',''),file),
-                        "size": fileSize_str}
+                    entry={"name": file,
+                        "path": root.replace('docs/',''),
+                        "size_str": fileSize_str,
+                        "size_raw_kb": str(fileSize),
+                        "extension": "stl"}
                     
                     if len(dirDepth) == 1:
                         if dirDepth[0] not in fileDetails:
@@ -46,5 +48,4 @@ def define_env(env):
                         if dirDepth[0] not in fileDetails[dirDepth[2]][dirDepth[1]]:
                             fileDetails[dirDepth[2]][dirDepth[1]].update({dirDepth[0]:{}})
                         fileDetails[dirDepth[2]][dirDepth[1]][dirDepth[0]].update(entry)
-
         return fileDetails
