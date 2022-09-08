@@ -8,13 +8,13 @@ Since NavQ+ has USB-C® ports capable of being configured as a USB Ethernet Gadg
 !!! note
     - Unless set otherwise, the default USB-C® port for use as an Ethernet Gadget device is configured to only the centermost USB-C® port (labeled USB 2) as shown in the example pictures.
 
-The NavQ+ is pictured in the cargo bay using the 3D-printed [adapter](../print_compute/#adapter-plate) plate and on top of the faceplate using the 3D-printed [case](../print_compute/#navq-by-NXP®).
+The NavQ+ is pictured in the cargo bay using the 3D-printed [adapter](../print_compute/#adapter-plate) plate and on top of the faceplate using the 3D-printed [case](../print_compute/#navq-by-NXP).
 ![Hookup diagram for NavQ+ with adapter mount in cargo bay](data/hookup_navqplus_adapter_mount_bay.jpg "NavQ+ in Cargo Bay")
 ![Hookup diagram for NavQ+ with case on faceplate](data/hookup_navqplus_case_faceplate.jpg "NavQ+ on Faceplate")
 
 
 ## Printable Case
-The [NavQ+ has a printable case](../print_compute/#navq-by-NXP®) specifically designed for use with the Create® 3, allowing for it to be mounted to the faceplate or cargo bay.
+The [NavQ+ has a printable case](../print_compute/#navq-by-NXP) specifically designed for use with the Create® 3, allowing for it to be mounted to the faceplate or cargo bay.
 The [base](../print_compute/#case-base) of the case attaches to the NavQ+ using the existing four (4) M2.5-0.45 x 12mm System On Module (SOM) mounting screws.
 
 !!! note
