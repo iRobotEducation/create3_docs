@@ -2,7 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - main
+      - jinja-ninja-gh-pages
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -14,3 +14,6 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFIG_FILE: mkdocs.yml
+          EXTRA_PACKAGES: build-base
+          REQUIREMENTS: requirements.txt

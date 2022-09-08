@@ -7,7 +7,7 @@ It is possible to directly connect various single board computers to the Create 
 
 ## Currently documented hookup examples:
 
-### NavQ+ by NXP
+### NavQ+ by NXP®
 * [NavQ+ by NXP Hookup Guide](../navqplus_hookup/)
 
 ### NVIDIA® Jetson™
