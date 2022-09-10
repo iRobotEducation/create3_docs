@@ -18,3 +18,4 @@ multidict==6.0.2
 vtkplotlib==2.0.0 
 wslink==1.8.2
 yarl==1.8.1
+vtk
