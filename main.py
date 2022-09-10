@@ -74,20 +74,23 @@ else:
     print('INFO\t -  {:s}Using git branch in main.py:{:s} {:s}'.format(cl.GRN,cl.END,currentGitBranch))
 
 # End of optional block
-
+flag_gen_image = True
 try:
     from stl.mesh import Mesh                   
 except ImportError:
+    flag_gen_image = False
     print('\n\n{:s}{:s}ERROR\t -  Unable to import Python module "stl", check to see if numpy-stl is installed.{:s}\n\n'.format(cl.FAIL,cl.BOLD,cl.END))
 
 try:
     import vtkplotlib as vpl                   
 except ImportError:
+    flag_gen_image = False
     print('\n\n{:s}{:s}ERROR\t -  Unable to import Python module "vtkplotlib", check to see if vtkplotlib is installed.{:s}\n\n'.format(cl.FAIL,cl.BOLD,cl.END))
 
 try:
     from PIL import Image
 except ImportError:
+    flag_gen_image = False
     print('\n\n{:s}{:s}ERROR\t -  Unable to import Python module "PIL", check to see if PIL is installed.{:s}\n\n'.format(cl.FAIL,cl.BOLD,cl.END))
 
 
@@ -146,7 +149,7 @@ def define_env(env):
     def check_generate(file_path):
         name_file = './docs/'+file_path
         image_name = name_file.replace(".stl",".png")
-        if not os.path.exists(image_name):
+        if not os.path.exists(image_name) and flag_gen_image:
             print('INFO\t -  {:s}Attempting to generate:{:s} {:s} -> {:s}'.format(cl.GRN,cl.END,name_file,image_name))
             try:
                 mesh = Mesh.from_file(name_file)
