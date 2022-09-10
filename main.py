@@ -73,8 +73,23 @@ else:
     print('INFO\t -  {:s}Using github organization in main.py:{:s} {:s}'.format(cl.GRN,cl.END,currentGitOrg))
     print('INFO\t -  {:s}Using git branch in main.py:{:s} {:s}'.format(cl.GRN,cl.END,currentGitBranch))
 
-
 # End of optional block
+
+try:
+    from stl.mesh import Mesh                   
+except ImportError:
+    print('\n\n{:s}{:s}ERROR\t -  Unable to import Python module "stl", check to see if numpy-stl is installed.{:s}\n\n'.format(cl.FAIL,cl.BOLD,cl.END))
+
+try:
+    import vtkplotlib as vpl                   
+except ImportError:
+    print('\n\n{:s}{:s}ERROR\t -  Unable to import Python module "vtkplotlib", check to see if vtkplotlib is installed.{:s}\n\n'.format(cl.FAIL,cl.BOLD,cl.END))
+
+try:
+    from PIL import Image
+except ImportError:
+    print('\n\n{:s}{:s}ERROR\t -  Unable to import Python module "PIL", check to see if PIL is installed.{:s}\n\n'.format(cl.FAIL,cl.BOLD,cl.END))
+
 
 def define_env(env):
     env.variables['branch'] = currentGitBranch
@@ -125,3 +140,34 @@ def define_env(env):
                             fileDetails[dirDepth[2]][dirDepth[1]].update({dirDepth[0]:{}})
                         fileDetails[dirDepth[2]][dirDepth[1]][dirDepth[0]].update(entry)
         return fileDetails
+
+
+    @env.macro
+    def check_generate(file_path):
+        name_file = './docs/'+file_path
+        image_name = name_file.replace(".stl",".png")
+        if not os.path.exists(image_name):
+            print('INFO\t -  {:s}Attempting to generate:{:s} {:s} -> {:s}'.format(cl.GRN,cl.END,name_file,image_name))
+            try:
+                mesh = Mesh.from_file(name_file)
+                fig=vpl.figure()
+                vpl.mesh_plot(mesh,fig=fig,color=(60,116,179))
+                vpl.save_fig(path=image_name, trim_pad_width=5, pixels=640, off_screen=True, fig=fig)
+            except:
+                return False
+                print('ERROR\t -  {:s}Failed to generate:{:s} {:s} -> {:s}'.format(cl.FAIL,cl.END,name_file,image_name))
+            else:
+                try:
+                    img = Image.open(image_name)
+                    img = img.convert("RGBA")
+                    pixdata = img.load()
+                    width, height = img.size
+                    for y in range(height):
+                        for x in range(width):
+                            if pixdata[x, y] == (216, 220, 214, 255):
+                                pixdata[x, y] = (255, 255, 255, 0)
+
+                    img.save(image_name, "PNG")
+                except:
+                    print('WARN\t -  {:s}Failed to remove background in:{:s} {:s}'.format(cl.WARN,cl.END,image_name))
+        return True

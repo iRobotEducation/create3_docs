@@ -8,10 +8,7 @@ The automatically generated website can be viewed at https://iroboteducation.git
 Install required dependencies:
 
 ```bash
-pip3 install mkdocs
-pip3 install mkdocs-material
-pip3 install mkdocs-macros-plugin
-pip3 install GitPython
+pip3 -r requirements.txt
 ```
 
 Build the documentation locally:

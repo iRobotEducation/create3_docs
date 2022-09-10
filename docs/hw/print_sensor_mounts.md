@@ -6,27 +6,28 @@
 ## {{ key0|replace("IntelRealSense", "Intel® RealSense™")|replace("SLAMTEC", "SLAMTEC®")|replace("Luxonis", "Luxonis®") }}
   {% for keys, file in val0|dictsort %}
 ### {{ keys|replace("Oak-D", "Oak-D®") }}
+{% set full_path=file.path+'/'+file.name %}
+{% if check_generate(full_path|string()) %}
+![{{ file.name|replace(file.extension, "") }}](../{{ file.path }}/{{ file.name|replace(file.extension, "png") }} "{{ file.name|replace(file.extension, "") }}")
+{% endif %}
 {% if file.size_raw_kb|float() < render_size_limit|float() %}
 <details>
   <summary>3D-Rendering</summary>
 
-  <script src="https://embed.github.com/view/3d/{{ repo }}/create3_docs/{{ org }}/docs/{{ file.path }}/{{ file.name }}"></script>
-
-</details>
-{% else %}
-<details>
-  <summary>Ortho-Image</summary>
-
-  <img src="../../{{ file.path}}/{{ file.name|replace(file.extension, "png") }}"></img>
+  <script src="https://embed.github.com/view/3d/{{ org }}/create3_docs/{{ branch }}/docs/{{ file.path }}/{{ file.name }}"></script>
 
 </details>
 {% endif %}
 
 
 
-* [STL ({{ file.size_str }})](../{{ file.path }}/{{ file.name }})
+* [{{ keys|replace("Oak-D", "Oak-D®") }} STL ({{ file.size_str }})](../{{ file.path }}/{{ file.name }})
 
 {% endfor %}
 {% endfor %}
+
+
+
+
 
 [^1]: All trademarks mentioned are the property of their respective owners.

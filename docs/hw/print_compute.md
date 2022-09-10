@@ -6,6 +6,10 @@
 ## {{ key0|replace("NVIDIA", "NVIDIA®")|replace("Jetson", "Jetson™")|replace("Pi", "Pi®")|replace("NXP", "NXP®") }}
   {% for keys, file in val0|dictsort %}
 ### {{ keys }}
+{% set full_path=file.path+'/'+file.name %}
+{% if check_generate(full_path|string()) %}
+![{{ file.name|replace(file.extension, "") }}](../{{ file.path }}/{{ file.name|replace(file.extension, "png") }} "{{ file.name|replace(file.extension, "") }}")
+{% endif %}
 {% if file.size_raw_kb|float() < render_size_limit|float() %}
 <details>
   <summary>3D-Rendering</summary>
@@ -13,20 +17,17 @@
   <script src="https://embed.github.com/view/3d/{{ org }}/create3_docs/{{ branch }}/docs/{{ file.path }}/{{ file.name }}"></script>
 
 </details>
-{% else %}
-<details>
-  <summary>Ortho-Image</summary>
-
-  <img src="../../{{ file.path}}/{{ file.name|replace(file.extension, "png") }}"></img>
-
-</details>
 {% endif %}
 
 
 
-* [STL ({{ file.size_str }})](../{{ file.path }}/{{ file.name }})
+* [{{ keys }} STL ({{ file.size_str }})](../{{ file.path }}/{{ file.name }})
 
 {% endfor %}
 {% endfor %}
+
+
+
+
 
 [^1]: All trademarks mentioned are the property of their respective owners.
