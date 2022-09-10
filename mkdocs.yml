@@ -3,8 +3,8 @@ site_description: 'Documentation for the iRobot® Create® 3 robot'
 site_author: 'iRobot'
 #site_url: http://edu.irobot.com/create3/
 
-repo_name: 'rudislabs/create3_docs'
-repo_url: 'https://github.com/rudislabs/create3_docs'
+repo_name: 'iRobotEducation/create3_docs'
+repo_url: 'https://github.com/iRobotEducation/create3_docs'
 
 edit_uri: 'edit/main/docs/'
 
