@@ -2,7 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - main
+      - jinja-ninja-gh-pages
 jobs:
   deploy:
     runs-on: ubuntu-latest
