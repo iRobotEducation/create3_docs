@@ -20,5 +20,6 @@ The latest release can be found at
 Downloads of a particular version can be found on each individual release page.
 
 ## Releases
-* [G.2.2](../g_2_2) (latest)
+* [G.3.1](../g_3_1) (latest)
+* [G.2.2](../g_2_2)
 * [G.1.1](../g_1_1)
