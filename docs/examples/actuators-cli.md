@@ -77,8 +77,14 @@ ros2 action send_goal /undock irobot_create_msgs/action/Undock "{}"
 
 If the Create® 3 robot sees its dock (check the [docking documentation](../../api/docking) for details) you can dock it with:
 
+##### Galactic
 ```sh
 ros2 action send_goal /dock irobot_create_msgs/action/DockServo "{}"
+```
+
+##### Humble
+```sh
+ros2 action send_goal /dock irobot_create_msgs/action/Dock "{}"
 ```
 
 ### E-Stop
