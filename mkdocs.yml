@@ -100,7 +100,7 @@ nav:
       - Actuators via CLI: examples/actuators-cli.md
       - Sensors via CLI: examples/sensors-cli.md
       - Navigation Apps: examples/create3_examples.md
-    - Software Releases:
+    - Firmware Releases:
       - Overview: releases/overview.md
       - G.1.1: releases/g_1_1.md
       - G.2.2: releases/g_2_2.md
