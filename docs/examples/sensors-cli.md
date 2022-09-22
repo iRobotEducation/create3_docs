@@ -29,9 +29,16 @@ ros2 topic echo /interface_buttons
 ```
 
 ### Docking State
+
+##### Galactic
 ```sh
 ros2 topic echo /dock
 ```
+##### Humble
+```sh
+ros2 topic echo /dock_status
+```
+
 
 ### IR Docking Sensor
 ```sh
