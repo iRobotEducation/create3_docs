@@ -46,7 +46,7 @@ otherwise just use the base (barebones) install
 
 1. We also recommend installing a few other packages:
 
-        sudo apt install -y build-essential python3-colcon-common-extensions python3-rosdep ros-humble-rmw-cyclonedds-cpp ros-humble-irobot-create-msgs
+        sudo apt install -y build-essential python3-colcon-common-extensions python3-rosdep ros-humble-rmw-cyclonedds-cpp #ros-humble-irobot-create-msgs
 
     !!! warning
         As of Sept. 22, 2022, the iRobot® Create® Platform interfaces (`irobot_create_msgs`) are not available via apt, but they should be available soon.
