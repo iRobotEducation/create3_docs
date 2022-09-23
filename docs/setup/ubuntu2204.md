@@ -8,7 +8,7 @@ These directions follow Open Robotics' official documentation on [Installing ROS
 
 ## Step-by-step
 
-1. If you haven't already, download and install [Ubuntu® Server 22.04 64-bit](https://releases.ubuntu.com/22.04.1/ubuntu-22.04.1-live-server-amd64.iso) onto your machine.
+1. If you haven't already, download and install [Ubuntu® 22.04 64-bit](https://releases.ubuntu.com/22.04/) onto your machine. You may choose either the desktop (for a GUI) or server (for console-only) install.
 
 1. Once logged in, check to ensure that you are using a UTF-8 locale by typing
 
