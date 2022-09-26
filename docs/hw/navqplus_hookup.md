@@ -1,5 +1,8 @@
 # iRobot® Create® 3 Hookup Guide for NavQ+ by NXP®
 
+!!! important
+    **This is community-submitted content. Please feel welcome to submit PRs for additions or corrections.**
+
 The iRobot® Create® 3 robot has a USB-C®[^1] connector implementing a USB 2.0 host capable of 5 V @ 3 A continuous, which can be used to power and communicate with various downstream devices.
 
 NavQ+ is an open source reference design provided by NXP® and manufacturable by anyone.
