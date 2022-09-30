@@ -74,7 +74,7 @@ nav:
         - Humble on Ubuntu 22: setup/ubuntu2204.md
         - Run with Docker: setup/docker.md
         - Network Config: setup/xml-config.md
-      - Add a Compute Board: 
+      - Add a Compute Board:
         - NavQ+ by NXP®:
           - Hookup Guide: hw/navqplus_hookup.md
           - Software Config: setup/navqplus.md
@@ -103,6 +103,9 @@ nav:
       - Navigation Apps: examples/create3_examples.md
     - Firmware Releases:
       - Overview: releases/overview.md
-      - G.1.1: releases/g_1_1.md
-      - G.2.2: releases/g_2_2.md
-      - G.3.1: releases/g_3_1.md
+      - Galactic:
+        - G.1.1: releases/g_1_1.md
+        - G.2.2: releases/g_2_2.md
+        - G.3.1: releases/g_3_1.md
+      - Humble:
+        - H.0.0: releases/h_0_0.md
