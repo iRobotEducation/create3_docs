@@ -72,7 +72,7 @@ In order to apply a configuration, the path to the XML file must be provided thr
 export CYCLONEDDS_URI=/path/to/the/xml/profile
 ```
 
-Detailed network configurations are described in the [CycloneDDS documentation](https://github.com/eclipse-cyclonedds/cyclonedds#configuration).
+Detailed network configurations are described in the [CycloneDDS documentation](https://cyclonedds.io/docs/cyclonedds/latest/config/cyclonedds_specifics.html#network-and-discovery-configuration).
 
 #### Multiple Network Interfaces
 
@@ -84,7 +84,10 @@ For example `usb0` and `wlan0` in this example.
 <CycloneDDS>
    <Domain>
      <General>
-        <NetworkInterfaceAddress>usb0,wlan0</NetworkInterfaceAddress>
+        <Interfaces>
+          <NetworkInterface name="usb0" />
+          <NetworkInterface name="wlan0" />
+        </Interfaces>
     </General>
    </Domain>
 </CycloneDDS>
@@ -116,7 +119,9 @@ The file must be edited replacing `${ROBOT_IP}` with the actual IP value, or exp
   <Domain>
     <Id>any</Id>
     <General>
-      <NetworkInterfaceAddress>auto</NetworkInterfaceAddress>
+      <Interfaces>
+        <NetworkInterface autodetermine="true" />
+      </Interfaces>
       <AllowMulticast>false</AllowMulticast>
       <EnableMulticastLoopback>true</EnableMulticastLoopback>
     </General>
