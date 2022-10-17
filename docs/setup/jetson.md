@@ -118,7 +118,7 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
 
 1. Set the default network interface by setting Cyclone DDS configuration.
 
-        export CYCLONEDDS_URI='<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="l4tbr0"></Interfaces></General></Domain></CycloneDDS>'
+        export CYCLONEDDS_URI='<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="l4tbr0" /></Interfaces></General></Domain></CycloneDDS>'
     !!! attention
         **If you are using CycloneDDS (Galactic default) and want the Jetson to talk to the robot over USB and a laptop via Wi-Fi, you will need to take extra steps to setup CycloneDDS to use multiple interfaces.**
         **You will need to create a CycloneDDS XML configuration file with both USB and Wi-Fi interfaces and then set the CYCLONEDDS_URI environment variable to its path.**
