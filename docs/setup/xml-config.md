@@ -14,6 +14,13 @@ export RMW_IMPLEMENTATION=name-of-the-rmw
 ```
 Currently, the only supported RMW implementations are: `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`.  See [here](https://docs.ros.org/en/rolling/Concepts/About-Different-Middleware-Vendors.html) for more info on the different RMW vendors.
 
+If you have already set your default RMW implementation via the ROS2 setup process and would like to change your default RMW, use 
+
+```sh
+nano ~/.bashrc
+```
+Then scroll to the bottom of the file and replace the current `name-of-the-rmw` with either `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`.
+
 On the robot the same can be controlled through the Create® 3 webserver.
 
 !!! important
