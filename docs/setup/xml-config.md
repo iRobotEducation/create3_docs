@@ -14,12 +14,20 @@ export RMW_IMPLEMENTATION=name-of-the-rmw
 ```
 Currently, the only supported RMW implementations are: `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`.  See [here](https://docs.ros.org/en/rolling/Concepts/About-Different-Middleware-Vendors.html) for more info on the different RMW vendors.
 
-If you have already set your default RMW implementation via the ROS2 setup process and would like to change your default RMW, use 
+If you are using a bash shell (default on Ubuntu), you can set a default rmw adding the above line to your .bashrc file. You may have already set a default RMW in this file if you followed our [ROS 2 Galactic](https://iroboteducation.github.io/create3_docs/setup/ubuntu2004/) or [ROS 2 Humble](https://iroboteducation.github.io/create3_docs/setup/ubuntu2204/) installation instructions, in that case you can change the name of the RMW by editing your .bashrc file using your preferred text editor. Nano is an option for a text editor that is standard on most Ubuntu installations. You can also install it using
 
+```sh
+sudo apt-get update && sudo apt-get install nano
+```
+Then the file can be opened and edited
 ```sh
 nano ~/.bashrc
 ```
-Then scroll to the bottom of the file and replace the current `name-of-the-rmw` with either `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`.
+
+Then scroll to the bottom of the file and replace the current `name-of-the-rmw` with either `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. Once you've changed the RMW, press `CTRL X` to exit nano and save the file. Finally, either log out and log back in, or simply
+```sh
+source ~/.bashrc
+```
 
 On the robot the same can be controlled through the Create® 3 webserver.
 
