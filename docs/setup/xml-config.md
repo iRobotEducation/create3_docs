@@ -24,7 +24,7 @@ Then the file can be opened and edited
 nano ~/.bashrc
 ```
 
-Then scroll to the bottom of the file and replace the current `name-of-the-rmw` with either `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. Once you've changed the RMW, press `CTRL X` to exit nano and save the file. Finally, either log out and log back in, or simply
+Then scroll to the bottom of the file and replace the current `name-of-the-rmw` with either `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. Once you've changed the RMW, press `Ctrl-X` to exit nano and save the file. Finally, either log out and log back in, or simply
 ```sh
 source ~/.bashrc
 ```
