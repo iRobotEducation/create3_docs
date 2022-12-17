@@ -1,4 +1,4 @@
-# ROS 2 Network Configuration
+# ROS 2 Middleware (RMW) Configuration
 
 ROS 2[^1] is built on top of DDS/RTPS as its middleware, which provides advanced networking features such as: discovery, serialization and transportation.  This **R**OS 2 **m**iddle**w**are is abbreviated **RMW** for short.
 
