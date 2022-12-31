@@ -42,11 +42,14 @@ While many virtualization applications default to a "shared" or "NAT" network co
 ### Option 2 USB Wi-Fi Network Adapter
 If you are experiencing difficulty with a bridged network connection, a stable alternative is to provide your virtual machine with its own dedicated network adapter. This can be done by purchasing a USB Wi-Fi network adapter that is compatible with Ubuntu. Once you plug the USB Wi-Fi network adapter into your computer, assign the USB device to be used by the VM only and this should enable you to select and connect to a Wi-Fi network directly within your VM.
 
+!!! important
+    For reliable functionality, you must disconnect your bridged connection between your VM and your computer when using the USB Wi-Fi network adapter. Failure to do so will result in intermittent connection difficulties as the VM attempts to connect to both networks. 
+
 ### Option 3 (Advanced) Bridged Network Connnection with MAC Address Mirroring
-In the event Option 1 did not work on your network, it may still be possible to communicate between your virtual machine and your Create® 3 on the same network attempted in Option 1. Typically, a bridged network connection asks your network to assign a new IP address to your virtual machine, which has its own unique MAC address. Security and authentication settings on some networks may reject this request. A possible work around is to assign your virtual machine the same MAC address as your native machine's network adapter. Within your virtualization application under network settings, there should be an advanced network settings option that allows you to modify the existing MAC address. Entering your native machine's network adapter MAC address in this field will mirror the MAC address on your virtual machine. 
+In the event Option 1 did not work on your network, it may still be possible to communicate between your virtual machine and your Create® 3 on the same network attempted in Option 1. Typically, a bridged network connection asks your network to assign a new IP address to your virtual machine, which has its own unique MAC address. Security and authentication settings on some networks may reject this request. A possible work around is to assign your virtual machine the same MAC address as your computer's network adapter. Within your virtualization application under network settings, there should be an advanced network settings option that allows you to modify the existing MAC address. Entering your computer's network adapter MAC address in this field will mirror the MAC address on your virtual machine. 
 
 !!! attention
-    **This work around will likely result in the loss of internet connection on your native machine.**
+    **This work around will likely result in the loss of internet connection on your computer.**
 
 ### Option 4 (Advanced) Ethernet Over USB
 Follow the instructions outlined in the Ethernet Over USB section above but assign the USB device to your virtual machine as instructed in Option 3. 
