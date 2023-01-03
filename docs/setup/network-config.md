@@ -1,6 +1,7 @@
 # Network Recommendations
 This page details the recommendations for network settings to communicate with the Create® 3 via a network. 
 
+
 ## Wi-Fi Networks
 There are several Wi-Fi configurations that must be in place to properly communicate with the Create® 3 via a Wi-Fi network. Below are the currently supported configurations. 
 
@@ -26,6 +27,8 @@ The Create® 3 has a USB-C® port that allows for ethernet network connectivity 
 
 You can check to confirm the connection is functional by navigating to `192.168.186.2` in your web browser. If all is working properly, the [iRobot® Create® 3 Webserver](https://iroboteducation.github.io/create3_docs/webserver/overview/) will load. 
 
+!!! important
+    This connection type will mean that your Create® 3 is physically attached to your computer, which is not practical for many applications. However, this can be a useful tool when troubleshooting. 
 
 ## Virtual Machines
 As noted in the ROS 2 [Galactic](../ubuntu2004) and [Humble](../ubuntu2204) installation instructions, it is possible to install Ubuntu 20.04 or 22.04 in a virtualized container if your machine is natively running another operating system. There are three possible ways to communicate over a network between a `virtual machine (VM)` and the Create® 3 using ROS 2. 
