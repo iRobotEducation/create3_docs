@@ -15,7 +15,7 @@ The ROS 2 node discovery process that is handled by the ROS 2 Middleware (RMW) c
 #### Disable Multicasting
 Both supported RMWs (Fast and Cyclone) require multicasting to be enabled on your Wi-Fi network by default. However, multicasting is often disabled on enterprise networks, and the [creators of Fast DDS recommend disabling multicasting](https://fast-dds.docs.eprosima.com/en/latest/fastdds/use_cases/well_known_deployments/well_known_deployments.html) when operating on a Wi-Fi network.   
 
-A complete overview of the multicast disabling process for both RMWs is outlined on the [ROS 2 Middleware Configuration](https://iroboteducation.github.io/create3_docs/setup/xml-config/) page. 
+A complete overview of the multicast disabling process for both RMWs is outlined on the [ROS 2 Middleware Configuration](../xml-config) page. 
 
 #### Dedicated Network
 In cases where multiple robots will be using a busy network (e.g., university or corporate networks) or the existing network configuration is non-functional, creating a dedicated network for your Create® 3 can mitigate most issues. 
@@ -28,7 +28,7 @@ You can check to confirm the connection is functional by navigating to `192.168.
 
 
 ## Virtual Machines
-As noted in the ROS 2 [Galactic](https://iroboteducation.github.io/create3_docs/setup/ubuntu2004/) and [Humble](https://iroboteducation.github.io/create3_docs/setup/ubuntu2204/) installation instructions, it is possible to install Ubuntu 20.04 or 22.04 in a virtualized container if your machine is natively running another operating system. There are three possible ways to communicate over a network between a `virtual machine (VM)` and the Create® 3 using ROS 2. 
+As noted in the ROS 2 [Galactic](../ubuntu2004) and [Humble](../ubuntu2204) installation instructions, it is possible to install Ubuntu 20.04 or 22.04 in a virtualized container if your machine is natively running another operating system. There are three possible ways to communicate over a network between a `virtual machine (VM)` and the Create® 3 using ROS 2. 
 
 !!! important
     Any time you change your network configuration settings on your virtual machine, you should restart the virtual machine before attempting to confirm connectivity.
@@ -37,7 +37,7 @@ As noted in the ROS 2 [Galactic](https://iroboteducation.github.io/create3_docs/
 While many virtualization applications default to a "shared" or "NAT" network connection, this type of connection will **not** allow ROS 2 to communicate with the Create® 3. Instead, a bridged network connection should be used for the virtual machine. This does require that your Wi-Fi network allows for bridged connections. Many enterprise networks prevent bridging and it is recommended you speak with your network administrator to confirm whether bridging is enabled on these networks. 
 
 !!! attention
-    **If you have confirmed your network allows bridged connections, but you are unable to pull a topic list, you may need to disable multicasting. Instructions on how to disable multicasting can be found on the [RMW Configuration](https://iroboteducation.github.io/create3_docs/setup/xml-config/) page.**
+    **If you have confirmed your network allows bridged connections, but you are unable to pull a topic list, you may need to disable multicasting. Instructions on how to disable multicasting can be found on the [RMW Configuration](../xml-config) page.**
 
 ### Option 2 USB Wi-Fi Network Adapter
 If you are experiencing difficulty with a bridged network connection, a stable alternative is to provide your virtual machine with its own dedicated network adapter. This can be done by purchasing a USB Wi-Fi network adapter that is compatible with Ubuntu. Once you plug the USB Wi-Fi network adapter into your computer, assign the USB device to be used by the VM only and this should enable you to select and connect to a Wi-Fi network directly within your VM.
