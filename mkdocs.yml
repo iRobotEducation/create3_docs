@@ -74,6 +74,7 @@ nav:
         - Humble on Ubuntu 22: setup/ubuntu2204.md
         - Run with Docker: setup/docker.md
         - Middleware Config: setup/xml-config.md
+        - Network Config: setup/network-config.md
       - Add a Compute Board:
         - NavQ+ by NXP®:
           - Hookup Guide: hw/navqplus_hookup.md
