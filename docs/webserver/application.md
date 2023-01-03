@@ -20,7 +20,7 @@ After saving either section, it is required to restart the application for chang
 
 ### Main Configuration
 The main configuration includes ROS 2 domain ID, namespace, and RMW Implementation.
-Basic information about these settings can be found on this docs site both in the [ROS 2 Network Configuration](../setup/xml-config/) and [Multi-Robot Setup](http://localhost:8000/setup/multi-robot/) pages.
+Basic information about these settings can be found on this docs site both in the [ROS 2 Middleware Configuration](https://iroboteducation.github.io/create3_docs/setup/xml-config/) page.
 Further details on these settings can be found in the official ROS 2 documentation.
 
 ### Application ROS 2 Parameters File
