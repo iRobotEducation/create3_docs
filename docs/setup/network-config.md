@@ -13,7 +13,7 @@ Frequency: 2.4 GHz
 The ROS 2 node discovery process that is handled by the ROS 2 Middleware (RMW) can be network intensive, but there are several options to mitigate excess traffic and ensure your Create® 3 can operate on your Wi-Fi network. 
 
 #### Disable Multicasting
-Both RMWs (Fast and Cyclone) require multicasting to be enabled on your Wi-Fi network by default. However, multicasting is often disabled on enterprise networks, and the [creators of Fast DDS recommend disabling multicasting](https://fast-dds.docs.eprosima.com/en/latest/fastdds/use_cases/well_known_deployments/well_known_deployments.html) when operating on a Wi-Fi network.   
+Both supported RMWs (Fast and Cyclone) require multicasting to be enabled on your Wi-Fi network by default. However, multicasting is often disabled on enterprise networks, and the [creators of Fast DDS recommend disabling multicasting](https://fast-dds.docs.eprosima.com/en/latest/fastdds/use_cases/well_known_deployments/well_known_deployments.html) when operating on a Wi-Fi network.   
 
 A complete overview of the multicast disabling process for both RMWs is outlined on the [ROS 2 Middleware Configuration](https://iroboteducation.github.io/create3_docs/setup/xml-config/) page. 
 
