@@ -75,7 +75,7 @@ nav:
         - Run with Docker: setup/docker.md
         - Network Config: setup/xml-config.md
       - Add a Compute Board:
-        - NavQ+ by NXP®:
+        - NavQPlus by NXP®:
           - Hookup Guide: hw/navqplus_hookup.md
           - Software Config: setup/navqplus.md
         - NVIDIA® Jetson™:

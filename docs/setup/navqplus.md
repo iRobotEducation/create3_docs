@@ -1,22 +1,25 @@
-# Connect Create® 3 to NavQ+ and set up ROS 2 Galactic
+# Connect Create® 3 to NavQPlus and set up ROS 2 Humble
 
 !!! important
     **This is community-submitted content. Please feel welcome to submit PRs for additions or corrections.**
 
 ## Before you start
+!!! important
+    **The NavQPlus Ubuntu 22.04 with ROS 2 Humble image uses CycloneDDS by default, make sure that you either set the [iRobot® Create® 3's ROS 2 RMW to CycloneDDS](../../webserver/application/#main-configuration) or switch the [image's .bashrc to use FastDDS](xml-config.md).[^1][^3]**
+
 !!! attention
     **These directions are written for someone with experience with embedded Linux and basic embedded computers.**
 
 ## Step-by-step
  
-1. Download the [pre-built Ubuntu 20.04 with ROS2 Galactic image](https://github.com/rudislabs/navqplus-create3-images/releases), specifically designed for use with the Create® 3.[^1][^3]
+1. Download the [pre-built latest Ubuntu 22.04 with ROS2 Humble and CycloneDDS image](https://github.com/rudislabs/navqplus-create3-images/releases/latest), specifically designed for use with the Create® 3.
 2. Extract the image `navqplus-image-<version>.wic` from the compressed downloaded file `navqplus-image-<version>.wic.bz2` and flash it to an [SD card](#flashing-the-sd-card) or the [EMMC](#flashing-the-emmc).
 3. [Log in for the first time](#log-in-for-the-first-time) by connecting to your computer using the [USB to UART adatper](#usb-to-uart-adapter), [ethernet adapter](#ethernet) or [centermost (USB 2) USB-C® port](#usb-c-gadget-ethernet).[^2]
 4. [Configure Wifi, System User Name and Password.](#configuring-wifi-system-username-and-password)
-5. [Connect NavQ+ to iRobot Create 3](#connecting-to-irobot-create-3)
+5. [Connect NavQPlus to iRobot® Create® 3](#connecting-to-irobot-create-3)
 
 ## Flashing the SD card
-The NavQ+ comes with a 32GB SD card that you can flash with the pre-built Ubuntu 20.04 image for iRobot Create 3. See below for instructions to flash your SD card on each platform.
+The NavQPlus comes with a 32GB SD card that you can flash with the pre-built Ubuntu 22.04 image for iRobot® Create® 3. See below for instructions to flash your SD card on each platform.
 
 !!! attention
     **You must have an SD card reader available on your system to perform these instructions.**
@@ -60,15 +63,15 @@ sudo dd if=navqplus-image-<version>.wic of=/dev/diskX bs=1m status=progress ofla
 Once this is done, your SD card will be flashed with the image. Make sure that your [boot switches](#boot-switches) are set to boot from SD.
 
 ## Flashing the eMMC
-To flash the eMMC on your NavQ+, you will need to download [UUU](https://github.com/NXPmicro/mfgtools/releases/tag/uuu_1.4.193), a tool created by NXP to flash NXP boards. Make sure to download the correct application for your platform. The file titled "uuu" with no file extension is a binary file for use on x86/64 Linux.
+To flash the eMMC on your NavQPlus, you will need to download [UUU](https://github.com/NXPmicro/mfgtools/releases/latest), a tool created by NXP to flash NXP boards. Make sure to download the correct application for your platform. The file titled "uuu" with no file extension is a binary file for use on x86/64 Linux.
 
-Once you have downloaded UUU, find the [boot switches](#boot-switches) on your NavQ+ and flip them to the "Flash" mode.
+Once you have downloaded UUU, find the [boot switches](#boot-switches) on your NavQPlus and flip them to the "Flash" mode.
 
-Then, connect NavQ+ to your computer using the leftmost (USB 1) USB-C® port and the two flash status light should light up as shown in the image. 
+Then, connect NavQPlus to your computer using the leftmost (USB 1) USB-C® port and the two flash status light should light up as shown in the image. 
 ![Flash eMMC hookup and status lights.](data/navqplus/flash_hookup_lights.jpg "Flash eMMC hookup and status lights")
 
 
-Run the following command to make sure that the NavQ+ is recognized by UUU:
+Run the following command to make sure that the NavQPlus is recognized by UUU:
 
 ```
 ./uuu[.exe] -lsusb
@@ -88,7 +91,7 @@ Once this process has finished, make sure that the flash was successfull by comp
 
 ## Boot Switches
 
-NavQ+ can be configured to boot from either SD card or eMMC. It also has a flash mode that allows you to flash either the eMMC or SD card over USB-C®. See the table below for the boot switch configuration.
+NavQPlus can be configured to boot from either SD card or eMMC. It also has a flash mode that allows you to flash either the eMMC or SD card over USB-C®. See the table below for the boot switch configuration.
 
 | Mode  | Switch 1 | Switch 2 |
 | ----- | -------- | -------- |
@@ -99,17 +102,44 @@ NavQ+ can be configured to boot from either SD card or eMMC. It also has a flash
 
 ## Log in for the first time
 
-Power on the NavQ+ by plugging in a USB-C® cable to the centermost (USB 2) USB-C® port. NavQ+ will boot, and you will be able to confirm it has fully booted by observing the LEDs on board. The 3 LEDs by the USB1 port should be on, as well as two LEDs next to the CAN bus connectors.
+Power on the NavQPlus by plugging in a USB-C® cable to the centermost (USB 2) USB-C® port. NavQPlus will boot, and you will be able to confirm it has fully booted by observing the LEDs on board. The 3 LEDs by the USB1 port should be on, as well as two LEDs next to the CAN bus connectors.
 
-To log into NavQ+, you can use the included USB to UART adapter, Ethernet, or USB-C® gadget mode (recommended). The default username/password combo is as follows:
+To log into NavQPlus, you can use the included [USB to UART adapter](#usb-to-uart-adapter), [Ethernet](#ethernet), or [USB-C® gadget mode (recommended)](#usb-c-gadget-ethernet). The default username/password combo is as follows:
 
 **Username: user**
 
 **Password: user**
 
+### USB to UART adapter
+Connect the included USB to UART adapter to the UART2 port on the NavQPlus, and open your favorite serial console application. Open a serial console with a baud rate of 115200. Press enter if there is no output on the screen to get a log-in prompt. 
+
+### Ethernet
+Connect the included IX Industrial Ethernet cable to NavQPlus, and connect the RJ45 connector to your computer, switch, or router on your local network. You can log into NavQPlus over SSH. The default hostname for NavQPlus is imx8mpnavq. To SSH into NavQPlus, you can run the following command:
+
+```
+ssh user@imx8mpnavq.local
+```
+
+### USB-C® Gadget Ethernet
+The IP address of the `usb0` network interface on NavQPlus is statically assigned to 192.168.186.3. This is necessary to connect to the iRobot® Create® 3 out of the box. If you want to use USB-C® gadget ethernet to connect to NavQPlus, you will need to assign a static IP to your existing gadget ethernet interface on your computer. The network configuration is as follows:
+
+**IP Address:** 192.168.186.2
+
+**Network Mask:** 255.255.255.0
+
+
+![Network Manager connection profile.](data/navqplus/usb_network.png "USB-C® gadget ethernet network connection")
+
+
+Once you have set up your USB-C® gadget ethernet interface on your computer, you can SSH by running:
+
+```
+ssh user@imx8mpnavq.local
+```
+
 ### Expand Image
 The flashed images will need expanding to utilize all the available storage.
-After logging into the NavQ+ open a terminal and run:
+After logging into the NavQPlus open a terminal and run:
 
 - Expand image on the SD:
 
@@ -123,38 +153,22 @@ echo -e "d\n2\nn\np\n2\n196608\n\n\nw" | sudo fdisk /dev/mmcblk1 && sudo resize2
 echo -e "d\n2\nn\np\n2\n196608\n\n\nw" | sudo fdisk /dev/mmcblk2 && sudo resize2fs /dev/mmcblk2p2
 ```
 
-### USB to UART adapter
-Connect the included USB to UART adapter to the UART2 port on the NavQ+, and open your favorite serial console application. Open a serial console with a baud rate of 115200. Press enter if there is no output on the screen to get a log-in prompt. 
-
-### Ethernet
-Connect the included IX Industrial Ethernet cable to NavQ+, and connect the RJ45 connector to your computer, switch, or router on your local network. You can log into NavQ+ over SSH. The default hostname for NavQ+ is imx8mpnavq. To SSH into NavQ+, you can run the following command:
-
-```
-ssh user@imx8mpnavq.local
-```
-
-### USB-C® Gadget Ethernet
-The IP address of the `usb0` network interface on NavQ+ is statically assigned to 192.168.186.3. This is necessary to connect to the iRobot Create 3 out of the box. If you want to use USB-C® gadget ethernet to connect to NavQ+, you will need to assign a static IP to your existing gadget ethernet interface on your computer. The network configuration is as follows:
-
-IP Address: 192.168.186.2
-Network Mask: 255.255.255.0
-
-Once you have set up your USB-C® gadget ethernet interface on your computer, you can SSH by running:
-
-```
-ssh user@imx8mpnavq.local
-```
-
 ## Configuring WiFi, System Username and Password
 
-### Configuring WiFi on NavQ+
-To connect NavQ+ to your local WiFi network, you can use the `nmtui` command. This command presents a GUI in your terminal to connect to WiFi. The interface is relatively straightforward. To run `nmtui`, run the following command:
+### Configuring WiFi on NavQPlus
+To connect NavQPlus to your local WiFi network, you can use the `nmtui` command. This command presents a GUI in your terminal to connect to WiFi. The interface is relatively straightforward. To run `nmtui`, run the following command:
 
 ```
 sudo nmtui
 ```
 
-Once you are finished connecting to your local WiFi network, you can exit the application. Your NavQ+ will continue to connect to this WiFi network even after a reboot.
+For a non-GUI way to connect to WiFi or manage your network connections, use `nmcli` by running the following command:
+
+```
+sudo nmcli device wifi connect <network_name> password "<password>"
+```
+
+Once you are finished connecting to your local WiFi network, you can exit the application. Your NavQPlus will continue to connect to this WiFi network even after a reboot.
 
 ### Configuring System Username and Password
 
@@ -171,8 +185,8 @@ Password:
 passwd
 ```
 
-## Connecting to iRobot Create 3
-Once you have set up your NavQ+ to connect to your local WiFi network, you can now connect it to the iRobot Create 3. Simply connect a USB-C® cable between NavQ+'s centermost (USB 2) USB-C® port and the USB-C® port internal to the iRobot Create 3. Your NavQ+ and iRobot Create 3 will now be communicating over CycloneDDS for ROS2! SSH into your NavQ+ over WiFi by running:
+## Connecting to iRobot® Create® 3
+Once you have set up your NavQPlus to connect to your local WiFi network, you can now connect it to the iRobot® Create® 3. Simply connect a USB-C® cable between NavQPlus's centermost (USB 2) USB-C® port and the USB-C® port internal to the iRobot® Create® 3. Your NavQPlus and iRobot® Create® 3 will now be communicating over CycloneDDS for ROS2! SSH into your NavQPlus over WiFi by running:
 
 ```
 ssh <your-username>@imx8mpnavq.local
