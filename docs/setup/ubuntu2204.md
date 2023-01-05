@@ -44,9 +44,13 @@ otherwise just use the base (barebones) install
 
         sudo apt install -y ros-humble-ros-base
 
+1. Next add the Create® 3 messages:
+
+        sudo apt install -y ros-humble-irobot-create-msgs
+
 1. We also recommend installing a few other packages:
 
-        sudo apt install -y build-essential python3-colcon-common-extensions python3-rosdep ros-humble-rmw-cyclonedds-cpp ros-humble-irobot-create-msgs
+        sudo apt install -y build-essential python3-colcon-common-extensions python3-rosdep ros-humble-rmw-cyclonedds-cpp
 
 1. At this point, we recommend setting your default RMW (ROS 2 middleware). The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Right now, the Create® 3 robot supports `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. The default for Humble is `rmw_fastrtps_cpp`. Depending on your robot's RMW implementation, type one of the following:
 
