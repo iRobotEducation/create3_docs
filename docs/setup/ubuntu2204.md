@@ -50,9 +50,6 @@ otherwise just use the base (barebones) install
 
 1. In order to have your environment ready to go, we recommend auto-running the following when you open a new session:
 
-        echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
-        echo "export _colcon_cd_root=/opt/ros/humble/" >> ~/.bashrc
-        echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
         echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
 1. At this point, we recommend setting your default RMW (ROS 2 middleware). The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Right now, the Create® 3 robot supports `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. The default for Humble is `rmw_fastrtps_cpp`. Depending on your robot's RMW implementation, type one of the following:
