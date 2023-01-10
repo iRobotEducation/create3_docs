@@ -25,7 +25,8 @@ In cases where multiple robots will be using a busy network (e.g., university or
 
 ## Ethernet Over USB
 The Create® 3 robot has a USB-C® port that allows for ethernet network connectivity over USB.
-To utilize this connection, switch the USB/BLE toggle on the robot to the USB position. 
+To utilize this connection, switch the USB/BLE toggle on the robot to the USB position.
+When you switch this toggle, the blue light on the adapter board will turn off, but the yellow and orange lights will remain on. 
 
 ![Ethernet Over USB Setup Steps 1-2](data/ethoverusb_step1-2.png "Ethernet Over USB Steps 1-2")
 
@@ -35,7 +36,8 @@ On the other end of the ethernet cable, connect another ethernet to USB adapter 
 ![Ethernet Over USB Setup Step 3](data/ethoverusb_step3.png "Ethernet Over USB Step 3")
 
 !!! important
-    If your adapter board on your Create® 3 robot detaches during the USB-C® insertion process, it can easily be re-attached by sliding it back into the designated slot. 
+    If the yellow and orange lights on the adapter board turn off during this process, this means your adapter board has disconnected from the Create® 3 robot.
+    The adapter board can easily be re-attached by sliding it back into the designated slot. 
 
 On your computer, navigate to your wired connection and change you IPv4 method to `manual` and input an address of `192.168.186.3` and a netmask of `255.255.0.0`. 
 ![Ethernet Over USB Network Configuration](data/ethoverusb.png "Ethernet Over USB Configuration")
