@@ -14,7 +14,9 @@ export RMW_IMPLEMENTATION=name-of-the-rmw
 ```
 Currently, the only supported RMW implementations are: `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`.  See [here](https://docs.ros.org/en/rolling/Concepts/About-Different-Middleware-Vendors.html) for more info on the different RMW vendors.
 
-If you are using a bash shell (default on Ubuntu), you can set a default rmw adding the above line to your .bashrc file. You may have already set a default RMW in this file if you followed our [ROS 2 Galactic](https://iroboteducation.github.io/create3_docs/setup/ubuntu2004/) or [ROS 2 Humble](https://iroboteducation.github.io/create3_docs/setup/ubuntu2204/) installation instructions, in that case you can change the name of the RMW by editing your .bashrc file using your preferred text editor. Nano is an option for a text editor that is standard on most Ubuntu installations. You can also install it using
+If you are using a bash shell (default on Ubuntu), you can set a default rmw adding the above line to your `.bashrc` file. 
+You may have already set a default RMW in this file if you followed our [ROS 2 Galactic](https://iroboteducation.github.io/create3_docs/setup/ubuntu2004/) or [ROS 2 Humble](https://iroboteducation.github.io/create3_docs/setup/ubuntu2204/) installation instructions; in that case, you can change the name of the RMW by editing your `.bashrc` file using your preferred text editor. 
+Nano is an option for a text editor that is standard on most Ubuntu installations. You can also install it using
 
 ```sh
 sudo apt-get update && sudo apt-get install nano
