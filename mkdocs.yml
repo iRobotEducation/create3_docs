@@ -73,7 +73,8 @@ nav:
         - Galactic on Ubuntu 20: setup/ubuntu2004.md
         - Humble on Ubuntu 22: setup/ubuntu2204.md
         - Run with Docker: setup/docker.md
-        - Network Config: setup/xml-config.md
+        - Middleware Config: setup/xml-config.md
+        - Network Recommendations: setup/network-config.md
       - Add a Compute Board:
         - NavQPlus by NXP®:
           - Hookup Guide: hw/navqplus_hookup.md

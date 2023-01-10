@@ -13,7 +13,7 @@ Be sure to click "save" after making any changes, and then restart the applicati
 !!! attention
     **As of Create 3 software version G.2.2, there is a memory leak in Cyclone DDS that can cause the robot to reboot after a few hours of use. Please monitor [this issue](https://github.com/ros2/rmw_cyclonedds/issues/388) for further information. Fast-DDS does not have this problem.**
 
-See [ROS 2 Network Config](xml-config.md) for more information about RMW specific choices and configuration requirements.
+See [ROS 2 Middleware Config](xml-config.md) for more information about RMW specific choices and configuration requirements.
 
 A detailed rundown of the features of the robot webserver can be found on the [Application](../webserver/application.md) page.
 

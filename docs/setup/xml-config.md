@@ -1,18 +1,36 @@
-# ROS 2 Network Configuration
+# ROS 2 Middleware (RMW) Configuration
 
 ROS 2[^1] is built on top of DDS/RTPS as its middleware, which provides advanced networking features such as: discovery, serialization and transportation.  This **R**OS 2 **m**iddle**w**are is abbreviated **RMW** for short.
 
 This page contains some examples that may be useful when interacting with the iRobot® Create® 3.
 
 !!! important
-    Depending on the ROS 2 RMW used, the syntax for configuring the network will be different. We recommend to visit the RMW vendor documentation for more details.
+    Depending on the ROS 2 RMW used, the syntax for configuring the network will be different. 
+    We recommend to visit the RMW vendor documentation for more details.
 
 You can choose a RMW implementation on your machine using
 
 ```sh
-export RMW_IMPLEMENTATION=name-of-the-rmw
+export RMW_IMPLEMENTATION=name-of-the-RMW
 ```
 Currently, the only supported RMW implementations are: `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`.  See [here](https://docs.ros.org/en/rolling/Concepts/About-Different-Middleware-Vendors.html) for more info on the different RMW vendors.
+
+If you are using a bash shell (default on Ubuntu), you can set a default RMW adding the above line to your `.bashrc` file. 
+You may have already set a default RMW in this file if you followed our [ROS 2 Galactic](https://iroboteducation.github.io/create3_docs/setup/ubuntu2004/) or [ROS 2 Humble](https://iroboteducation.github.io/create3_docs/setup/ubuntu2204/) installation instructions; in that case, you can change the name of the RMW by editing your `.bashrc` file using your preferred text editor. 
+Nano is an option for a text editor that is standard on most Ubuntu installations. You can also install it using
+
+```sh
+sudo apt-get update && sudo apt-get install nano
+```
+Then the file can be opened and edited
+```sh
+nano ~/.bashrc
+```
+
+Then scroll to the bottom of the file and replace the current `name-of-the-rmw` with either `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. Once you've changed the RMW, press `Ctrl-X` to exit nano and save the file. Finally, either log out and log back in, or simply
+```sh
+source ~/.bashrc
+```
 
 On the robot the same can be controlled through the Create® 3 webserver.
 
