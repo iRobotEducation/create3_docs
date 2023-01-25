@@ -25,6 +25,7 @@ Downloads of a particular version can be found on each individual release page.
 * [H.0.0](../h_0_0) (beta)
 
 ### Galactic
-* [G.3.1](../g_3_1) (latest)
+* [G.4.0](../g_4_0) (latest)
+* [G.3.1](../g_3_1)
 * [G.2.2](../g_2_2)
 * [G.1.1](../g_1_1)
