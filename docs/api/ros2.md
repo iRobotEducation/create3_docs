@@ -13,6 +13,7 @@ You can see the ROS 2 topics exposed by the Create® 3 robot running the `ros2 t
 ```bash
 $ ros2 topic list -t
 /battery_state [sensor_msgs/msg/BatteryState]
+/cmd_audio [irobot_create_msgs/msg/AudioNoteVector]
 /cmd_lightring [irobot_create_msgs/msg/LightringLeds]
 /cmd_vel [geometry_msgs/msg/Twist]
 /dock [irobot_create_msgs/msg/Dock]
@@ -28,6 +29,7 @@ $ ros2 topic list -t
 /rosout [rcl_interfaces/msg/Log]
 /slip_status [irobot_create_msgs/msg/SlipStatus]
 /stop_status [irobot_create_msgs/msg/StopStatus]
+/tf [tf2_msgs/msg/TFMessage]
 /tf_static [tf2_msgs/msg/TFMessage]
 /wheel_status [irobot_create_msgs/msg/WheelStatus]
 /wheel_ticks [irobot_create_msgs/msg/WheelTicks]
@@ -38,6 +40,7 @@ Note that the Create® 3 robot will produce data on most of these topics.
 On the other hand, some of them can be used by the user to send commands to the Create® 3 robot.
 In particular, the Create® 3 robot will subscribe to the following topics:
 
+ - `/cmd_audio`: use this topic to play specified notes from the robot speaker.
  - `/cmd_lightring`: use this topic to change the color of the light ring.
  - `/cmd_vel`: use this topic to command velocities in the robot reference frame.
 
@@ -47,26 +50,39 @@ For more details on the content of these topics, please have a look at their cor
  - [Odometry](odometry.md)
  - [User Interface](ui.md)
 
+If you have trouble seeing the topics using `ros2 topic list`, ensure that the robot's `RMW_IMPLEMENTATION` matches the one on your machine; see [Network Configuration](../setup/xml-config.md) for more information about <ins>R</ins>OS <ins>m</ins>iddle<ins>w</ins>are (RMW).
+Additionally, the command line `ros2 topic` utility could use stale cached discovery information; try running it with additional arguments `ros2 topic list --no-daemon --spin-time 10` to not use the cached information.
+
 ## ROS 2 Services
 
 You can see the ROS 2 servers exposed by the Create® 3 robot running the `ros2 service list` command.
 
 ```bash
-$ ros2 service list
-/e_stop
-/motion_control/describe_parameters
-/motion_control/get_parameter_types
-/motion_control/get_parameters
-/motion_control/list_parameters
-/motion_control/set_parameters
-/motion_control/set_parameters_atomically
-/robot_power
-/static_transform/describe_parameters
-/static_transform/get_parameter_types
-/static_transform/get_parameters
-/static_transform/list_parameters
-/static_transform/set_parameters
-/static_transform/set_parameters_atomically
+$ ros2 service list -t
+/e_stop [irobot_create_msgs/srv/EStop]
+/motion_control/describe_parameters [rcl_interfaces/srv/DescribeParameters]
+/motion_control/get_parameter_types [rcl_interfaces/srv/GetParameterTypes]
+/motion_control/get_parameters [rcl_interfaces/srv/GetParameters]
+/motion_control/list_parameters [rcl_interfaces/srv/ListParameters]
+/motion_control/set_parameters [rcl_interfaces/srv/SetParameters]
+/motion_control/set_parameters_atomically [rcl_interfaces/srv/SetParametersAtomically]
+/robot_power [irobot_create_msgs/srv/RobotPower]
+/robot_state/change_state [lifecycle_msgs/srv/ChangeState]
+/robot_state/get_available_states [lifecycle_msgs/srv/GetAvailableStates]
+/robot_state/get_available_transitions [lifecycle_msgs/srv/GetAvailableTransitions]
+/robot_state/get_state [lifecycle_msgs/srv/GetState]
+/robot_state/get_transition_graph [lifecycle_msgs/srv/GetAvailableTransitions]
+/static_transform/change_state [lifecycle_msgs/srv/ChangeState]
+/static_transform/describe_parameters [rcl_interfaces/srv/DescribeParameters]
+/static_transform/get_available_states [lifecycle_msgs/srv/GetAvailableStates]
+/static_transform/get_available_transitions [lifecycle_msgs/srv/GetAvailableTransitions]
+/static_transform/get_parameter_types [rcl_interfaces/srv/GetParameterTypes]
+/static_transform/get_parameters [rcl_interfaces/srv/GetParameters]
+/static_transform/get_state [lifecycle_msgs/srv/GetState]
+/static_transform/get_transition_graph [lifecycle_msgs/srv/GetAvailableTransitions]
+/static_transform/list_parameters [rcl_interfaces/srv/ListParameters]
+/static_transform/set_parameters [rcl_interfaces/srv/SetParameters]
+/static_transform/set_parameters_atomically [rcl_interfaces/srv/SetParametersAtomically]
 ```
 
 ## ROS 2 Actions
@@ -75,6 +91,7 @@ You can see the ROS 2 action servers exposed by the Create® 3 robot running the
 
 ```bash
 $ ros2 action list -t
+/audio_note_sequence [irobot_create_msgs/action/AudioNoteSequence]
 /dock [irobot_create_msgs/action/DockServo]
 /drive_arc [irobot_create_msgs/action/DriveArc]
 /drive_distance [irobot_create_msgs/action/DriveDistance]
@@ -129,6 +146,11 @@ $ ros2 param list
   wheels_radius
 /ui_mgr:
   lightring_led_brightness
+  qos_overrides./parameter_events.publisher.depth
+  qos_overrides./parameter_events.publisher.durability
+  qos_overrides./parameter_events.publisher.history
+  qos_overrides./parameter_events.publisher.reliability
+  use_sim_time
 ```
 
 Morphology parameters such as `wheel_base` and `wheels_encoder_resolution` are read-only parameters that can be used in order to implement your estimation or motion control algorithms.
@@ -139,3 +161,50 @@ For more details, please have a look at the [safety documentation](safety.md).
 The `lightring_led_brightness` parameter allows user to increase/decrease the brightness of the light ring.
 
 For more details on how to use and configure reflexes, please have a look at the [reflexes documentation](reflexes.md).
+
+## ROS 2 Coordinate System
+
+The Create® 3 robot produces a fused odometry that combines its wheel encoders, IMU, and ground optical flow sensor.
+It exposes this coordinate system both through the tf tree and the `/odom` publication.
+The `/tf` tree from the robot exposes ROS 2 standard transforms `odom->base_footprint` and `odom->base_link` with corresponding definitions [odom](https://www.ros.org/reps/rep-0105.html#odom), [base_footprint](https://www.ros.org/reps/rep-0120.html#base-footprint), and [base_link](https://www.ros.org/reps/rep-0120.html#base-link).
+`base_link` is defined to be at the center of rotation of the robot with z height intersecting the floor.
+`base_footprint` is the 2D planar representation `base_link` with the pitch and roll factors removed from the transform, this can be useful for applications like 2D planar mapping.
+The `/odom` publication contains the same position and orientation as `base_link` in the form of a `nav_msgs/msg/Odometry` message with velocity additionally populated.
+The robot's coordinate system is right-handed, with x forward, y left, and z up.
+
+```bash
+$ ros2 topic echo /tf
+transforms:
+- header:
+    stamp:
+      sec: 1646697192
+      nanosec: 702756640
+    frame_id: odom
+  child_frame_id: base_footprint
+  transform:
+    translation:
+      x: -0.00043813258525915444
+      y: -3.853919679386308e-06
+      z: 0.0
+    rotation:
+      x: 0.0
+      y: 0.0
+      z: 2.5629995434428565e-05
+      w: 1.0
+- header:
+    stamp:
+      sec: 1646697192
+      nanosec: 702756640
+    frame_id: odom
+  child_frame_id: base_link
+  transform:
+    translation:
+      x: -0.00043813258525915444
+      y: -3.853919679386308e-06
+      z: 0.0
+    rotation:
+      x: -0.0016827837098389864
+      y: -0.009617267176508904
+      z: 9.441922884434462e-06
+      w: 0.9999523162841797
+```

@@ -6,31 +6,87 @@ site_author: 'iRobot'
 repo_name: 'iRobotEducation/create3_docs'
 repo_url: 'https://github.com/iRobotEducation/create3_docs'
 
+edit_uri: 'edit/main/docs/'
+
 docs_dir: docs/
 
 theme:
   name: material
   custom_dir: theme_overrides
+  logo: assets/irobot_symbol_white.png
+  favicon: assets/irobot_symbol_green.png
 
 extra_css:
   - stylesheets/irobot-palette.css
 
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/iRobotEducation
+    - icon: fontawesome/brands/github
+      link: https://github.com/iRobotEducation
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/iRobotEducation
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/irobot/
+  analytics:
+    provider: google
+    property: G-9QX6GHMSD7
+
+copyright: Copyright &copy; 2021-2022 iRobot Corporation. ​​All Rights Reserved.
+
 markdown_extensions:
   - admonition
+  - footnotes
+  - attr_list
+
+plugins:
+  - search
+  - macros
 
 nav:
     - Home: index.md
-    - Create® 3 Hardware:
+    - Hardware:
       - Overview: hw/overview.md
       - Mechanical: hw/mechanical.md
-      - Electrical: hw/electrical.md
-      - Hookup Examples: hw/hookup.md
-    - Create® 3 Setup:
+      - Electrical:
+        - Electrical Overview: hw/electrical.md
+        - Buttons and Light Ring: hw/face.md
+        - Adapter Board: hw/adapter.md
+      - Printable Accessories:
+        - Compute Boards: hw/print_compute.md
+        - Create® 3 Caster: hw/print_casters.md
+        - Generic Mounts: hw/print_generic.md
+        - Sensor Mounts: hw/print_sensor_mounts.md
+    - Webserver:
+      - Overview: webserver/overview.md
+      - Home: webserver/home.md
+      - Connect: webserver/connect.md
+      - Update: webserver/update.md
+      - Logs: webserver/logs.md
+      - Application: webserver/application.md
+      - About: webserver/about.md
+    - Setup:
       - Connect to Wi-Fi: setup/provision.md
       - Multi-Robot Setup: setup/multi-robot.md
-      - ROS 2 on a Pi 4: setup/pi4.md
-      - ROS 2 on a NVIDIA Jetson: setup/jetson.md
-    - Create® 3 APIs:
+      - ROS 2 Setup:
+        - Galactic on Ubuntu 20: setup/ubuntu2004.md
+        - Humble on Ubuntu 22: setup/ubuntu2204.md
+        - Run with Docker: setup/docker.md
+        - Middleware Config: setup/xml-config.md
+        - Network Recommendations: setup/network-config.md
+      - Add a Compute Board:
+        - NavQPlus by NXP®:
+          - Hookup Guide: hw/navqplus_hookup.md
+          - Software Config: setup/navqplus.md
+        - NVIDIA® Jetson™:
+          - Hookup Guide: hw/jetson_hookup.md
+          - Software Config: setup/jetson.md
+        - Raspberry Pi®:
+          - Hookup Guide: hw/rpi_hookup.md
+          - Software Config: setup/pi4.md
+        - Network Time Protocol: setup/compute-ntp.md
+    - APIs:
       - ROS 2 Interface: api/ros2.md
       - Docking: api/docking.md
       - Drive Goals: api/drive-goals.md
@@ -39,8 +95,18 @@ nav:
       - Reflexes: api/reflexes.md
       - Safety: api/safety.md
       - User Interface: api/ui.md
-    - Create® 3 Simulator:
+      - Wall Follow: api/wall-follow.md
+    - Simulator:
       - Using the Simulator: sim/setup.md
     - Software Examples:
-      - Overview: examples/overview.md
-      - Driving via CLI: examples/driving-cli.md
+      - Actuators via CLI: examples/actuators-cli.md
+      - Sensors via CLI: examples/sensors-cli.md
+      - Navigation Apps: examples/create3_examples.md
+    - Firmware Releases:
+      - Overview: releases/overview.md
+      - Galactic:
+        - G.1.1: releases/g_1_1.md
+        - G.2.2: releases/g_2_2.md
+        - G.3.1: releases/g_3_1.md
+      - Humble:
+        - H.0.0: releases/h_0_0.md

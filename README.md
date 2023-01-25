@@ -10,7 +10,15 @@ Install required dependencies:
 ```bash
 pip3 install mkdocs
 pip3 install mkdocs-material
+pip3 -r requirements.txt
 ```
+
+Optionally, if you desire to generate images of STL models dynamically install:
+
+```bash
+pip3 -r model_image_generation.txt
+```
+
 
 Build the documentation locally:
 

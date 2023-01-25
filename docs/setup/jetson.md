@@ -1,7 +1,8 @@
 <!--
 # SPDX-FileCopyrightText: Copyright (c) 2022 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-FileCopyrightText: Additions copyright (c) 2022 iRobot Corporation. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause
-# 
+#
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
 #
@@ -31,6 +32,9 @@
 
 # Connect Create® 3 to NVIDIA® Jetson™ and set up ROS 2 Galactic
 
+!!! important
+    **This is community-submitted content. Please feel welcome to submit PRs for additions or corrections.**
+
 ## Before you start
 !!! attention
     **These directions are written for someone with experience with embedded Linux and basic embedded computers.**
@@ -49,7 +53,7 @@ It is highly recommended to read through the getting started document for your N
 
 2. Complete the getting started guide (listed above) until you complete the initial setup.
 
-### Alter "USB Device Mode" to apply static IP 
+### Alter "USB Device Mode" to apply static IP
 
 1. To alter the Jetson's "USB Device Mode" feature (specifically, disabling DHCP server and self-assign a static IP address);
 
@@ -74,9 +78,11 @@ It is highly recommended to read through the getting started document for your N
                 TX packets 1644  bytes 213306 (213.3 KB)
                 TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
+    !!! warning
+        Be sure that the [USB/BLE toggle on the robot's adapter board](../../hw/electrical/#adapter-board-overview) is set to the USB position.
 
-!!! note
-    If you ever want to stop using the Jetson device for Create® 3 and re-enable the original USB Device Mode feature (so that you can connect to your Windows PC in headless style), you can simply remove the flag file, or execute the following.
+    !!! note
+        If you ever want to stop using the Jetson device for Create® 3 and re-enable the original USB Device Mode feature (so that you can connect to your Windows PC in headless style), you can simply remove the flag file, or execute the following.
 
         sudo mv /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf.bak
 
@@ -100,24 +106,33 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
         }
 
 
-2. Use `jetson-containers`' script to simplify the invocation of `docker run` command.
+1. Use `jetson-containers`' script to simplify the invocation of `docker run` command.
 
         git clone https://github.com/dusty-nv/jetson-containers/
         cd jetson-containers
         scripts/docker_run.sh -c dustynv/ros:galactic-ros-base-l4t-r32.6.1
 
+1. Install additional ROS 2 packages
 
-3. Set the default network interface by setting Cyclone DDS configuration.
+        sudo apt update && sudo apt install -y ros-galactic-ros-base python3-colcon-common-extensions python3-rosdep ros-galactic-rmw-fastrtps-cpp ros-galactic-rmw-cyclonedds-cpp ros-galactic-irobot-create-msgs
+
+1. Set the default network interface by setting Cyclone DDS configuration.
 
         export CYCLONEDDS_URI='<CycloneDDS><Domain><General><NetworkInterfaceAddress>l4tbr0</NetworkInterfaceAddress></General></Domain></CycloneDDS>'
+    !!! attention
+        **If you are using CycloneDDS (Galactic default) and want the Jetson to talk to the robot over USB and a laptop via Wi-Fi, you will need to take extra steps to setup CycloneDDS to use multiple interfaces.**
+        **You will need to create a CycloneDDS XML configuration file with both USB and Wi-Fi interfaces and then set the CYCLONEDDS_URI environment variable to its path.**
+        **See [CycloneDDS Multiple Network Interfaces](../xml-config/#cyclonedds).**
+        **Note the differences in Jetson USB and Wi-Fi interface names from the documentation.**
 
-4. Check to ensure Create® 3 topics appear
+1. Check to ensure Create® 3 topics appear
 
         ros2 topic list
 
     You should get
 
         /battery_state
+        /cmd_audio
         /cmd_lightring
         /cmd_vel
         /dock
@@ -135,6 +150,7 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
         /stop_status
         /tf
         /tf_static
+        /wheel_status
         /wheel_ticks
         /wheel_vels
 
