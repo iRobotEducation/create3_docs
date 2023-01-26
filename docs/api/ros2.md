@@ -1,6 +1,6 @@
 # ROS 2 APIs
 
-The Create® 3 robot is based on ROS 2 and, as such, it exposes all its user-facing APIs through ROS 2 entities (topics, services, actions and parameters).
+The Create® 3 robot is based on ROS 2[^1] and, as such, it exposes all its user-facing APIs through ROS 2 entities (topics, services, actions and parameters).
 
 The purpose of this page is to give a quick overview of these ROS 2 APIs.
 The robot uses standard ROS 2 messages when available and implements custom messages in [irobot_create_msgs](https://github.com/iRobotEducation/irobot_create_msgs) for data not represented by standard messages.
@@ -208,3 +208,6 @@ transforms:
       z: 9.441922884434462e-06
       w: 0.9999523162841797
 ```
+
+[^1]: ROS 2 is governed by Open Robotics
+[^2]: All trademarks mentioned are the property of their respective owners.

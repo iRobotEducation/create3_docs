@@ -1,6 +1,6 @@
 # Sensors via ROS 2 Command Line
 
-This page describes how to read the the Create® 3 robot's sensors using the ROS 2 command line tools.
+This page describes how to read the the Create® 3 robot's sensors using the ROS 2[^1] command line tools.
 
 ## Overview
 Reading the robot's sensors is as simple as
@@ -59,3 +59,6 @@ ros2 topic echo /odom
 ```sh
 ros2 topic echo /wheel_status
 ```
+
+[^1]: ROS 2 is governed by Open Robotics
+[^2]: All trademarks mentioned are the property of their respective owners.
