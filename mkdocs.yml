@@ -65,6 +65,8 @@ nav:
       - Update: webserver/update.md
       - Logs: webserver/logs.md
       - Application: webserver/application.md
+      - Beta Features:
+        - Serial Port Forward: webserver/serial-config.md
       - About: webserver/about.md
     - Setup:
       - Connect to Wi-Fi: setup/provision.md
