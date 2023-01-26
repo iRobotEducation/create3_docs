@@ -10,7 +10,8 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
 
 ![](./data/hookup_jetson_xavier_nx_on_c3_with_PC.jpg)
 
-!!! note: Hook-up kit for NVIDIA® Jetson Xavier NX™ Developer Kit
+!!! note "Hook-up kit for NVIDIA® Jetson Xavier NX™ Developer Kit"
+
     Below lists the content of an example kit that enables mounting Jetson Xavier NX Developr Kit with some sensors like Intel®  RealSense™[^3].
 
     - Jetson Xavier NX Developer Kit
