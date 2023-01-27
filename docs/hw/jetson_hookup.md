@@ -12,7 +12,7 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
 
 !!! note 
 
-    ### Hookup kit for NVIDIA® Jetson Xavier NX™ Developer Kit
+    ### Hookup kit
     
     Below lists the content of an example kit that enables mounting Jetson Xavier NX Developr Kit with some sensors like Intel®  RealSense™[^3].
 
