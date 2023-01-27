@@ -10,13 +10,15 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
 
 ![](./data/hookup_jetson_xavier_nx_on_c3_with_PC.jpg)
 
-!!! note "Hook-up kit for NVIDIA® Jetson Xavier NX™ Developer Kit"
+!!! note 
 
+    ### Hookup kit for NVIDIA® Jetson Xavier NX™ Developer Kit
+    
     Below lists the content of an example kit that enables mounting Jetson Xavier NX Developr Kit with some sensors like Intel®  RealSense™[^3].
 
     - Jetson Xavier NX Developer Kit
     - Custom power calbe (JST-HX to DC 5.5-2.5mm plug)
-      - [DC power plug (5.5mm x 2.5mm)](https://a.co/d/cfNWywP)
+        - [DC power plug (5.5mm x 2.5mm)](https://a.co/d/cfNWywP)
     - [USB data calbe (USB Micro-B to USB-C)](https://a.co/d/dnlCj1d)
     - Jetson Xavier Developer Kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount.stl))
     - Sensor mount plate (STL file)
