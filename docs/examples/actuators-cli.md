@@ -1,6 +1,6 @@
 # Actuators via ROS 2 Command Line
 
-This page describes how to use the the Create® 3 robot's actuators using the ROS 2 command line tools.
+This page describes how to use the the Create® 3 robot's actuators using the ROS 2[^1] command line tools.
 
 ## Audio
 
@@ -126,3 +126,6 @@ Warning: this turns the robot and payload off immediately
 ```sh
 ros2 service call /robot_power irobot_create_msgs/srv/RobotPower "{}"
 ```
+
+[^1]: ROS 2 is governed by Open Robotics
+[^2]: All trademarks mentioned are the property of their respective owners.

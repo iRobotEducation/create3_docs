@@ -36,3 +36,5 @@ Note that the optical mouse sensor is not affected by slippage.
 ### The `stop_status` topic
 
 The Create® 3 robot will periodically publish a boolean estimate of whether it is currently moving or not on the `stop_status` topic.
+
+[^1]: All trademarks mentioned are the property of their respective owners.

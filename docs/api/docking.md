@@ -2,7 +2,7 @@
 
 The Create® 3 robot is equipped with a docking station to recharge it between experiments.
 
-Through the ROS 2 APIs users can command docking and undocking autonomous behaviors.
+Through the ROS 2[^1] APIs users can command docking and undocking autonomous behaviors.
 
 !!! warning
     Note that the docking action and sensor topic changed between Galactic and Humble.
@@ -65,3 +65,6 @@ Each message will contain a time-stamped detection of one of those signals, incl
 In Galactic, more high-level information is produced by the robot in the `/dock` ROS 2 topic.
 In Humble and beyond, the topic has been renamed to `/dock_status`.
 Here it's possible to quickly know if the robot is able to see the dock from its current location and whether it is currently docked or not.
+
+[^1]: ROS 2 is governed by Open Robotics
+[^2]: All trademarks mentioned are the property of their respective owners.

@@ -1,6 +1,6 @@
 # ROS 2 APIs
 
-The Create® 3 robot is based on ROS 2 and, as such, it exposes all its user-facing APIs through ROS 2 entities (topics, services, actions and parameters).
+The Create® 3 robot is based on ROS 2[^1] and, as such, it exposes all its user-facing APIs through ROS 2 entities (topics, services, actions and parameters).
 
 The purpose of this page is to give a quick overview of these ROS 2 APIs.
 The robot uses standard ROS 2 messages when available and implements custom messages in [irobot_create_msgs](https://github.com/iRobotEducation/irobot_create_msgs) for data not represented by standard messages.
@@ -115,6 +115,7 @@ You can see the ROS 2 parameters exposed by the Create® 3 robot running the `ro
 $ ros2 param list
 /motion_control:
   max_speed
+  min_speed
   qos_overrides./parameter_events.publisher.depth
   qos_overrides./parameter_events.publisher.durability
   qos_overrides./parameter_events.publisher.history
@@ -132,11 +133,10 @@ $ ros2 param list
   safety_override
   use_sim_time
   wheel_accel_limit
+/robot_state:
+  publish_odom_tfs
+  use_sim_time
 /static_transform:
-  qos_overrides./parameter_events.publisher.depth
-  qos_overrides./parameter_events.publisher.durability
-  qos_overrides./parameter_events.publisher.history
-  qos_overrides./parameter_events.publisher.reliability
   qos_overrides./tf_static.publisher.depth
   qos_overrides./tf_static.publisher.history
   qos_overrides./tf_static.publisher.reliability
@@ -144,6 +144,13 @@ $ ros2 param list
   wheel_base
   wheels_encoder_resolution
   wheels_radius
+/system_health:
+  log_period
+  qos_overrides./parameter_events.publisher.depth
+  qos_overrides./parameter_events.publisher.durability
+  qos_overrides./parameter_events.publisher.history
+  qos_overrides./parameter_events.publisher.reliability
+  use_sim_time
 /ui_mgr:
   lightring_led_brightness
   qos_overrides./parameter_events.publisher.depth
@@ -153,24 +160,27 @@ $ ros2 param list
   use_sim_time
 ```
 
-Morphology parameters such as `wheel_base` and `wheels_encoder_resolution` are read-only parameters that can be used in order to implement your estimation or motion control algorithms.
-
-The `safety_override` parameter allows user to enable/disable safety features.
+ - Morphology parameters such as `wheel_base` and `wheels_encoder_resolution` are read-only parameters that can be used in order to implement your estimation or motion control algorithms.
+ - The `safety_override` parameter allows user to enable/disable safety features (default: none).
 For more details, please have a look at the [safety documentation](safety.md).
-
-The `lightring_led_brightness` parameter allows user to increase/decrease the brightness of the light ring.
+ - The `publish_odom_tfs` parameter allows the user to enable transformations from `odom` (boolean, default: true).
+   This parameter cannot be set at runtime; it must be configured from the [ROS 2 parameters file on the application configuration page](../../webserver/application/#application-ros-2-parameters-file) of the webserver, as it is loaded only at application start.
+ - The `wheel_accel_limit` parameter sets acceleration limits in units of mm·s<sup>-2</sup> (int between 1 and 900 inclusive, default: 900).
+ - The `lightring_led_brightness` parameter allows user to increase/decrease the brightness of the light ring (int between 10 - 100 inclusive, default: 15).
 
 For more details on how to use and configure reflexes, please have a look at the [reflexes documentation](reflexes.md).
 
 ## ROS 2 Coordinate System
 
 The Create® 3 robot produces a fused odometry that combines its wheel encoders, IMU, and ground optical flow sensor.
+The robot's coordinate system is right-handed, with x forward, y left, and z up.
 It exposes this coordinate system both through the tf tree and the `/odom` publication.
 The `/tf` tree from the robot exposes ROS 2 standard transforms `odom->base_footprint` and `odom->base_link` with corresponding definitions [odom](https://www.ros.org/reps/rep-0105.html#odom), [base_footprint](https://www.ros.org/reps/rep-0120.html#base-footprint), and [base_link](https://www.ros.org/reps/rep-0120.html#base-link).
 `base_link` is defined to be at the center of rotation of the robot with z height intersecting the floor.
 `base_footprint` is the 2D planar representation `base_link` with the pitch and roll factors removed from the transform, this can be useful for applications like 2D planar mapping.
 The `/odom` publication contains the same position and orientation as `base_link` in the form of a `nav_msgs/msg/Odometry` message with velocity additionally populated.
-The robot's coordinate system is right-handed, with x forward, y left, and z up.
+Note: the `/odom` -> `/base_footprint` and `/odom` -> `base_link` transformations can be disabled by setting the `publish_odom_tfs` parameter to `false`.
+The `publish_odom_tfs` parameter cannot be set at runtime; it must be configured from the [ROS 2 parameters file on the application configuration page](../../webserver/application/#application-ros-2-parameters-file) of the webserver, as it is loaded only at application start.
 
 ```bash
 $ ros2 topic echo /tf
@@ -208,3 +218,6 @@ transforms:
       z: 9.441922884434462e-06
       w: 0.9999523162841797
 ```
+
+[^1]: ROS 2 is governed by Open Robotics
+[^2]: All trademarks mentioned are the property of their respective owners.

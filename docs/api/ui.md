@@ -62,3 +62,6 @@ For example you can run the following:
 ```bash
 ros2 action send_goal /audio_note_sequence irobot_create_msgs/action/AudioNoteSequence "{iterations: 3,note_sequence:{append: false, notes: [{frequency: 100, max_runtime: {sec: 1,nanosec: 0}}, {frequency: 50, max_runtime: {sec: 1,nanosec: 0}}]}}"
 ```
+
+[^1]: ROS 2 is governed by Open Robotics
+[^2]: All trademarks mentioned are the property of their respective owners.
