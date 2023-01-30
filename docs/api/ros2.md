@@ -164,6 +164,7 @@ $ ros2 param list
  - The `safety_override` parameter allows user to enable/disable safety features (default: none).
 For more details, please have a look at the [safety documentation](safety.md).
  - The `publish_odom_tfs` parameter allows the user to enable transformations from `odom` (boolean, default: true).
+   This parameter cannot be set at runtime; it must be configured from the [ROS 2 parameters file on the application configuration page](../../webserver/application/#application-ros-2-parameters-file) of the webserver, as it is loaded only at application start.
  - The `wheel_accel_limit` parameter sets acceleration limits in units of mm·s<sup>-2</sup> (int between 1 and 900 inclusive, default: 900).
  - The `lightring_led_brightness` parameter allows user to increase/decrease the brightness of the light ring (int between 10 - 100 inclusive, default: 15).
 
@@ -179,6 +180,7 @@ The `/tf` tree from the robot exposes ROS 2 standard transforms `odom->base_foot
 `base_footprint` is the 2D planar representation `base_link` with the pitch and roll factors removed from the transform, this can be useful for applications like 2D planar mapping.
 The `/odom` publication contains the same position and orientation as `base_link` in the form of a `nav_msgs/msg/Odometry` message with velocity additionally populated.
 Note: the `/odom` -> `/base_footprint` and `/odom` -> `base_link` transformations can be disabled by setting the `publish_odom_tfs` parameter to `false`.
+The `publish_odom_tfs` parameter cannot be set at runtime; it must be configured from the [ROS 2 parameters file on the application configuration page](../../webserver/application/#application-ros-2-parameters-file) of the webserver, as it is loaded only at application start.
 
 ```bash
 $ ros2 topic echo /tf
