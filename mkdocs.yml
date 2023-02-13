@@ -67,6 +67,8 @@ nav:
       - Application: webserver/application.md
       - Beta Features:
         - Serial Port Forward: webserver/serial-config.md
+        - Set Date and Time: webserver/set-datetime.md
+        - Restart ntpd: webserver/restart-ntpd.md
       - About: webserver/about.md
     - Setup:
       - Connect to Wi-Fi: setup/provision.md
@@ -111,5 +113,6 @@ nav:
         - G.2.2: releases/g_2_2.md
         - G.3.1: releases/g_3_1.md
         - G.4.1: releases/g_4_1.md
+        - G.4.3: releases/g_4_3.md
       - Humble:
         - H.0.0: releases/h_0_0.md
