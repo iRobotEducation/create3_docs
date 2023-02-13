@@ -14,15 +14,23 @@ Increments to major release imply API breaking changes or significant new featur
 
 The second number corresponds with a minor release number within the major release number.
 Increments to the minor release imply bug fixes or small feature additions that should be backwards compatible with code that currently integrates with the major release number.
+One exception is that beta features may be added in minor releases.
 
 The latest stable release can be found at
 [http://edu.irobot.com/create3-latest-fw](http://edu.irobot.com/create3-latest-fw).
+
+The latest stable Humble release can be found at
+[http://edu.irobot.com/create3-humble-latest-fw](http://edu.irobot.com/create3-humble-latest-fw).
+The latest stable Galactic release can be found at
+[http://edu.irobot.com/create3-galactic-latest-fw](http://edu.irobot.com/create3-galactic-latest-fw).
+
 Downloads of a particular version can be found on each individual release page.
 
 ## Releases
 
 ### Humble
-* [H.0.0](../h_0_0) (beta)
+* [H.1.0](../h_1_0) (humble-latest)
+* [H.0.0](../h_0_0)
 
 ### Galactic
 * [G.4.3](../g_4_3) (latest)
