@@ -135,6 +135,10 @@ $ ros2 param list
   wheel_accel_limit
 /robot_state:
   publish_odom_tfs
+  qos_overrides./tf.publisher.depth
+  qos_overrides./tf.publisher.durability
+  qos_overrides./tf.publisher.history
+  qos_overrides./tf.publisher.reliability
   use_sim_time
 /static_transform:
   qos_overrides./tf_static.publisher.depth
