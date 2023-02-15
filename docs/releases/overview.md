@@ -33,7 +33,7 @@ Downloads of a particular version can be found on each individual release page.
 * [H.0.0](../h_0_0)
 
 ### Galactic
-* [G.4.3](../g_4_3) (latest)
+* [G.4.3](../g_4_3) (galactic-latest, latest)
 * [G.4.1](../g_4_1)
 * [G.3.1](../g_3_1)
 * [G.2.2](../g_2_2)
