@@ -31,7 +31,7 @@ A boolean status will be periodically published on the `kidnap_status` topic.
 
 ### The `ir_intensity` topic
 
-Besides the aforementioned sensors, the Create® 3 robot is also equipped with IR emitters and receivers and it can use them to detect objects at close range.
+Besides the aforementioned sensors, the Create® 3 robot is also equipped with [7 sets of IR emitters and receivers](/hw/mechanical/#ir-proximity-sensors) and it can use them to detect objects at close range.
 
 The Create® 3 robot will periodically publish on the `ir_intensity` topic the raw intensity readings obtained from these sensors.
 The message will be a vector where each element corresponds to a different sensor.
