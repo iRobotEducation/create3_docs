@@ -38,6 +38,10 @@ ros2 action send_goal led_animation irobot_create_msgs/action/LedAnimation "{ani
 
 You can play sound out of your Create® 3 robot speakers by publishing a corresponding message on the `cmd_audio` topic.
 
+
+!!!important
+    A `best-effort` publisher will not be able to communicate with this subscription as of G.4.4 / H.1.1 as its QOS has been changed to `reliable` from `best-effort`. See [this compatibilty matrix](https://docs.ros.org/en/rolling/Concepts/About-Quality-of-Service-Settings.html#qos-compatibilities) for details.
+
 ```bash
 ros2 topic pub --once /cmd_audio irobot_create_msgs/msg/AudioNoteVector "{append: false, notes: [{frequency: 100, max_runtime: {sec: 1,nanosec: 0}}, {frequency: 50, max_runtime: {sec: 1,nanosec: 0}}]}"
 ```
