@@ -114,6 +114,8 @@ nav:
         - G.3.1: releases/g_3_1.md
         - G.4.1: releases/g_4_1.md
         - G.4.3: releases/g_4_3.md
+        - G.4.4: releases/g_4_4.md
       - Humble:
         - H.0.0: releases/h_0_0.md
         - H.1.0: releases/h_1_0.md
+        - H.1.1: releases/h_1_1.md
