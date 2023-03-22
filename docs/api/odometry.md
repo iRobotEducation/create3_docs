@@ -7,7 +7,7 @@ In particular you will find:
  - Optical mouse
  - Wheel encoders
 
-
+Many details about these messages can be found in the message definitions themselves, which are linked below.
 
 ## Raw sensor topics
 
