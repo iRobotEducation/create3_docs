@@ -54,7 +54,7 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
         sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
         export LANG=en_US.UTF-8
 
-1. Then, execute the following blocks of commands to install ROS 2[^4]:
+11. Then, execute the following blocks of commands to install ROS 2[^4]:
 
         sudo apt update && sudo apt install -y curl gnupg2 lsb-release build-essential git cmake
 then
@@ -73,14 +73,14 @@ finally
 
         echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
-1. At this point, we recommend setting your default RMW. The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Depending on your robot's RMW implementation, type one of the following:
+12. At this point, we recommend setting your default RMW. The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Depending on your robot's RMW implementation, type one of the following:
 
         echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
 or
 
         echo "export RMW_IMPLEMENTATION=rmw_fastrtps_cpp" >> ~/.bashrc
 
-1. Log out and log back in. Once you do, test things out with a `ros2 topic list`.
+13. Log out and log back in. Once you do, test things out with a `ros2 topic list`.
 A full Create® 3 API description can be found [here](../../api/ros2).
 
     !!! attention
