@@ -8,7 +8,7 @@ These directions follow Open Robotics' official documentation on [Installing ROS
 
 !!! important
     Some single board computers may have board specific instructions that differ from the step-by-step process outlined below. 
-    These instructions are available for the [NVIDIA® Jetson™](../jetson) and [Raspberry Pi® 4](../pi4galactic).
+    These instructions are available for the [NVIDIA® Jetson™](../setup/jetson) and [Raspberry Pi® 4](../setup/pi4galactic).
 
 ## Step-by-step
 
