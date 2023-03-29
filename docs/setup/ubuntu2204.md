@@ -6,6 +6,10 @@ Note that there might be some network setup required if in a virtualized contain
 
 These directions follow Open Robotics' official documentation on [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html), and more detailed information about what the commands below do can be found there.
 
+!!! important
+    Some single board computers may have board specific instructions that differ from the step-by-step process outlined below. 
+    These instructions are available for the [NavQPlus](../navqplus) and [Raspberry Pi® 4](../pi4humble).
+
 ## Step-by-step
 
 1. If you haven't already, download and install [Ubuntu® 22.04 64-bit](https://releases.ubuntu.com/22.04/) onto your machine. You may choose either the desktop (for a GUI) or server (for console-only) install.
