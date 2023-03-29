@@ -6,6 +6,10 @@ Note that there might be some network setup required if in a virtualized contain
 
 These directions follow Open Robotics' official documentation on [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html), and more detailed information about what the commands below do can be found there.
 
+!!! important
+    Some single board computers may have board specific instructions that differ from the step-by-step process outlined below. 
+    These instructions are available for the [NVIDIA® Jetson™](../setup/jetson/) and [Raspberry Pi® 4](../setup/pi4galactic).
+
 ## Step-by-step
 
 1. If you haven't already, download and install [Ubuntu® Server 20.04 64-bit](https://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso) onto your machine.
