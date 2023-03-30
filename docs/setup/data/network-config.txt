@@ -21,11 +21,11 @@ ethernets:
 #    dhcp4: true
 #    optional: true
 #    access-points:
-#      myhomewifi:
+#      "myhomewifi":
 #        password: "S3kr1t"
-#      myworkwifi:
+#      "myworkwifi":
 #        password: "correct battery horse staple"
-#      workssid:
+#      "workssid":
 #        auth:
 #          key-management: eap
 #          method: peap
