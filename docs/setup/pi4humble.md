@@ -43,7 +43,7 @@ It is recommended to uncheck the "Eject media when finished" box in advanced opt
 A photo of this connection can be found [here](../../hw/hookup/#raspberry-pi-4).
 The first boot may take a few minutes. (It may help to have a monitor and keyboard set up in case of any trouble on the first boot.)
 
-   !!! attention
+    !!! attention
         If you are new to ROS 2 and would like to utilize the turtlesim tutorials, it necessary to install a desktop environment to do this. 
         We have had success with xubuntu which can be installed with the following command: `sudo apt install xubuntu-desktop`. 
         Please see the [Ubuntu docs](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#5-install-a-desktop) for more details. 
@@ -70,8 +70,6 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
         sudo apt install -y ros-humble-desktop
         sudo apt install -y ros-humble-irobot-create-msgs
         sudo apt install -y build-essential python3-colcon-common-extensions python3-rosdep ros-humble-rmw-cyclonedds-cpp
-        
-        
    finally
 
         echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
