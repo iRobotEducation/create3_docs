@@ -43,13 +43,13 @@ It is recommended to uncheck the "Eject media when finished" box in advanced opt
 A photo of this connection can be found [here](../../hw/hookup/#raspberry-pi-4).
 The first boot may take a few minutes. (It may help to have a monitor and keyboard set up in case of any trouble on the first boot.)
 
-!!! attention
+   !!! attention
         If you are new to ROS 2 and would like to utilize the turtlesim tutorials, it necessary to install a desktop environment to do this. 
         We have had success with xubuntu which can be installed with the following command: `sudo apt install xubuntu-desktop`. 
         Please see the [Ubuntu docs](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#5-install-a-desktop) for more details. 
 
 
-11. Log in with the default username and password (ubuntu/ubuntu), change your password, and then change your locale to be one that uses UTF-8. For example, in the US, type
+1. Log in with the default username and password (ubuntu/ubuntu), change your password, and then change your locale to be one that uses UTF-8. For example, in the US, type
 
         sudo apt update
         sudo apt install locales
@@ -57,33 +57,33 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
         sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
         export LANG=en_US.UTF-8
 
-12. Then, execute the following blocks of commands to install ROS 2[^4]:
+1. Then, execute the following blocks of commands to install ROS 2[^4]:
 
         sudo apt update && sudo apt install -y curl gnupg2 lsb-release build-essential git cmake
-then
+   then
 
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
         sudo apt update
-then 
+   then 
 
         sudo apt install -y ros-humble-desktop
         sudo apt install -y ros-humble-irobot-create-msgs
         sudo apt install -y build-essential python3-colcon-common-extensions python3-rosdep ros-humble-rmw-cyclonedds-cpp
         
         
-finally
+   finally
 
         echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
-13. At this point, we recommend setting your default RMW. The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Depending on your robot's RMW implementation, type one of the following:
+1. At this point, we recommend setting your default RMW. The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Depending on your robot's RMW implementation, type one of the following:
 
         echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
-or
+   or
 
         echo "export RMW_IMPLEMENTATION=rmw_fastrtps_cpp" >> ~/.bashrc
 
-14. Log out and log back in. Once you do, test things out with a `ros2 topic list`.
+1. Log out and log back in. Once you do, test things out with a `ros2 topic list`.
 A full Create® 3 API description can be found [here](../../api/ros2).
 
     !!! attention
