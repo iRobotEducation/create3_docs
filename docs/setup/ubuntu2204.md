@@ -1,5 +1,8 @@
 # Install ROS 2 Humble with Create 3 Messages on an Ubuntu 22.04 Machine
 
+!!! note
+    As of March 2023, use of Galactic is recommended, as it is more performant than Humble on Create 3.
+
 ## Before you start
 These directions should work on a machine natively running Ubuntu[^1] 22.04, as well as in a virtualized container within another operating system.
 Note that there might be some network setup required if in a virtualized container; for example, RMWs seem to like running in a bridged network configuration rather than a NATted one.
@@ -7,7 +10,7 @@ Note that there might be some network setup required if in a virtualized contain
 These directions follow Open Robotics' official documentation on [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html), and more detailed information about what the commands below do can be found there.
 
 !!! important
-    Some single board computers may have board specific instructions that differ from the step-by-step process outlined below. 
+    Some single board computers may have board specific instructions that differ from the step-by-step process outlined below.
     These instructions are available for the [NavQPlus](../navqplus) and [Raspberry Pi® 4](../pi4humble).
 
 ## Step-by-step
