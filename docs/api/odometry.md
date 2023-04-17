@@ -66,5 +66,6 @@ This topic publishes at 20 Hz.
 
 The `stop_status` topic produces messages of type [`irobot_create_msgs/msg/StopStatus`](https://github.com/iRobotEducation/irobot_create_msgs/blob/rolling/msg/StopStatus.msg).
 The Create® 3 robot will periodically publish a boolean estimate of whether it is currently moving or not on the `stop_status` topic.
+This topic publishes at 1 Hz.
 
 [^1]: All trademarks mentioned are the property of their respective owners.

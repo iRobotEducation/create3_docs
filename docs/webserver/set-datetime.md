@@ -1,7 +1,7 @@
 # iRobot® Create® 3 Webserver - Set Date and Time
 The Set Date and Time page of the Create® 3 webserver allows the user to directy change the robot's date and time.
 
-![Picture of set date and timepage](data/set-datetime.png)
+![Picture of set date and time page](data/set-datetime.png)
 
 Please note that this is a beta feature, and as such is not supported by the customer service team.
 Please exercise caution, as improper use of beta features may result in an inoperable robot.
