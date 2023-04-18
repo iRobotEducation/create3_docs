@@ -1,0 +1,159 @@
+title: "Q&A Template"
+labels: ["General Introduction"]
+body:
+
+  - type: markdown
+    attributes:
+      value: "## Create 3 Question"
+      
+  
+  - type: input
+    id: title
+    attributes:
+      label: Question title
+      placeholder: "Title"
+      render: bash
+    validations:
+      required: true
+      
+      
+  - type: markdown
+    attributes:
+      value: "## Tech Specs"
+  - type: markdown
+    attributes:
+      value: |
+        Please provide complete information on your computer(s) and robots in order for the community to arrive at an accurate diagnosis.
+  
+  - type: dropdown
+    id: connection
+    attributes:
+      label: How are you connecting to your Create 3?
+      options:
+       - Wi-Fi (ROS 2)
+       - USB Ethernet (ROS 2)
+       - Bluetooth (iRobot Coding)
+       - Bluetooth (Python Playground)
+       - Bluetooth (Python SDK)
+    validations:
+      required: true
+    
+  - type: input
+    id: os
+    attributes:
+      label: Computer(s): Model(s) and Operating System(s)
+      description: "List the computer(s) you are using, along with their models and operating system versions."
+      placeholder: "Example: MacBook Pro 2019/ Ventura 13.1; Raspberry Pi 4 / Ubuntu 20.04"
+    validations:
+      required: false
+      
+      
+  - type: dropdown
+    id: rosversion
+    attributes:
+      label: Which version of ROS 2 is installed on your computer?
+      options:
+       - Galactic
+       - Humble
+       - I am unable to install ROS 2
+       - Other
+    validations:
+      required: false
+      
+      
+  - type: input
+    id: firmware
+    attributes:
+      label: Which firmware version is installed on your robot?
+      description: "Learn more about and update your current firmware [here](https://iroboteducation.github.io/create3_docs/webserver/overview/)."
+      placeholder: "example: G.4.1"
+    validations:
+      required: false
+      
+      
+  - type: dropdown
+    id: rmw
+    attributes:
+      label: Which RMW is your robot running?
+      description: "Learn more about middleware (rmw) configuration [here](https://iroboteducation.github.io/create3_docs/setup/xml-config/)."
+      options:
+       - CycloneDDS
+       - FastRTPS
+    validations:
+      required: false
+      
+      
+  - type: input
+    id: namespace
+    attributes:
+      label: Does your robot have an assigned namespace? If so, please share.
+      placeholder: "/happygolucky"
+    validations:
+      required: false
+      
+  - type: input
+    id: provisioned
+    attributes:
+      label: Is the robot provisioned? If so, what is the network type?
+      description: "Learn more about connecting your robot to Internet [here](https://iroboteducation.github.io/create3_docs/webserver/connect/)."
+      placeholder: "example: Yes; home network"
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: multiplerobots
+    attributes:
+      label: Are there multiple Create 3 robots connected to your network?
+      description: "Learn more about connecting multiple robots [here](https://iroboteducation.github.io/create3_docs/setup/multi-robot/)."
+      options:
+       - Yes
+       - No
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: multicast
+    attributes:
+      label: Is multicast enabled?
+      description: "Learn more about multicasting [here](https://iroboteducation.github.io/create3_docs/setup/xml-config/#disable-multicast)."
+      options:
+       - Yes
+       - No
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: adaptorboard
+    attributes:
+      label: What is the Adaptor Board's USB/BLE Toggle currently switched to?
+      description: "Learn about the Adaptor Board [here](https://iroboteducation.github.io/create3_docs/hw/adapter/)."
+      options:
+       - Bluetooth (default)
+       - USB
+    validations:
+      required: false
+      
+      
+  - type: markdown
+    attributes:
+      value: "## Question Details"
+  - type: markdown
+    attributes:
+      value: |
+        Please describe your question in detail, including the steps you have followed and any error messages you have received. Additionally, please attach your logs file if relevant.
+        
+        
+  - type: textarea
+    id: description
+    attributes:
+     label: Describe your question.
+     value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+     required: true
+      
+
