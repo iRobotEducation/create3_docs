@@ -23,7 +23,7 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
     - [M3 standoff/spacer x4](https://a.co/d/f1QWGB3)
     - M3 screws
     
-The [Jetson Orin Nano™ Developer Kit](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) has a 5.5mm x 2.5mm barrel connector jack for power (9 V to 20 V) and a USB-C® port (J5) for downstream data.<br>
+The [Jetson Orin Nano™ Developer Kit](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) has a 5.5mm x 2.5mm barrel connector jack for power (9 V to 20 V) and a **USB-C® port** for downstream data.<br>
 This can be powered from the unregulated battery port of the Create® 3  adapter board by using a JST-XH female connector to DC barrel plug cable.
 
 ## NVIDIA® Jetson Xavier NX™ Developer Kit
