@@ -6,6 +6,27 @@ The iRobot® Create® 3 robot has a USB-C®[^1] connector implementing a USB 2.0
 
 Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
 
+## NVIDIA® Jetson Orin Nano™ Developer Kit
+
+!!! note 
+
+    ### Hookup kit
+    
+    Below lists the content of an example kit that enables mounting Jetson Orin Nano Developer Kit with some sensors like Intel®  RealSense™[^3].
+
+    - Jetson Orin Nano Developer Kit
+    - Custom power cable (JST-HX to DC 5.5-2.5mm plug)
+        - [DC power plug (5.5mm x 2.5mm)](https://a.co/d/cfNWywP)
+    - [USB data cable (##USB-C® to USB-C®##)](https://a.co/d/7H62wsI)
+    - Jetson NX-style developer kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount.stl))
+    - Sensor mount plate (STL file)
+    - [M3 standoff/spacer x4](https://a.co/d/f1QWGB3)
+    - M3 screws
+    
+
+The [Jetson Orin Nano™ Developer Kit](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) has a 5.5mm x 2.5mm barrel connector jack for power (9 V to 20 V) and a USB-C® port (J5) for downstream data.<br>
+This can be powered from the unregulated battery port of the Create® 3  adapter board by using a JST-XH female connector to DC barrel plug cable.
+
 ## NVIDIA® Jetson Xavier NX™ Developer Kit
 
 ![](./data/hookup_jetson_xavier_nx_on_c3_with_PC.jpg)
@@ -14,12 +35,12 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
 
     ### Hookup kit
     
-    Below lists the content of an example kit that enables mounting Jetson Xavier NX Developr Kit with some sensors like Intel®  RealSense™[^3].
+    Below lists the content of an example kit that enables mounting Jetson Xavier NX Developer Kit with some sensors like Intel®  RealSense™[^3].
 
     - Jetson Xavier NX Developer Kit
-    - Custom power calbe (JST-HX to DC 5.5-2.5mm plug)
+    - Custom power cable (JST-HX to DC 5.5-2.5mm plug)
         - [DC power plug (5.5mm x 2.5mm)](https://a.co/d/cfNWywP)
-    - [USB data calbe (USB Micro-B to USB-C)](https://a.co/d/dnlCj1d)
+    - [USB data cable (USB Micro-B to USB-C®)](https://a.co/d/dnlCj1d)
     - Jetson Xavier Developer Kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount.stl))
     - Sensor mount plate (STL file)
     - [M3 standoff/spacer x4](https://a.co/d/f1QWGB3)
@@ -33,8 +54,13 @@ The data connection is established by using a USB Micro B to USB-C® cable, whic
 
 ![Hookup diagram for Jetson Xavier NX™ Developer Kit](data/hookup_jetson_xavier_nx.jpg "Jetson Xavier NX™ Developer Kit")
 
-### NVIDIA® Jetson Xavier NX™ Developer Kit Printable Adapter Mount
-You can 3d print the [mount adapter](../print_compute/#adapter-mount) to place the Jetson Xavier NX Developer Kit in the cargo bay or on the faceplate.
+## How to mount
+
+### Mount bracket for NVIDIA® Jetson NX-style developer kits
+
+A mount bracket can be used to mount either Jetson Orin Nano™ Developer Kit or Jetson Xavier NX™ Developer Kit on the Create® 3 faceplate or in the cargo bay..
+
+You can 3d print the [mount bracket](../print_compute/#adapter-mount).
 
 !!! note
     - If you are 3d printing the above (mount adapter)[../print_compute/#adapter-mount], use **support** to support overhang areas.
@@ -42,7 +68,6 @@ You can 3d print the [mount adapter](../print_compute/#adapter-mount) to place t
       <summary>Slicing example</summary>
       <img src="../data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount_slice-example.png"></img>
     </details>
-
 
     - You need four (4) M3 x 6mm screws; cap head is suggested.
 
