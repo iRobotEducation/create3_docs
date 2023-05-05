@@ -23,7 +23,6 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
     - [M3 standoff/spacer x4](https://a.co/d/f1QWGB3)
     - M3 screws
     
-
 The [Jetson Orin Nano™ Developer Kit](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) has a 5.5mm x 2.5mm barrel connector jack for power (9 V to 20 V) and a USB-C® port (J5) for downstream data.<br>
 This can be powered from the unregulated battery port of the Create® 3  adapter board by using a JST-XH female connector to DC barrel plug cable.
 
@@ -46,7 +45,6 @@ This can be powered from the unregulated battery port of the Create® 3  adapter
     - [M3 standoff/spacer x4](https://a.co/d/f1QWGB3)
     - M3 screws
     
-
 The [Jetson Xavier NX™ Developer Kit](https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit) has a 5.5mm x 2.5mm barrel connector jack (J16) for power (9 V to 20 V) and a USB Micro-B port (J5) for downstream data.<br>
 This can be powered from the unregulated battery port of the Create® 3  adapter board by using a JST-XH female connector to DC barrel plug cable.
 
@@ -54,16 +52,17 @@ The data connection is established by using a USB Micro B to USB-C® cable, whic
 
 ![Hookup diagram for Jetson Xavier NX™ Developer Kit](data/hookup_jetson_xavier_nx.jpg "Jetson Xavier NX™ Developer Kit")
 
+
 ## How to mount
 
 ### Mount bracket for NVIDIA® Jetson NX-style developer kits
 
 A mount bracket can be used to mount either Jetson Orin Nano™ Developer Kit or Jetson Xavier NX™ Developer Kit on the Create® 3 faceplate or in the cargo bay..
 
-You can 3d print the [mount bracket](../print_compute/#adapter-mount).
+You can 3d print the [mount bracket](../print_compute/#mount-bracket).
 
 !!! note
-    - If you are 3d printing the above [mount bracket](../print_compute/#adapter-mount), use **support** to support overhang areas.
+    - If you are 3d printing the above [mount bracket](../print_compute/#mount-bracket), use **support** to support overhang areas.
     <details>
       <summary>Slicing example</summary>
       <img src="../data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount_slice-example.png"></img>
