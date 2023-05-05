@@ -67,7 +67,7 @@ flowchart LR
     style E stroke-width:4px
     style G stroke-width:4px
     style H stroke-width:4px
-``` mermaid
+```
 
 ## Communication mode setup
 
@@ -75,15 +75,15 @@ flowchart LR
 
 If you don't need wired communication between Create® 3 and Jetson™, letting them communicate over Wi-Fi is easier than setting Ethernet over USB.
 
-=== "Create® 3"
+#### Create® 3 Wi-Fi setup
 
-    Follow the main guide (https://edu.irobot.com/create3-setup) to connect your Create 3 to your wireless AP.
+Follow the main guide (https://edu.irobot.com/create3-setup) to connect your Create 3 to your wireless AP.
 
-=== "Jetson™"
+#### "Jetson™ Wi-Fi setup
 
-    If you have your Jetson connected to a display minotor ("Minitor-attached" Mode), use the Ubuntu's GUI to setup Wi-Fi connection ([official guide](https://help.ubuntu.com/20.04/ubuntu-help/net-wireless-connect.html.en)).
+If you have your Jetson connected to a display monitor ("Monitor-attached" Mode), use the Ubuntu's GUI to setup Wi-Fi connection ([official guide](https://help.ubuntu.com/20.04/ubuntu-help/net-wireless-connect.html.en)).
 
-    > If you cannot easily attach a display monitor to your Jetson, check [this guide](https://jetbot.org/master/software_setup/wifi_setup.html#headless-mode) for "Headless Mode".
+> If you cannot easily attach a display monitor to your Jetson, check [this guide](https://jetbot.org/master/software_setup/wifi_setup.html#headless-mode) for "Headless Mode".
 
 ### B. Set up Ethernet over USB
 
