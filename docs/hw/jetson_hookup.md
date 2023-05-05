@@ -17,7 +17,7 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
     - Jetson Orin Nano Developer Kit
     - Custom power cable (JST-HX to DC 5.5-2.5mm plug)
         - [DC power plug (5.5mm x 2.5mm)](https://a.co/d/cfNWywP)
-    - [USB data cable (##USB-C® to USB-C®##)](https://a.co/d/7H62wsI)
+    - [USB data cable (**USB-C® to USB-C®**)](https://a.co/d/7H62wsI)
     - Jetson NX-style developer kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount.stl))
     - Sensor mount plate (STL file)
     - [M3 standoff/spacer x4](https://a.co/d/f1QWGB3)
@@ -63,7 +63,7 @@ A mount bracket can be used to mount either Jetson Orin Nano™ Developer Kit or
 You can 3d print the [mount bracket](../print_compute/#adapter-mount).
 
 !!! note
-    - If you are 3d printing the above (mount adapter)[../print_compute/#adapter-mount], use **support** to support overhang areas.
+    - If you are 3d printing the above [mount bracket](../print_compute/#adapter-mount), use **support** to support overhang areas.
     <details>
       <summary>Slicing example</summary>
       <img src="../data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount_slice-example.png"></img>
