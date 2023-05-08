@@ -3,16 +3,16 @@
 By default, the Create® 3 robot has some safety features enabled.
 Their purpose is to make sure that the robot does not get into dangerous sitations and it is able to detect and react properly to cliff hazards.
 
-Safety features are configurable by the user through a ROS 2 parameter.
+Safety features are configurable by the user through a ROS 2[^1] parameter.
 This will allow more adventurous users to have full control over the robot.
 
-!!! important 
+!!! important
     The robot will temporarily re-enable all safety features whenever it is commanded to execute any of the built-in autonomous behaviors.
 
 The `safety_override` parameter exposed by the `motion_control` ROS 2 node should be used to control and override safety features.
 It's a `string` parameter and it accepts 3 possible values:
 
- - `none` Safety features are fully enabled. This is the default value. 
+ - `none` Safety features are fully enabled. This is the default value.
  - `backup_only` Overrides the robot backup limit safety feature, disabling it.
  - `full` Safety features are fully disabled.
 
@@ -28,7 +28,7 @@ The following sections briefly describe what the safety features do.
 
 ## Backup Limit
 
-!!! attention 
+!!! attention
     **If you disable the backup limit, the robot will not stop if there are cliffs while driving backward!**
 
 The Create® 3 robot is equipped with cliff sensors, but they are located only in the front of the robot.
@@ -40,7 +40,7 @@ Under standard circumstances, the robot is allowed to briefly move backward only
 If the robot is kidnapped (i.e. first lifted by the user and then placed somewhere), the backup limit will immediately trigger.
 
 The Create® 3 robot signals to the user when the backup limit is about to be triggered in multiple ways:
- 
+
  - Through the `HazardDetectionsVector` ROS 2 message: an hazard of type `BACKUP_LIMIT` will be published in the vector.
  - By logging a warning message.
  - By changing the color of the lights to orange.
@@ -90,3 +90,6 @@ ros2 service call /e_stop irobot_create_msgs/srv/EStop "{e_stop_on: true}"
 
 There is a `wheel_status` topic which publishes [WheelStatus.msg](https://github.com/iRobotEducation/irobot_create_msgs/blob/main/msg/WheelStatus.msg)
 exposing whether the wheels are enabled (disabled if E-Stop is engaged) and the present PWM duty cycle and current through each wheel.
+
+[^1]: ROS 2 is governed by Open Robotics
+[^2]: All trademarks mentioned are the property of their respective owners.

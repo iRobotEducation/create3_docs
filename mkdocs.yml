@@ -65,6 +65,11 @@ nav:
       - Update: webserver/update.md
       - Logs: webserver/logs.md
       - Application: webserver/application.md
+      - Beta Features:
+        - Serial Port Forward: webserver/serial-config.md
+        - Set Date and Time: webserver/set-datetime.md
+        - Restart ntpd: webserver/restart-ntpd.md
+        - Set Wired Subnet: webserver/set-wired-subnet.md
       - About: webserver/about.md
     - Setup:
       - Connect to Wi-Fi: setup/provision.md
@@ -84,7 +89,8 @@ nav:
           - Software Config: setup/jetson.md
         - Raspberry Pi®:
           - Hookup Guide: hw/rpi_hookup.md
-          - Software Config: setup/pi4.md
+          - Galactic Config: setup/pi4galactic.md
+          - Humble Config: setup/pi4humble.md
         - Network Time Protocol: setup/compute-ntp.md
     - APIs:
       - ROS 2 Interface: api/ros2.md
@@ -108,5 +114,12 @@ nav:
         - G.1.1: releases/g_1_1.md
         - G.2.2: releases/g_2_2.md
         - G.3.1: releases/g_3_1.md
+        - G.4.1: releases/g_4_1.md
+        - G.4.3: releases/g_4_3.md
+        - G.4.4: releases/g_4_4.md
+        - G.4.5: releases/g_4_5.md
       - Humble:
         - H.0.0: releases/h_0_0.md
+        - H.1.0: releases/h_1_0.md
+        - H.1.1: releases/h_1_1.md
+        - H.1.2: releases/h_1_2.md

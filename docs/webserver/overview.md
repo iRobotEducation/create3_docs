@@ -20,6 +20,8 @@ Please use the menu to navigate between sections of the webserver, or else navig
 - [Update](../webserver/update.md)
 - [Logs](../webserver/logs.md)
 - [Application](../webserver/application.md)
+- Beta Features
+    - [Serial Forwarder](../webserver/serial-config.md)
 - [About](../webserver/about.md)
 
 [^1]: ROS 2 is governed by Open Robotics

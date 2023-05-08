@@ -1,6 +1,6 @@
 # Create® 3 Wall Follow
 
-The Create® 3 robot exposes a ROS 2 action server to invoke a wall-following behavior.
+The Create® 3 robot exposes a ROS 2[^1] action server to invoke a wall-following behavior.
 
 You can command the robot to follow along an obstacle using the following ROS 2 action.
 
@@ -14,3 +14,6 @@ The `follow_side` can be specified as left (1) or right (-1) see the [action int
 
 The robot will use a spiraling motion to try to engage with the obstacles.
 The spiral will be clockwise if `follow_side` is left (1) or counter-clockwise if `follow_side` is right (-1).
+
+[^1]: ROS 2 is governed by Open Robotics
+[^2]: All trademarks mentioned are the property of their respective owners.
