@@ -126,11 +126,11 @@ If you don't need wired communication between Create® 3 and Jetson™, letting 
 
 #### Create® 3 Wi-Fi setup
 
-Follow the main guide (https://edu.irobot.com/create3-setup) to connect your Create 3 to your wireless AP.
+Follow the main guide (https://edu.irobot.com/create3-setup) to connect your Create® 3 to your wireless AP.
 
-Once you connect Create 3 robot to your wireless AP, and find out the new IP address assigned to your robot, you can access the robot web dashboard by the new IP address.
+Once you connect Create® 3 robot to your wireless AP, and find out the new IP address assigned to your robot, you can access the robot web dashboard by the new IP address.
 
-If you plan to operate multiple Create 3 robots in the same wireless network, it is a good idea to set "ROS 2 Domain ID" on the "Application" > "Configuration" page.
+If you plan to operate multiple Create® 3 robots in the same wireless network, it is a good idea to set "ROS 2 Domain ID" on the "Application" > "Configuration" page.
 
 ![](./data/create3_ros_domain_id.png)
 
@@ -215,15 +215,15 @@ Perform the followings in the ROS 2 container.
 
 If you need a reliable wired communication between Create® 3 and Jetson™, you can connect them via a USB cable and let them establish a virtual Ethernet connection over the USB data communication.
 
-Jetson's upstream USB port (USB-C for the case of Jetson Orin Nano Developer Kit and micro-B for the case of Jetson Xavier Developer Kit) is conveniently set up in such a way to present a virtual network card to the host system, so Create 3 and Jetson can form a virtual Ethernet connection over the USB link.
+Jetson's upstream USB port (USB-C for the case of Jetson Orin Nano Developer Kit and micro-B for the case of Jetson Xavier Developer Kit) is conveniently set up in such a way to present a virtual network card to the host system, so Create® 3 and Jetson can form a virtual Ethernet connection over the USB link.
 
-However, because Create 3 expects the client device to have a specific IP address (`192.168.186.3`), we need to tweak the Jetson's "USB Device Mode" functionality, that is designed to run a DHCP server on Jetson side to assign IP address to other device by default.
+However, because Create® 3 expects the client device to have a specific IP address (`192.168.186.3`), we need to tweak the Jetson's "USB Device Mode" functionality, that is designed to run a DHCP server on Jetson side to assign IP address to other device by default.
 
 #### Alter "USB Device Mode" to apply static IP
 
 1. To alter the Jetson's "USB Device Mode" feature (specifically, disabling DHCP server and self-assign a static IP address);
 
-    1. First, create a flag file to store IP address for Jetson to be used with Create 3.
+    1. First, create a flag file to store IP address for Jetson to be used with Create® 3.
 
             sudo bash -c 'echo "192.168.186.3" > /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf'
 
@@ -247,7 +247,7 @@ However, because Create 3 expects the client device to have a specific IP addres
     !!! warning
         Be sure that the [USB/BLE toggle on the robot's adapter board](../../hw/electrical/#adapter-board-overview) is set to the USB position.
 
-3. Check if you can ping Create 3
+3. Check if you can ping Create® 3 robot
 
         ping 192.168.186.2
 
