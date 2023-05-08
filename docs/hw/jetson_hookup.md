@@ -18,7 +18,7 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
     Below lists the content of an example kit that enables mounting Jetson Orin Nano Developer Kit with some sensors like Intel® RealSense™[^3].
 
     - Jetson Orin Nano Developer Kit
-    - Custom power cable (JST-HX to DC 5.5 mm x 2.5 mm plug)
+    - Custom power cable (JST-XH to DC 5.5 mm x 2.5 mm plug)
         - [DC power plug (5.5 mm x 2.5 mm)](https://a.co/d/cfNWywP)
     - [USB data cable (**USB-C® to USB-C®**)](https://a.co/d/7H62wsI)
     - Jetson NX-style developer kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount.stl))
@@ -40,7 +40,7 @@ This can be powered from the unregulated battery port of the Create® 3 adapter 
     Below lists the content of an example kit that enables mounting Jetson Xavier NX Developer Kit with some sensors like Intel® RealSense™[^3].
 
     - Jetson Xavier NX Developer Kit
-    - Custom power cable (JST-HX to DC 5.5 mm x 2.5 mm plug)
+    - Custom power cable (JST-XH to DC 5.5 mm x 2.5 mm plug)
         - [DC power plug (5.5 mm x 2.5 mm)](https://a.co/d/cfNWywP)
     - [USB data cable (USB Micro-B to USB-C®)](https://a.co/d/dnlCj1d)
     - Jetson Xavier Developer Kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount.stl))
