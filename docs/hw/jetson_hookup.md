@@ -1,5 +1,8 @@
 # iRobot® Create® 3 Hookup Guide for NVIDIA® Jetson™
 
+!!! important
+    **This is community-submitted content. Please feel welcome to submit PRs for additions or corrections.**
+
 The iRobot® Create® 3 robot has a JST XH-style connector on its internal [Adapter Board](./adapter.md) which is capable of supplying a **maximum of 2 A** of current at the current battery voltage (14.4 V nominal).
 
 The iRobot® Create® 3 robot has a USB-C®[^1] connector implementing a USB 2.0 host capable of 5 V @ 3 A continuous, which can be used to power and communicate with various downstream devices.
