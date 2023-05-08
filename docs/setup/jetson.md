@@ -112,7 +112,7 @@ It comes with a ROS 2 Humble based container, so if you plan to test/use any of 
 ### E. Build ROS 2 from source
 
 !!! Attention
-    If you chose and performed the above "***Use `jetson-containers` ROS 2 Galactic / ROS 2 Humble container***", you can skip this section
+    If you chose and performed the above "***Use `jetson-containers` ROS 2 Galactic container***", you can skip this section
 
 Jetson's BSP (JetPack 5) is based on Ubuntu 20.04.<br>
 Debian packages for ROS 2 Humble are currently only available for Ubuntu Jammy (22.04), so you would need to build from source if you need to natively install ROS 2 on Jetson.
@@ -183,7 +183,7 @@ Perform the following in the ROS 2 container.
 
         ros2 topic echo battery_state
 
-    You should see continuous repetition of output like following.
+    You should see continuous repetition of output like the following.
 
         header:
           stamp:

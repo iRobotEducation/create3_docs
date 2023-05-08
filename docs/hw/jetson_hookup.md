@@ -51,7 +51,7 @@ This can be powered from the unregulated battery port of the Create® 3 adapter 
 The [Jetson Xavier NX™ Developer Kit](https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit) has a 5.5 mm x 2.5 mm barrel connector jack (J16) for power (9 V to 20 V) and a USB Micro-B port (J5) for upstream data.<br>
 This can be powered from the unregulated battery port of the Create® 3 adapter board by using a JST-XH female connector to DC barrel plug cable.
 
-The data connection is established by using a USB Micro B to USB-C® cable, which requires some software tweaking to allow the Create3-to-Jetson communication. See [this page](../setup/jetson.md).
+The data connection is established by using a USB Micro-B to USB-C® cable, which requires some software tweaking to allow the Create3-to-Jetson communication. See [this page](../setup/jetson.md).
 
 ![Hookup diagram for Jetson Xavier NX™ Developer Kit](data/hookup_jetson_xavier_nx.jpg "Jetson Xavier NX™ Developer Kit")
 
