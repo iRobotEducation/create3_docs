@@ -55,7 +55,7 @@ It is highly recommended to read through the getting started document for your N
 
 ### Use pre-built ROS 2 Docker container
 
-The recommended way to run ROS2 on Jetson is to use pre-built Docker container images.
+The recommended way to run ROS 2 on Jetson is to use pre-built Docker container images.
 
 1. Install NVIDIA Container Runtime with Docker integration
 
@@ -86,7 +86,7 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
         }
 
 
-### A. Use `jetson-containers` ROS2 Galactic container
+### A. Use `jetson-containers` ROS 2 Galactic container
 
 Dustin Franklin's `jetson-contianers` GitHub repository provides all the pre-built Docker container images for machine learning and ROS.
 
@@ -100,10 +100,10 @@ Dustin Franklin's `jetson-contianers` GitHub repository provides all the pre-bui
 
         apt update && apt install -y ros-galactic-irobot-create-msgs
 
-### B. Use Isaac ROS (ROS2 Humble) container
+### B. Use Isaac ROS (ROS 2 Humble) container
 
 !!! Attention
-    If you chose and performed the above "***Use `jetson-containers` ROS2 Galactic container***", you can skip this section
+    If you chose and performed the above "***Use `jetson-containers` ROS 2 Galactic container***", you can skip this section
 
 NVIDIA Isaac ROS is a collection of hardware-accelerated, high performance, low latency ROS 2 packages that runs on and leverage the power of Jetson.
 
@@ -112,7 +112,7 @@ It comes with a ROS 2 Humble based container, so if you plan to test/use any of 
 ### E. Build ROS 2 from source
 
 !!! Attention
-    If you chose and performed the above "***Use `jetson-containers` ROS2 Galactic / ROS 2 Humble container***", you can skip this section
+    If you chose and performed the above "***Use `jetson-containers` ROS 2 Galactic / ROS 2 Humble container***", you can skip this section
 
 Jetson's BSP (JetPack 5) is based on Ubuntu 20.04.<br>
 Debian packages for ROS 2 Humble are currently only available for Ubuntu Jammy (22.04), so you would need to build from source if you need to natively install ROS 2 on Jetson.
