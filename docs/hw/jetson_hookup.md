@@ -15,7 +15,7 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
 
     ### Hookup kit
     
-    Below lists the content of an example kit that enables mounting Jetson Orin Nano Developer Kit with some sensors like Intel®  RealSense™[^3].
+    Below lists the content of an example kit that enables mounting Jetson Orin Nano Developer Kit with some sensors like Intel® RealSense™[^3].
 
     - Jetson Orin Nano Developer Kit
     - Custom power cable (JST-HX to DC 5.5 mm x 2.5 mm plug)
@@ -27,7 +27,7 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
     - M3 screws
     
 The [Jetson Orin Nano™ Developer Kit](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) has a 5.5 mm x 2.5 mm barrel connector jack for power (9 V to 20 V) and a **USB-C® port** for upstream data.<br>
-This can be powered from the unregulated battery port of the Create® 3  adapter board by using a JST-XH female connector to DC barrel plug cable.
+This can be powered from the unregulated battery port of the Create® 3 adapter board by using a JST-XH female connector to DC barrel plug cable.
 
 ## NVIDIA® Jetson Xavier NX™ Developer Kit
 
@@ -37,7 +37,7 @@ This can be powered from the unregulated battery port of the Create® 3  adapter
 
     ### Hookup kit
     
-    Below lists the content of an example kit that enables mounting Jetson Xavier NX Developer Kit with some sensors like Intel®  RealSense™[^3].
+    Below lists the content of an example kit that enables mounting Jetson Xavier NX Developer Kit with some sensors like Intel® RealSense™[^3].
 
     - Jetson Xavier NX Developer Kit
     - Custom power cable (JST-HX to DC 5.5 mm x 2.5 mm plug)
@@ -49,7 +49,7 @@ This can be powered from the unregulated battery port of the Create® 3  adapter
     - M3 screws
     
 The [Jetson Xavier NX™ Developer Kit](https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit) has a 5.5 mm x 2.5 mm barrel connector jack (J16) for power (9 V to 20 V) and a USB Micro-B port (J5) for upstream data.<br>
-This can be powered from the unregulated battery port of the Create® 3  adapter board by using a JST-XH female connector to DC barrel plug cable.
+This can be powered from the unregulated battery port of the Create® 3 adapter board by using a JST-XH female connector to DC barrel plug cable.
 
 The data connection is established by using a USB Micro B to USB-C® cable, which requires some software tweaking to allow the Create3-to-Jetson communication. See [this page](../setup/jetson.md).
 
