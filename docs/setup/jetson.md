@@ -142,11 +142,11 @@ If you have your Jetson connected to a display monitor ("Monitor-attached" Mode)
 
 #### Test inside Jetson ROS container
 
-Perform the followings in the ROS 2 container.
+Perform the following in the ROS 2 container.
 
-1. Set the `ROS_DOMAIN_ID` environmental variable 
+1. Set the `ROS_DOMAIN_ID` environment variable
 
-    Once you are in container;
+    Once you are in container:
 
         export ROS_DOMAIN_ID=32
 
@@ -258,7 +258,7 @@ However, because Create® 3 expects the client device to have a specific IP addr
 
 #### Test the USB link inside the container
 
-Perform the followings in the ROS 2 container.
+s in the ROS 2 container.
 
 1. Set the `ROS_DOMAIN_ID` environmental variable 
 
