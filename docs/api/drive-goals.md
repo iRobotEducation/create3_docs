@@ -2,7 +2,7 @@
 
 The Create® 3 robot exposes some actions for simple driving goals that close the loop on odometry position.
 
-Through the ROS 2 APIs users can command:
+Through the ROS 2[^1] APIs users can command:
 
  * Driving along a specified arc
 
@@ -51,7 +51,7 @@ ros2 action send_goal /navigate_to_position irobot_create_msgs/action/NavigateTo
 
 The robot will take a rotate -> translate -> rotate approach to achieve the goal position.
 First rotating from its current heading to face the goal position, then driving straight to the goal position,
-then optionally rotating to achieve the goal heading. 
+then optionally rotating to achieve the goal heading.
 
 #### Rotate Angle
 
@@ -63,3 +63,5 @@ ros2 action send_goal /rotate_angle irobot_create_msgs/action/RotateAngle "{angl
 
 The robot will rotate either clockwise (negative angle) or counter clockwise (positive angle) until it has achieved the angle offset.
 
+[^1]: ROS 2 is governed by Open Robotics
+[^2]: All trademarks mentioned are the property of their respective owners.

@@ -4,7 +4,7 @@ With the word "reflex" we denote a set of autonomous reactive behaviors that the
 
 Reflexes are high-priority behaviors and will temporarily override any user-provided command for their short duration.
 
-Reflexes can be enabled or disabled on the Create® 3 using the corresponding ROS 2 parameters exposed by the `motion_control` ROS 2 node.
+Reflexes can be enabled or disabled on the Create® 3 using the corresponding ROS 2[^1] parameters exposed by the `motion_control` ROS 2 node.
 
 ## Reflex parameters
 
@@ -83,3 +83,6 @@ It will trigger as soon as the robot detects that one of its wheels is fully ext
 The robot will drive the other wheel in order to return to a flat surface.
 
 This reflex is enabled by default.
+
+[^1]: ROS 2 is governed by Open Robotics
+[^2]: All trademarks mentioned are the property of their respective owners.

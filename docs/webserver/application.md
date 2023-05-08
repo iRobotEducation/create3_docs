@@ -23,6 +23,9 @@ The main configuration includes ROS 2 domain ID, namespace, and RMW Implementati
 Basic information about these settings can be found on this docs site both in the [ROS 2 Middleware Configuration](../xml-config) and [Multi-Robot Setup](../multi-robot) pages.
 Further details on these settings can be found in the official ROS 2 documentation.
 
+For robots running Galactic >= G.4 and Humble >= H.1, when Fast-DDS is selected as the RMW, it is possible to direct the robot to use an offboard Fast-DDS Discovery server, as well.
+Further details on the Fast-DDS Discovery Server can be found [here](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/discovery_server/ros2_discovery_server.html).
+
 ### Application ROS 2 Parameters File
 This is a raw yaml file used for configuring ROS 2 parameters.
 The web server will not validate this yaml file; setting it incorrectly may cause the application to fail to start properly.
