@@ -49,92 +49,32 @@ It is highly recommended to read through the getting started document for your N
 
 ## Setup Overview
 
-``` mermaid
-flowchart LR
-    A(Start) --> B[Flash SD card<br>with JetPack 5 image]
-    B --> C{Require <br>wired<br>connection?}
-    C -->|No| D[Setup Wi-Fi<br>connections &#40A&#41]
-    C -->|Yes| E[Setup<br>Ethernet over USB &#40B&#41]
-    D --> F{Which<br>ROS2<br>setup?}
-    E --> F
-    F --> G[Use jetson-containers'<br> ROS2 Galactic / ROS2 Humble<br>container &#40C&#41]
-    F --> H[Use Isaac ROS &#40ROS2 Humble&#41<br>container &#40D&#41]
-    F .-> I[Build from source]
-    G --> X(End)
-    H --> X
-    I .-> X
-    style D stroke-width:4px
-    style E stroke-width:4px
-    style G stroke-width:4px
-    style H stroke-width:4px
-```
+![](./data/jetson_setup_flow_overview.png)
 
-## Communication mode setup
+## ROS 2 Setup on Jetson
 
-### A. Setup Wi-Fi connections.
-
-If you don't need wired communication between Create® 3 and Jetson™, letting them communicate over Wi-Fi is easier than setting Ethernet over USB.
-
-#### Create® 3 Wi-Fi setup
-
-Follow the main guide (https://edu.irobot.com/create3-setup) to connect your Create 3 to your wireless AP.
-
-#### "Jetson™ Wi-Fi setup
-
-If you have your Jetson connected to a display monitor ("Monitor-attached" Mode), use the Ubuntu's GUI to setup Wi-Fi connection ([official guide](https://help.ubuntu.com/20.04/ubuntu-help/net-wireless-connect.html.en)).
-
-> If you cannot easily attach a display monitor to your Jetson, check [this guide](https://jetbot.org/master/software_setup/wifi_setup.html#headless-mode) for "Headless Mode".
-
-### B. Set up Ethernet over USB
-
-!!! Attention
-    If you chose and performed the above "Setup Wi-Fi connections", you can skip this section.
-
-If you need a reliable wired communication between Create® 3 and Jetson™, you can connect them via a USB cable and let them establish a virtual Ethernet connection over the USB data communication.
-
-Jetson's upstream USB port (USB-C for the case of Jetson Orin Nano Developer Kit and micro-B for the case of Jetson Xavier Developer Kit) is conveniently set up in such a way to present a virtual network card to the host system, so Create 3 and Jetson can form a virtual Ethernet connection over the USB link.
-
-However, because Create 3 expects the client device to have a specific IP address (`192.168.186.3`), we need to tweak the Jetson's "USB Device Mode" functionality, that is designed to run a DHCP server on Jetson side to assign IP address to other device by default.
-
-#### Alter "USB Device Mode" to apply static IP
-
-1. To alter the Jetson's "USB Device Mode" feature (specifically, disabling DHCP server and self-assign a static IP address);
-
-    1. First, create a flag file to store IP address for Jetson to be used with Create 3.
-
-            sudo bash -c 'echo "192.168.186.3" > /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf'
-
-    2. Then, modify the "nv-l4t-device-mode-runtime" service script (`/opt/nvidia/l4t-usb-device-mode/nv-l4t-usb-device-mode-runtime-start.sh`). The complete file is [here](data/nv-l4t-usb-device-mode-runtime-start.sh).
-     <br>
-
-2. Connect USB cable from Create® 3 robot to the upstream USB port of Jetson. Then check if the static IP address is set by issuing `ifconfig` command.
-
-        $ ifconfig l4tbr0
-
-        l4tbr0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-                inet 192.168.186.3  netmask 255.255.255.0  broadcast 192.168.186.255
-                inet6 fe80::1  prefixlen 128  scopeid 0x20<link>
-                inet6 fe80::ecb6:edff:feac:7dd5  prefixlen 64  scopeid 0x20<link>
-                ether ee:b6:ed:ac:7d:d5  txqueuelen 1000  (Ethernet)
-                RX packets 169  bytes 36206 (36.2 KB)
-                RX errors 0  dropped 0  overruns 0  frame 0
-                TX packets 1644  bytes 213306 (213.3 KB)
-                TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-    !!! warning
-        Be sure that the [USB/BLE toggle on the robot's adapter board](../../hw/electrical/#adapter-board-overview) is set to the USB position.
-
-    !!! note
-        If you ever want to stop using the Jetson device for Create® 3 and re-enable the original USB Device Mode feature (so that you can connect to your Windows PC in headless style), you can simply remove the flag file, or execute the following.
-
-        sudo mv /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf.bak
-
-
-### C. Use `jetson-containers` ROS2 Galactic / ROS2 Humble container
+### Use pre-built ROS 2 Docker container
 
 The recommended way to run ROS2 on Jetson is to use pre-built Docker container images.
 
-1. Enable NVIDIA Container Runtime with Docker integration, if this is the first time running containers on Jetson, to allow access to GPU from containers.
+1. Install NVIDIA Container Runtime with Docker integration
+
+    It should be a part of JetPack, so if you use a NVIDIA supplied JetPack 5 image to flash your SD card, you can skip this process.
+
+    ```bash
+    sudo apt update
+    sudo apt install nvidia-container
+    ```
+
+2. Make docker command available without `sudo`
+
+    ```
+    sudo systemctl restart docker
+    sudo usermod -aG docker $USER
+    newgrp docker
+    ```
+
+3. Set `nvidia` as the `default-runtime` for Docker.
 
     Edit `/etc/docker/daemon.json` to be the following.
 
@@ -149,15 +89,61 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
         }
 
 
+### A. Use `jetson-containers` ROS2 Galactic / ROS2 Humble container
+
+Dustin Franklin's `jetson-contianers` GitHub repository provides all the pre-built Docker container images for machine learning and ROS.
+
 1. Use `jetson-containers`' script to simplify the invocation of `docker run` command.
 
         git clone https://github.com/dusty-nv/jetson-containers/
         cd jetson-containers
-        scripts/docker_run.sh -c dustynv/ros:galactic-ros-base-l4t-r32.6.1
+        scripts/docker_run.sh -c dustynv/ros:galactic-desktop-l4t-r35.3.1
 
-1. Install additional ROS 2 packages
+1. Inside the container, install additional ROS 2 packages
 
         sudo apt update && sudo apt install -y ros-galactic-ros-base python3-colcon-common-extensions python3-rosdep ros-galactic-rmw-fastrtps-cpp ros-galactic-rmw-cyclonedds-cpp ros-galactic-irobot-create-msgs
+
+### B. Use Isaac ROS (ROS2 Humble) container
+
+!!! Attention
+    If you chose and performed the above "***Use `jetson-containers` ROS2 Galactic / ROS2 Humble container***", you can skip this section
+
+NVIDIA Isaac ROS is a collection of hardware-accelerated, high performance, low latency ROS 2 packages that runs on and leverage the power of Jetson.
+
+It comes with a ROS 2 Humble based container, so if you plan to test/use any of Isaac ROS packages, running the Issac ROS container can be a good option.
+
+### E. Build ROS 2 from source
+
+!!! Attention
+    If you chose and performed the above "***Use `jetson-containers` ROS2 Galactic / ROS 2 Humble container***", you can skip this section
+
+Jetson's BSP (JetPack 5) is based on Ubuntu 20.04.<br>
+Debian packages for ROS 2 Humble are currently only available for Ubuntu Jammy (22.04), so you would need to build from source if you need to natively install ROS 2 on Jetson.
+
+ 
+## Communication mode setup
+
+### C. Setup Wi-Fi connections.
+
+If you don't need wired communication between Create® 3 and Jetson™, letting them communicate over Wi-Fi is easier than setting Ethernet over USB.
+
+#### Create® 3 Wi-Fi setup
+
+Follow the main guide (https://edu.irobot.com/create3-setup) to connect your Create 3 to your wireless AP.
+
+Once you connect Create 3 robot to your wireless AP, and find out the new IP address assigned to your robot, you can access the robot web dashboard by the new IP address.
+
+If you plan to operate multiple Create 3 robots in the same wireless network, it is a good idea to set "ROS 2 Domain ID" on the "Application" > "Configuration" page.
+
+![](./data/create3_ros_domain_id.png)
+
+#### Jetson™ Wi-Fi setup
+
+If you have your Jetson connected to a display monitor ("Monitor-attached" Mode), use the Ubuntu's GUI to setup Wi-Fi connection ([official guide](https://help.ubuntu.com/20.04/ubuntu-help/net-wireless-connect.html.en)).
+
+> If you cannot easily attach a display monitor to your Jetson, check [this guide](https://jetbot.org/master/software_setup/wifi_setup.html#headless-mode) for "Headless Mode".
+
+#### Inside Jetson ROS container
 
 1. Set the default network interface by setting Cyclone DDS configuration.
 
@@ -234,21 +220,47 @@ The recommended way to run ROS2 on Jetson is to use pre-built Docker container i
             z: 0.0
         covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
-### D. Use Isaac ROS (ROS2 Humble) container
+
+### D. Set up Ethernet over USB
 
 !!! Attention
-    If you chose and performed the above "***Use `jetson-containers` ROS2 Galactic / ROS2 Humble container***", you can skip this section
+    If you chose and performed the above "Setup Wi-Fi connections", you can skip this section.
 
-NVIDIA Isaac ROS is a collection of hardware-accelerated, high performance, low latency ROS 2 packages that runs on and leverage the power of Jetson.
+If you need a reliable wired communication between Create® 3 and Jetson™, you can connect them via a USB cable and let them establish a virtual Ethernet connection over the USB data communication.
 
-It comes with a ROS 2 Humble based container, so if you plan to test/use any of Isaac ROS packages, running the Issac ROS container can be a good option.
+Jetson's upstream USB port (USB-C for the case of Jetson Orin Nano Developer Kit and micro-B for the case of Jetson Xavier Developer Kit) is conveniently set up in such a way to present a virtual network card to the host system, so Create 3 and Jetson can form a virtual Ethernet connection over the USB link.
 
-### E. Build ROS 2 from source
+However, because Create 3 expects the client device to have a specific IP address (`192.168.186.3`), we need to tweak the Jetson's "USB Device Mode" functionality, that is designed to run a DHCP server on Jetson side to assign IP address to other device by default.
 
-!!! Attention
-    If you chose and performed the above "***Use `jetson-containers` ROS2 Galactic / ROS 2 Humble container***", you can skip this section
+#### Alter "USB Device Mode" to apply static IP
 
-Jetson's BSP (JetPack 5) is based on Ubuntu 20.04.<br>
-Debian packages for ROS 2 Humble are currently only available for Ubuntu Jammy (22.04), so you would need to build from source if you need to natively install ROS 2 on Jetson.
+1. To alter the Jetson's "USB Device Mode" feature (specifically, disabling DHCP server and self-assign a static IP address);
 
- 
+    1. First, create a flag file to store IP address for Jetson to be used with Create 3.
+
+            sudo bash -c 'echo "192.168.186.3" > /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf'
+
+    2. Then, modify the "nv-l4t-device-mode-runtime" service script (`/opt/nvidia/l4t-usb-device-mode/nv-l4t-usb-device-mode-runtime-start.sh`). The complete file is [here](data/nv-l4t-usb-device-mode-runtime-start.sh).
+     <br>
+
+2. Connect USB cable from Create® 3 robot to the upstream USB port of Jetson. Then check if the static IP address is set by issuing `ifconfig` command.
+
+        $ ifconfig l4tbr0
+
+        l4tbr0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+                inet 192.168.186.3  netmask 255.255.255.0  broadcast 192.168.186.255
+                inet6 fe80::1  prefixlen 128  scopeid 0x20<link>
+                inet6 fe80::ecb6:edff:feac:7dd5  prefixlen 64  scopeid 0x20<link>
+                ether ee:b6:ed:ac:7d:d5  txqueuelen 1000  (Ethernet)
+                RX packets 169  bytes 36206 (36.2 KB)
+                RX errors 0  dropped 0  overruns 0  frame 0
+                TX packets 1644  bytes 213306 (213.3 KB)
+                TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+    !!! warning
+        Be sure that the [USB/BLE toggle on the robot's adapter board](../../hw/electrical/#adapter-board-overview) is set to the USB position.
+
+    !!! note
+        If you ever want to stop using the Jetson device for Create® 3 and re-enable the original USB Device Mode feature (so that you can connect to your Windows PC in headless style), you can simply remove the flag file, or execute the following.
+
+        sudo mv /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf.bak
