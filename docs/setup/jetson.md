@@ -215,7 +215,7 @@ Perform the following in the ROS 2 container.
 
 If you need a reliable wired communication between Create® 3 and Jetson™, you can connect them via a USB cable and let them establish a virtual Ethernet connection over the USB data communication.
 
-Jetson's upstream USB port (USB-C for the case of Jetson Orin Nano Developer Kit and micro-B for the case of Jetson Xavier Developer Kit) is conveniently set up in such a way to present a virtual network card to the host system, so Create® 3 and Jetson can form a virtual Ethernet connection over the USB link.
+Jetson's upstream USB port (USB-C for the case of Jetson Orin Nano Developer Kit and Micro B for the case of Jetson Xavier Developer Kit) is conveniently set up in such a way to present a virtual network card to the host system, so Create® 3 and Jetson can form a virtual Ethernet connection over the USB link.
 
 However, because Create® 3 expects the client device to have a specific IP address (`192.168.186.3`), we need to tweak the Jetson's "USB Device Mode" functionality, that is designed to run a DHCP server on Jetson side to assign IP address to other device by default.
 

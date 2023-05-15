@@ -42,16 +42,16 @@ This can be powered from the unregulated battery port of the Create® 3 adapter 
     - Jetson Xavier NX Developer Kit
     - Custom power cable (JST-XH to DC 5.5 mm x 2.5 mm plug)
         - [DC power plug (5.5 mm x 2.5 mm)](https://a.co/d/cfNWywP)
-    - [USB data cable (USB Micro-B to USB-C®)](https://a.co/d/dnlCj1d)
+    - [USB data cable (USB Micro B to USB-C®)](https://a.co/d/dnlCj1d)
     - Jetson Xavier Developer Kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount.stl))
     - Sensor mount plate (STL file)
     - [M3 standoff/spacer x4](https://a.co/d/f1QWGB3)
     - M3 screws
     
-The [Jetson Xavier NX™ Developer Kit](https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit) has a 5.5 mm x 2.5 mm barrel connector jack (J16) for power (9 V to 20 V) and a USB Micro-B port (J5) for upstream data.<br>
+The [Jetson Xavier NX™ Developer Kit](https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit) has a 5.5 mm x 2.5 mm barrel connector jack (J16) for power (9 V to 20 V) and a USB Micro B port (J5) for upstream data.<br>
 This can be powered from the unregulated battery port of the Create® 3 adapter board by using a JST-XH female connector to DC barrel plug cable.
 
-The data connection is established by using a USB Micro-B to USB-C® cable, which requires some software tweaking to allow the communication between the Create® 3 robot and Jetson. See [this page](../setup/jetson.md).
+The data connection is established by using a USB Micro B to USB-C® cable, which requires some software tweaking to allow the communication between the Create® 3 robot and Jetson. See [this page](../setup/jetson.md).
 
 ![Hookup diagram for Jetson Xavier NX™ Developer Kit](data/hookup_jetson_xavier_nx.jpg "Jetson Xavier NX™ Developer Kit")
 
@@ -79,8 +79,8 @@ You can 3d-print the sensor mount plate.
 To fix the plate at a raised height, you can use M3 spacers like [this](https://a.co/d/f1QWGB3) to allow the sensor to have unobstructed view.
 
 ## NVIDIA® Jetson Nano™ 2GB
-The Jetson Nano™ 2GB has a USB-C® port (J2) for power and a USB Micro-B port (J13) for downstream data.
-This can be connected to the Create 3 robot most simply using a USB-C® hub and two cables -- USB A to Micro-B and USB A to USB-C®.
+The Jetson Nano™ 2GB has a USB-C® port (J2) for power and a USB Micro B port (J13) for downstream data.
+This can be connected to the Create 3 robot most simply using a USB-C® hub and two cables -- USB A to Micro B and USB A to USB-C®.
 ![Hookup diagram for Jetson Nano™](data/hookup_nano2gb.jpg "Jetson Nano™ 2GB")
 
 [^1]: USB-C® is a trademark of USB Implementers Forum.
