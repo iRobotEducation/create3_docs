@@ -3,8 +3,9 @@ The Serial Configuration page of the Create® 3 webserver configures a feature w
 
 ![Picture of serial configuration page](data/serial-config.png)
 
-Please note that the serial port forwarder is a beta feature, and as such is not supported by the customer service team.
-Please exercise caution, as improper use of beta features may result in an inoperable robot.
+!!!warning
+    Please note that this is a beta feature, and as such is not supported by the customer service team.
+    Please exercise caution, as improper use of beta features may result in an inoperable robot.
 
 To enable this feature on the robot the first time, it is necessary to navigate to this page, press save, and then reboot the robot.
 Subsequent saved changes on this page do not require a reboot; they simply require an unplug-plug sequence to trigger the daemon.

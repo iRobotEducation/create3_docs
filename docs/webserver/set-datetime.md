@@ -3,8 +3,9 @@ The Set Date and Time page of the Create® 3 webserver allows the user to direct
 
 ![Picture of set date and time page](data/set-datetime.png)
 
-Please note that this is a beta feature, and as such is not supported by the customer service team.
-Please exercise caution, as improper use of beta features may result in an inoperable robot.
+!!!warning
+    Please note that this is a beta feature, and as such is not supported by the customer service team.
+    Please exercise caution, as improper use of beta features may result in an inoperable robot.
 
 The page first shows the current date and time on the robot on load.
 Simply change the date and time and click "save" to save.
