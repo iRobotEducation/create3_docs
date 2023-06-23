@@ -33,13 +33,15 @@ Downloads of a particular version can be found on each individual release page.
 
 ### Humble
 
-* [H.1.2](../h_1_2) (humble-latest)
+* [H.2.0](../h_2_0) (humble-latest)
+* [H.1.2](../h_1_2)
 * [H.1.1](../h_1_1)
 * [H.1.0](../h_1_0)
 * [H.0.0](../h_0_0)
 
 ### Galactic
-* [G.4.5](../g_4_5) (galactic-latest, latest)
+* [G.5.0](../g_5_0) (galactic-latest, latest)
+* [G.4.5](../g_4_5)
 * [G.4.4](../g_4_4)
 * [G.4.3](../g_4_3)
 * [G.4.1](../g_4_1)
