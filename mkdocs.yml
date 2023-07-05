@@ -92,7 +92,7 @@ nav:
           - Galactic Config: setup/pi4galactic.md
           - Humble Config: setup/pi4humble.md
         - Network Time Protocol: setup/compute-ntp.md
-      - Discovery Server: setup/discovery-server.md
+      - Fast DDS Discovery Server: setup/discovery-server.md
     - APIs:
       - ROS 2 Interface: api/ros2.md
       - Docking: api/docking.md
