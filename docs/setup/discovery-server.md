@@ -1,7 +1,7 @@
 # Fast DDS Discovery Server
 
 This page gives instructions on how to use a Fast DDS discovery server with the Create® 3 robot as a client.
-For more information on the Fast DDS discovery server, please refer to the [eProsima documentation](https://fastdds.docs.eprosima.com/en/latest/fastdds/ros2/discovery_server/ros2_discovery_server.html).
+For more information on the Fast DDS discovery server, please refer to the [eProsima documentation](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/discovery_server/ros2_discovery_server.html).
 
 *We’ll use the term "computer" to refer to any SBC (single board computer), virtual machine, personal computer, etc.*
 
