@@ -28,16 +28,29 @@ By "kidnap" we denote the action of manually lifting the robot and, eventually, 
 The Create® 3 robot combines together different sensors data in order to determine when it's being kidnapped.
 A boolean status will be periodically published on the `kidnap_status` topic.
 
+### Reflective Infrared Sensors
 
-### The `ir_intensity` topic
+The Create 3 robot is equipped with 11 reflective IR sensors to detect hazards.
 
-Besides the aforementioned sensors, the Create® 3 robot is also equipped with [7 sets of IR emitters and receivers](/hw/mechanical/#ir-proximity-sensors) and it can use them to detect objects at close range.
+#### The `ir_intensity` topic
+
+[7 sets of IR emitters and receivers](/hw/mechanical/#ir-proximity-sensors) are available in the front bumper to detect objects at close range.
 
 The Create® 3 robot will periodically publish on the `ir_intensity` topic the raw intensity readings obtained from these sensors.
 The message will be a vector where each element corresponds to a different sensor.
 The higher the intensity value is, the closer an obstacle is to the robot.
 The `header` field of each indivdual detection will provide all the information required to localize it.
 In particular the timestamp will denote when the robot detected the hazard and the frame id will denote the location of the sensor that performed the detection.
+
+#### The `cliff_intensity` topic
+
+[4 sets of IR emitters and receivers](/hw/mechanical/#bottom-view) are available in on the bottom of the robot just behind its front bumper to detect presence or absence of the floor.
+
+The Create® 3 robot will periodically publish on the `cliff_intensity` topic the raw intensity readings obtained from these sensors.
+The message will be a vector where each element corresponds to a different sensor.
+The higher the intensity value is, the more intensely the floor is perceived.
+The `header` field of each indivdual detection will provide all the information required to localize it.
+In particular the timestamp will denote the time of the reading and the frame id will denote the location of the sensor that performed the detection.
 
 [^1]: ROS 2 is governed by Open Robotics
 [^2]: All trademarks mentioned are the property of their respective owners.

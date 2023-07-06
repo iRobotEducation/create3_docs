@@ -13,6 +13,7 @@ You can see the ROS 2 topics exposed by the Create® 3 robot running the `ros2 t
 ```bash
 $ ros2 topic list -t
 /battery_state [sensor_msgs/msg/BatteryState]
+/cliff_intensity [irobot_create_msgs/msg/IrIntensityVector]
 /cmd_audio [irobot_create_msgs/msg/AudioNoteVector]
 /cmd_lightring [irobot_create_msgs/msg/LightringLeds]
 /cmd_vel [geometry_msgs/msg/Twist]
