@@ -37,6 +37,8 @@ copyright: Copyright &copy; 2021-2023 iRobot Corporation. ​​All Rights Reser
 
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - footnotes
   - attr_list
 
