@@ -5,9 +5,32 @@ The Override RMW Profile page of the Create® 3 webserver allows the user to ove
     Please note that this is a beta feature, and as such is not supported by the customer service team.
     Please exercise caution, as improper use of beta features may result in an inoperable robot.
 
-![Picture of Override RMW Profile page](data/rmw-profile-override.png)
+![Picture of Override RMW Profile page](data/rmw-profile-override.png)<br><br>
 
-This page allows the user to replace the robot's middleware XML profile file with one of their choosing. Leave this box blank in order to use the robot's default profile file. After pressing "save," the application must be [restarted](../webserver/application/#restart-application).
+## Usage
+This page allows the user to replace the robot's middleware XML profile file with one of their choosing.
+Leave this box blank in order to use the robot's default profile file.
+
+!!!important
+    After pressing "save," the application must be [restarted](../application/#restart-application).
+
+More details about the XML configuration file can be found on respective vendor sites:
+
+* [Cyclone DDS](https://github.com/eclipse-cyclonedds/cyclonedds/blob/master/docs/manual/options.md)
+* [Fast DDS](https://fast-dds.docs.eprosima.com/en/latest/fastdds/xml_configuration/xml_configuration.html)
+
+## Example for Cyclone DDS
+Replace `INTERFACE` with interface(s) of choice (for example, `usb0,wlan0` to communicate on both the USB and Wi-Fi interfaces)
+
+```xml
+<CycloneDDS>
+   <Domain>
+     <General>
+        <NetworkInterfaceAddress>INTERFACE</NetworkInterfaceAddress>
+    </General>
+   </Domain>
+</CycloneDDS>
+```
 
 ## Example for Fast DDS
 ```xml
@@ -30,19 +53,6 @@ This page allows the user to replace the robot's middleware XML profile file wit
        </rtps>
     </participant>
 </profiles>
-```
-
-## Example for Cyclone DDS
-Replace `INTERFACE` with interface(s) of choice (for example, `usb0,wlan0` to communicate on both the USB and Wi-Fi interfaces)
-
-```xml
-<CycloneDDS>
-   <Domain>
-     <General>
-        <NetworkInterfaceAddress>INTERFACE</NetworkInterfaceAddress>
-    </General>
-   </Domain>
-</CycloneDDS>
 ```
 
 [^1]: All trademarks mentioned are the property of their respective owners.

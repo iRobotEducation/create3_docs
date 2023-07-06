@@ -22,6 +22,11 @@ Please use the menu to navigate between sections of the webserver, or else navig
 - [Application](../webserver/application.md)
 - Beta Features
     - [Serial Forwarder](../webserver/serial-config.md)
+    - [Set Date and Time](../webserver/set-datetime.md)
+    - [Edit ntp.conf](../webserver/edit-ntp-conf.md)
+    - [Restart ntpd](../webserver/restart-ntpd.md)
+    - [Set Wired Subnet](../webserver/set-wired-subnet.md)
+    - [Override RMW Profile](../webserver/rmw-profile-override.md)
 - [About](../webserver/about.md)
 
 [^1]: ROS 2 is governed by Open Robotics
