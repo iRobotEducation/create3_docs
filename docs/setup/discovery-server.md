@@ -7,7 +7,7 @@ For more information on the Fast DDS discovery server, please refer to the [ePro
 
 ## Configure Server
 
-1. Start the discovery server on the computer that you wish to use as your server by replacing <SERVER_IP> with the server’s IP address.
+1. Start the discovery server on the computer that you wish to use as your server by replacing <SERVER_IP> with the computer's IP address.
 
         fastdds discovery -i 0 -l <SERVER_IP> -p 11811
    
@@ -15,7 +15,8 @@ For more information on the Fast DDS discovery server, please refer to the [ePro
 
 ## Configure Create® 3 Robot as a Client
 !!! important
-    If you have enabled the discovery server previously, make sure it is disabled in the configuration settings **before** connecting it to a new Wi-Fi network.*
+    If you have enabled the discovery server previously and wish to change the Wi-Fi network you are connected to, make sure the discovery server it is disabled in the configuration settings **before** connecting it to a **new** Wi-Fi network.
+    The discovery server can be disabled by unchecking the "Enable Fast DDS discovery server?" checkbox in the [webserver application settings](../../webserver/application/), and then saving and restarting the application. 
 
 1. Make sure your Create® 3 robot is connected to Wi-Fi. If it isn't, follow the directions [here](../provision/).
 
@@ -37,7 +38,7 @@ When using a discovery server with a Create® 3 Robot, all other devices connect
 
 1. Download the .xml file found [here](data/super_client_configuration_file.xml) and replace VM_IP with your device’s IP address.
 
-1. Navigate to your device and open terminal. If the super client and server are on the same computer, make sure to open a new tab in terminal (separate terminal from where the server is running).*
+1. Navigate to your device and open terminal. If the super client and server are on the same computer, make sure to open a new terminal (separate terminal from where the server is running).
 
 1. Assign your .xml file as your default profile by entering the following.
 
