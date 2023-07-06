@@ -26,7 +26,7 @@ In cases where multiple robots will be using a busy network (e.g., university or
 #### Fast DDS Discovery Server
 The Fast DDS Discovery Server further limits discovery traffic by routing discovery through a single server. 
 This can avoid known issues with scaling and multicasting. 
-Instructions on how to set up a discovery server are outlined [here.](../discovery-server.md)
+Instructions on how to set up a discovery server are outlined [here.](../discovery-server)
 
 ## Ethernet Over USB
 The Create® 3 robot has a USB-C® port that allows for ethernet network connectivity over USB.
