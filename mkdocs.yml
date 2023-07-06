@@ -33,10 +33,12 @@ extra:
     provider: google
     property: G-9QX6GHMSD7
 
-copyright: Copyright &copy; 2021-2022 iRobot Corporation. ​​All Rights Reserved.
+copyright: Copyright &copy; 2021-2023 iRobot Corporation. ​​All Rights Reserved.
 
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - footnotes
   - attr_list
 
@@ -68,8 +70,10 @@ nav:
       - Beta Features:
         - Serial Port Forward: webserver/serial-config.md
         - Set Date and Time: webserver/set-datetime.md
+        - Edit ntp.conf: webserver/edit-ntp-conf.md
         - Restart ntpd: webserver/restart-ntpd.md
         - Set Wired Subnet: webserver/set-wired-subnet.md
+        - Override RMW Profile: webserver/rmw-profile-override.md
       - About: webserver/about.md
     - Setup:
       - Connect to Wi-Fi: setup/provision.md
@@ -111,15 +115,19 @@ nav:
     - Firmware Releases:
       - Overview: releases/overview.md
       - Galactic:
-        - G.1.1: releases/g_1_1.md
-        - G.2.2: releases/g_2_2.md
-        - G.3.1: releases/g_3_1.md
-        - G.4.1: releases/g_4_1.md
-        - G.4.3: releases/g_4_3.md
-        - G.4.4: releases/g_4_4.md
-        - G.4.5: releases/g_4_5.md
+        - G.5.1: releases/g_5_1.md
+        - Older:
+          - G.1.1: releases/g_1_1.md
+          - G.2.2: releases/g_2_2.md
+          - G.3.1: releases/g_3_1.md
+          - G.4.1: releases/g_4_1.md
+          - G.4.3: releases/g_4_3.md
+          - G.4.4: releases/g_4_4.md
+          - G.4.5: releases/g_4_5.md
       - Humble:
-        - H.0.0: releases/h_0_0.md
-        - H.1.0: releases/h_1_0.md
-        - H.1.1: releases/h_1_1.md
-        - H.1.2: releases/h_1_2.md
+        - H.2.1: releases/h_2_1.md
+        - Older:
+          - H.0.0: releases/h_0_0.md
+          - H.1.0: releases/h_1_0.md
+          - H.1.1: releases/h_1_1.md
+          - H.1.2: releases/h_1_2.md
