@@ -43,4 +43,4 @@ When using a discovery server with a Create® 3 Robot, all other devices connect
 
         export FASTRTPS_DEFAULT_PROFILES_FILE=/path/to/the/xml/profile
 
-1. Now, try running a topic list by typing `ros2 topic list`.
+1. Now, try looking for the Create® 3 topics list by running `ros2 topic list`.
