@@ -33,6 +33,7 @@ Restart the application after saving all settings.
 
 ## Configure Other Devices as Super Clients 
 When using a discovery server with a Create® 3 Robot, all other devices connected to the discovery server must be set up as super clients in order to communicate with the Create® 3 Robot.
+Other devices could be any device that runs ROS 2 and wants to communicate with the Create® 3 Robot.
 
 1. Before starting, stop the ROS 2 Daemon with `ros2 daemon stop`.
 
