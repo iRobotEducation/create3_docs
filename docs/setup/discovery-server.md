@@ -15,7 +15,7 @@ For more information on the Fast DDS discovery server, please refer to the [ePro
 
 ## Configure Create® 3 Robot as a Client
 !!! important
-    If you have enabled the discovery server previously and wish to change the Wi-Fi network you are connected to, make sure the discovery server it is disabled in the configuration settings **before** connecting it to a **new** Wi-Fi network.
+    If you have enabled the discovery server previously and wish to change the Wi-Fi network you are connected to, make sure the discovery server is disabled in the configuration settings **before** connecting it to a **new** Wi-Fi network.
     The discovery server can be disabled by unchecking the "Enable Fast DDS discovery server?" checkbox in the [webserver application settings](../../webserver/application/), and then saving and restarting the application. 
 
 1. Make sure your Create® 3 robot is connected to Wi-Fi. If it isn't, follow the directions [here](../provision/).
