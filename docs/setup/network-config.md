@@ -21,7 +21,12 @@ However, multicasting is often disabled on enterprise networks, and the [creator
 A complete overview of the multicast disabling process for both RMWs is outlined on the [ROS 2 Middleware Configuration](../xml-config) page. 
 
 #### Dedicated Network
-In cases where multiple robots will be using a busy network (e.g., university or corporate networks) or the existing network configuration is non-functional, creating a dedicated network for your Create® 3 robot can mitigate most issues. 
+In cases where multiple robots will be using a busy network (e.g., university or corporate networks) or the existing network configuration is non-functional, creating a dedicated network for your Create® 3 robot can mitigate most issues.
+
+#### Fast DDS Discovery Server
+The Fast DDS Discovery Server further limits discovery traffic by routing discovery through a single server. 
+This can avoid known issues with scaling and multicasting. 
+Instructions on how to set up a discovery server are outlined [here.](../discovery-server)
 
 ## Ethernet Over USB
 The Create® 3 robot has a USB-C® port that allows for ethernet network connectivity over USB.
