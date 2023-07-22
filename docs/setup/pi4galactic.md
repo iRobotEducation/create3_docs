@@ -37,6 +37,13 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
         sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
         export LANG=en_US.UTF-8
 
+1. Specify some NTP servers for time syncronization. Edit `/etc/systemd/timesyncd.conf` (`sudo nano /etc/systemd/timesyncd.conf`) to have these contents:
+
+        [Time]
+        NTP=ntp.ubuntu.com
+        FallbackNTP=0.us.pool.ntp.org 1.us.pool.ntp.org
+
+1. Run `systemctl restart systemd-timesyncd.service` to load the new NTP server configuration.
 1. Then, execute the following blocks of commands to install ROS 2[^4]:
 
         sudo apt update && sudo apt install -y curl gnupg2 lsb-release build-essential git cmake
