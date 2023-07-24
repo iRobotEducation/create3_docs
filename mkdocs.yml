@@ -116,7 +116,7 @@ nav:
     - Firmware Releases:
       - Overview: releases/overview.md
       - Galactic:
-        - G.5.1: releases/g_5_1.md
+        - G.5.2: releases/g_5_2.md
         - Older:
           - G.1.1: releases/g_1_1.md
           - G.2.2: releases/g_2_2.md
@@ -125,10 +125,12 @@ nav:
           - G.4.3: releases/g_4_3.md
           - G.4.4: releases/g_4_4.md
           - G.4.5: releases/g_4_5.md
+          - G.5.1: releases/g_5_1.md
       - Humble:
-        - H.2.1: releases/h_2_1.md
+        - H.2.2: releases/h_2_2.md
         - Older:
           - H.0.0: releases/h_0_0.md
           - H.1.0: releases/h_1_0.md
           - H.1.1: releases/h_1_1.md
           - H.1.2: releases/h_1_2.md
+          - H.2.1: releases/h_2_1.md
