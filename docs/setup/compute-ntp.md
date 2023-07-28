@@ -22,7 +22,6 @@ If your Create® 3 and compute board have an internet connection, this is not re
 
 1. Add the following lines after the `pool #.ubuntu.pool.ntp.org iburst maxsources #` block
 
-        server 192.168.186.2 presend 0 minpoll 0 maxpoll 0 iburst  prefer trust
         # Enable serving time to ntp clients on 192.168.186.0 subnet.
         allow 192.168.186.0/24
 
@@ -35,6 +34,12 @@ If your Create® 3 and compute board have an internet connection, this is not re
 
         sudo service chrony restart
 
+1. Log into the Create® 3 web application and modify the NTP sources (as of Jul 2023 under "Beta Features") to add the following if it does not exist: 
+
+        server 192.168.186.3 iburst
+
+1. Through the Create® 3 web application, restart the NTPD server (or reboot the robot) if you made changes in the previous step.
+
 1. Verify compute NTP server is talking to the Create® 3
 
         sudo chronyc clients
@@ -44,12 +49,11 @@ If your Create® 3 and compute board have an internet connection, this is not re
         Hostname                      NTP   Drop Int IntL Last     Cmd   Drop Int  Last
         ===============================================================================
         192.168.186.2                  51      0   5   -    32       0      0   -     -
-        localhost                       0      0   -   -     -      31      0   7     4
 
 1. Note that if there is a large jump in the time, the Create® 3 may not accept it until its next reboot.
     This can be verified by checking the Create® 3 robot's log for a line like
 
         user.notice ntpd: ntpd: reply from 192.168.186.3: delay ### is too high, ignoring
-    If this happens, simply restart the robot (not just the application) via the webserver over the USB network connection.
+    If this happens, simply restart the robot (not just the application) via the webserver over the network connection.
 
 [^1]: ROS 2 is governed by Open Robotics

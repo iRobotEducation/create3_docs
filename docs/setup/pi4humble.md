@@ -60,6 +60,13 @@ The first boot may take a few minutes. (It may help to have a monitor and keyboa
         sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
         export LANG=en_US.UTF-8
 
+1. Recommended: follow the procedure to [Setup NTP on this compute board](compute-ntp.md) so the Create 3 can sync its clock.
+2. Optional: Run `timedatectl` and see if `System clock synchronized: ` says `yes`. If not, you may want setup NTP on your raspi so the clock stays accurate. To do so, specify some NTP servers for time syncronization. Edit `/etc/systemd/timesyncd.conf` (`sudo nano /etc/systemd/timesyncd.conf`) to have the below contents, then run `systemctl restart systemd-timesyncd.service` to load the new NTP server configuration.
+
+        [Time]
+        NTP=ntp.ubuntu.com
+        FallbackNTP=0.us.pool.ntp.org 1.us.pool.ntp.org
+
 1. Then, execute the following blocks of commands to install ROS 2[^4]:
 
         sudo apt update && sudo apt install -y curl gnupg2 lsb-release build-essential git cmake
