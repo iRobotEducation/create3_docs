@@ -34,11 +34,11 @@ If your Create® 3 and compute board have an internet connection, this is not re
 
         sudo service chrony restart
 
-1. Log into the Create® 3 web application and modify the NTP sources (as of Jul 2023 under "Beta Features") to add the following: 
+1. Log into the Create® 3 web application and modify the NTP sources (as of Jul 2023 under "Beta Features") to add the following if it does not exist: 
 
         server 192.168.186.3 iburst
 
-1. Through the Create® 3 web application, restart the NTPD server (or reboot the robot).
+1. Through the Create® 3 web application, restart the NTPD server (or reboot the robot) if you made changes in the previous step.
 
 1. Verify compute NTP server is talking to the Create® 3
 
