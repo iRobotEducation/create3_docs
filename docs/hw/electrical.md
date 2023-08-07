@@ -18,6 +18,7 @@ Resetting the battery is accomplished by removing the battery from the robot for
 
 Charge the battery by placing Create® 3 on the included iRobot® Home Base™ Charging Station.
 The light ring will show the state of charge and animate while the battery is charging.
+The battery will self-protect and disable the ability to charge if it charges continuously for four hours without reaching 100% state of charge.
 
 !!! attention "Notice"
     Always remove the Create® 3 robot’s battery prior to dismantling, adjusting, altering, or affecting the robot’s chassis at the risk of damaging the battery, robot, or both.
