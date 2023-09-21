@@ -21,7 +21,7 @@ Here are some hookup examples for NVIDIA® Jetson™[^2] computers.
     - Custom power cable (JST-XH to DC 5.5 mm x 2.5 mm plug)
         - [DC power plug (5.5 mm x 2.5 mm)](https://a.co/d/cfNWywP)
     - [USB data cable (**USB-C® to USB-C®**)](https://a.co/d/7H62wsI)
-    - Jetson NX-style developer kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount.stl))
+    - Jetson NX-style developer kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Mount_Bracket/C3-JetsonXavierNX-Mount.stl))
     - Sensor mount plate (STL file)
     - [M3 standoff/spacer x4](https://a.co/d/f1QWGB3)
     - M3 screws
@@ -43,7 +43,7 @@ This can be powered from the unregulated battery port of the Create® 3 adapter 
     - Custom power cable (JST-XH to DC 5.5 mm x 2.5 mm plug)
         - [DC power plug (5.5 mm x 2.5 mm)](https://a.co/d/cfNWywP)
     - [USB data cable (USB Micro B to USB-C®)](https://a.co/d/dnlCj1d)
-    - Jetson Xavier Developer Kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Adapter_Mount/C3-JetsonXavierNX-Mount.stl))
+    - Jetson Xavier Developer Kit mount ([STL file](./data/models/Compute/NVIDIA_Jetson/Mount_Bracket/C3-JetsonXavierNX-Mount.stl))
     - Sensor mount plate (STL file)
     - [M3 standoff/spacer x4](https://a.co/d/f1QWGB3)
     - M3 screws
