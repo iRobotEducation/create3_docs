@@ -5,7 +5,7 @@ ROS 2[^1] is built on top of DDS/RTPS as its middleware, which provides advanced
 This page contains some examples that may be useful when interacting with the iRobot® Create® 3.
 
 !!! important
-    Depending on the ROS 2 RMW used, the syntax for configuring the network will be different. 
+    Depending on the ROS 2 RMW used, the syntax for configuring the network will be different.
     We recommend to visit the RMW vendor documentation for more details.
 
 You can choose a RMW implementation on your machine using
@@ -15,8 +15,8 @@ export RMW_IMPLEMENTATION=name-of-the-RMW
 ```
 Currently, the only supported RMW implementations are: `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`.  See [here](https://docs.ros.org/en/rolling/Concepts/About-Different-Middleware-Vendors.html) for more info on the different RMW vendors.
 
-If you are using a bash shell (default on Ubuntu), you can set a default RMW adding the above line to your `.bashrc` file. 
-You may have already set a default RMW in this file if you followed our [ROS 2 Galactic](https://iroboteducation.github.io/create3_docs/setup/ubuntu2004/) or [ROS 2 Humble](https://iroboteducation.github.io/create3_docs/setup/ubuntu2204/) installation instructions; in that case, you can change the name of the RMW by editing your `.bashrc` file using your preferred text editor. 
+If you are using a bash shell (default on Ubuntu), you can set a default RMW adding the above line to your `.bashrc` file.
+You may have already set a default RMW in this file if you followed our [ROS 2 Galactic](https://iroboteducation.github.io/create3_docs/setup/ubuntu2004/) or [ROS 2 Humble](https://iroboteducation.github.io/create3_docs/setup/ubuntu2204/) installation instructions; in that case, you can change the name of the RMW by editing your `.bashrc` file using your preferred text editor.
 Nano is an option for a text editor that is standard on most Ubuntu installations. You can also install it using
 
 ```sh
@@ -81,23 +81,24 @@ The file must be edited replacing `ROBOT_IP` with the actual IP value.
 </profiles>
 ```
 
-## CycloneDDS
+## Cyclone DDS
 
-CycloneDDS allows to specify DDS configuration through an XML file.
+Cyclone DDS allows to specify DDS configuration through an XML file.
 In order to apply a configuration, the path to the XML file must be provided through the following environment variable:
 
 ```sh
 export CYCLONEDDS_URI=/path/to/the/xml/profile
 ```
 
-Detailed network configurations are described in the [CycloneDDS documentation](https://github.com/eclipse-cyclonedds/cyclonedds#configuration).
+Detailed network configurations are described in the [Cyclone DDS documentation](https://cyclonedds.io/docs/cyclonedds/latest/config/network-config.html).
 
 #### Multiple Network Interfaces
 
-This feature requires CycloneDDS version 0.8.0 or higher.
+This feature requires Cyclone DDS version 0.8.0 or higher.
 Use the following XML profile specifying the name of all the network interfaces you want to use.
 For example `usb0` and `wlan0` in this example.
 
+##### Galactic and Humble
 ```
 <CycloneDDS>
    <Domain>
@@ -108,10 +109,24 @@ For example `usb0` and `wlan0` in this example.
 </CycloneDDS>
 ```
 
+##### Humble and future releases
+```
+<CycloneDDS>
+   <Domain>
+     <General>
+        <Interfaces>
+          <NetworkInterface name="usb0" />
+          <NetworkInterface name="wlan0" />
+        </Interfaces>
+    </General>
+   </Domain>
+</CycloneDDS>
+```
+
 Note that the specified network interfaces must be already active when the ROS 2 process is started.
 
 !!! attention
-    **If the robot is running with a Compute Board like a [Raspberry Pi®](../pi4) or an [NVIDIA® Jetson™](../jetson) connected via USB, then the robot is using a multiple interface CycloneDDS config file to communicate both over usb0 and wlan0.**
+    **If the robot is running with a Compute Board like a [Raspberry Pi®](../pi4) or an [NVIDIA® Jetson™](../jetson) connected via USB, then the robot is using a multiple interface Cyclone DDS config file to communicate both over usb0 and wlan0.**
     **We have found that with CycloneDDS version 0.8.1, for an Ubuntu laptop to see the robot topics with CycloneDDS when running multiple interfaces, the laptop must use the configuration option:**
 ```
 <CycloneDDS>
@@ -129,12 +144,35 @@ The following XML profile can be used on your laptop (or compute board) to force
 
 The file must be edited replacing `${ROBOT_IP}` with the actual IP value, or exporting the value as an environment variable.
 
+##### Galactic and Humble
 ```
 <CycloneDDS>
   <Domain>
     <Id>any</Id>
     <General>
       <NetworkInterfaceAddress>auto</NetworkInterfaceAddress>
+      <AllowMulticast>false</AllowMulticast>
+      <EnableMulticastLoopback>true</EnableMulticastLoopback>
+    </General>
+    <Discovery>
+      <ParticipantIndex>0</ParticipantIndex>
+      <Peers>
+        <Peer Address="${ROBOT_IP}:7410"/>
+      </Peers>
+    </Discovery>
+  </Domain>
+</CycloneDDS>
+```
+
+##### Humble and future releases
+```
+<CycloneDDS>
+  <Domain>
+    <Id>any</Id>
+    <General>
+      <Interfaces>
+        <NetworkInterface autodetermine="true" />
+      </Interfaces>
       <AllowMulticast>false</AllowMulticast>
       <EnableMulticastLoopback>true</EnableMulticastLoopback>
     </General>
