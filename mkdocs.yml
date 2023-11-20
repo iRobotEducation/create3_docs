@@ -136,3 +136,7 @@ nav:
           - H.1.2: releases/h_1_2.md
           - H.2.1: releases/h_2_1.md
           - H.2.2: releases/h_2_2.md
+    - Community Highlights:
+      - Overview: community/overview.md
+      - Robots:
+        - Stub page
