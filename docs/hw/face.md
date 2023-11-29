@@ -63,10 +63,10 @@ The LEDs expose internal state information about the robot, but can also be over
 |  Device is connected to <br> robot’s Access Point page.  |  Robot downloading <br> update file  |  Robot updating firmware <br> Do not remove from dock  |  Update successful  |
 
 ### While Operating
-|  Spinning White  |  Solid White  |  Pulsing Red  |  Half Solid Orange  | Half Solid Yellow  |
-| ----- | ----- | ----- | ----- | ----- |
-|  ![Full spinning white](data/lightring/boot.gif){: style="height:100px;width:100px"}  |  ![Solid white](data/lightring/white_solid.jpg){: style="height:100px;width:100px"}  |  ![Pulsing Red](data/lightring/red_pulsing.gif){: style="height:100px;width:100px"}  |  ![Rear Half Orange](data/lightring/orange_half_solid.jpg){: style="height:100px;width:100px"}  |  ![Rear Half Yellow](data/lightring/yellow_half_solid.jpg){: style="height:100px;width:100px"}  |
-|  Robot is booting up.<br>Wait for "happy sound" to play.  |  Default light color  |  Battery <10%.  |  Back-up safety activated  |  Wheels disabled  |
+|  Spinning White  |  Solid White  |  Pulsing Red  |  Spinning Red  |  Half Solid Orange  | Half Solid Yellow  |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+|  ![Full spinning white](data/lightring/boot.gif){: style="height:100px;width:100px"}  |  ![Solid white](data/lightring/white_solid.jpg){: style="height:100px;width:100px"}  |  ![Pulsing Red](data/lightring/red_pulsing.gif){: style="height:100px;width:100px"}  |  ![Spinning Red](data/lightring/red_spinning.gif){: style="height:100px;width:100px"}  |  ![Rear Half Orange](data/lightring/orange_half_solid.jpg){: style="height:100px;width:100px"}  |  ![Rear Half Yellow](data/lightring/yellow_half_solid.jpg){: style="height:100px;width:100px"}  |
+|  Robot is booting up.<br>Wait for "happy sound" to play.  |  Default light color  |  Battery < 10%  |  Battery < 3%  |  Back-up safety activated  |  Wheels disabled  |
 
 [^1]: The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by iRobot is under license.
 [^2]: All other trademarks mentioned are the property of their respective owners.
