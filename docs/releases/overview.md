@@ -26,9 +26,6 @@ The latest stable Galactic release can be found at
 
 Downloads of a particular version can be found on each individual release page.
 
-!!! note
-    As of March 2023, use of Galactic is recommended, as it is more performant than Humble on Create 3.
-
 ## Releases
 
 ### Humble
