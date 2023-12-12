@@ -103,7 +103,7 @@ A boolean status will be periodically published on the `kidnap_status` topic.
 
 ### The `ir_intensity` topic
 
-[7 sets of IR emitters and receivers](/hw/mechanical/#ir-proximity-sensors) are available in the front bumper to detect objects at close range.
+[7 sets of IR emitters and receivers](../../hw/mechanical/#ir-proximity-sensors) are available in the front bumper to detect objects at close range.
 
 The Create® 3 robot will periodically publish on the `ir_intensity` topic the raw intensity readings obtained from these sensors.
 The message will be a vector where each element corresponds to a different sensor.
@@ -165,7 +165,7 @@ In particular the timestamp will denote when the robot detected the hazard and t
 
 ### The `cliff_intensity` topic
 
-[4 sets of IR emitters and receivers](/hw/mechanical/#bottom-view) are available in on the bottom of the robot just behind its front bumper to detect presence or absence of the floor.
+[4 sets of IR emitters and receivers](../../hw/mechanical/#bottom-view) are available in on the bottom of the robot just behind its front bumper to detect presence or absence of the floor.
 
 The Create® 3 robot will periodically publish on the `cliff_intensity` topic the raw intensity readings obtained from these sensors.
 The message will be a vector where each element corresponds to a different sensor.
