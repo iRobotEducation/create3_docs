@@ -33,7 +33,10 @@ If it does not, execute the following:
 
         sudo apt update && sudo apt install software-properties-common && sudo add-apt-repository universe
 
-1. Add the ROS 2[^2] apt repository, first by authorizing the Open Robotics GPG key
+1. Add the ROS 2[^2] apt repository, first by installing curl
+
+        sudo apt install curl
+then authorizing the Open Robotics GPG key
 
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 and then adding the repository to your computer's sources list
