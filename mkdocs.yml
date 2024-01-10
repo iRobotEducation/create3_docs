@@ -33,7 +33,7 @@ extra:
     provider: google
     property: G-9QX6GHMSD7
 
-copyright: Copyright &copy; 2021-2023 iRobot Corporation. ​​All Rights Reserved.
+copyright: Copyright &copy; 2021-2024 iRobot Corporation. ​​All Rights Reserved.
 
 markdown_extensions:
   - admonition
