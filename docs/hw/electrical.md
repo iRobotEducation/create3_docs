@@ -6,21 +6,26 @@ The battery shipping with the robot is a 26 Wh, 4S Lithium Ion smart battery pac
 It will report a 0% state of charge when the total voltage of the pack reaches 12.0 V.
 It will self-protect and disconnect from any load at 10.8 V or lower.
 
-!!! attention "Notice"
-    If the robot is approaching a 0% state of charge and the application does not believe it will make it to the dock, the robot should be powered down using the `/robot_power` service.
+!!! warning "Notice"
+    If the robot is approaching a 0% state of charge and the user application does not believe it will make it to the dock, the robot should be powered down using the [`/robot_power` service](../../examples/actuators-cli/#robot-power).
+    It is recommended to return to the dock at or below about 10% state of charge in order to prevent the robot from being stranded without power.
+
+
+!!! info
+    As of software version G.5.4 (Galactic) and H.2.4 (Humble), the Create 3 robot will interally call the `/robot_power` service once the battery's state of charge dips below 2% in order to reduce the risk of tripping the battery's self-protection limits.
 
 If the battery self-protects, its internal management system may refuse to charge until it is reset.
 Resetting the battery is accomplished by removing the battery from the robot for at least fifteen minutes, at which point it should be reinstalled in the robot and the robot placed on the charger.
 
 
-!!! attention "Notice"
+!!! info
     When not overridden, the robot's light ring will flash red to indicate low battery state, at about 10% state of charge. It is recommended not to run the robot for extended periods of time in this state.
 
 Charge the battery by placing Create® 3 on the included iRobot® Home Base™ Charging Station.
 The light ring will show the state of charge and animate while the battery is charging.
 The battery will self-protect and disable the ability to charge if it charges continuously for four hours without reaching 100% state of charge.
 
-!!! attention "Notice"
+!!! danger "Notice"
     Always remove the Create® 3 robot’s battery prior to dismantling, adjusting, altering, or affecting the robot’s chassis at the risk of damaging the battery, robot, or both.
     Do not attempt to use the robot without its battery installed.
 
