@@ -40,7 +40,7 @@ Downloads of a particular version can be found on each individual release page.
 * [H.0.0](../h_0_0)
 
 ### Galactic
-* [G.5.3](../g_5_4) (galactic-latest, latest)
+* [G.5.4](../g_5_4) (galactic-latest, latest)
 * [G.5.3](../g_5_3)
 * [G.5.2](../g_5_2)
 * [G.5.1](../g_5_1)
