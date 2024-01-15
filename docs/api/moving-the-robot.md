@@ -16,7 +16,7 @@ The velocity control API is the simplest way to move the Create® 3 robot.
 It's recommended for beginners and to simply try out the robot.
 Being the lowest-level motion API exposed by the robot, this is also recommended to the more advanced users who want to implement their own autonomous navigation applications.
 
-The robot is controlled by publishing `geometry_msgs::msg::Twist` messages to the `/cmd_vel` topic.
+The robot is controlled by publishing [geometry_msgs/msg/Twist](https://github.com/ros2/common_interfaces/blob/rolling/geometry_msgs/msg/Twist.msg) messages to the `/cmd_vel` topic.
 For example, to move the robot straight forward using the ROS 2 command line:
 
 ```bash
