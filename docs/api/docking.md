@@ -66,5 +66,16 @@ In Galactic, more high-level information is produced by the robot in the `/dock`
 In Humble and beyond, the topic has been renamed to `/dock_status`.
 Here it's possible to quickly know if the robot is able to see the dock from its current location and whether it is currently docked or not.
 
+??? example
+    ```
+    header:
+      stamp:
+        sec: 1705431756
+        nanosec: 487796375
+      frame_id: ''
+    dock_visible: true
+    is_docked: false
+    ```
+
 [^1]: ROS 2 is governed by Open Robotics
 [^2]: All trademarks mentioned are the property of their respective owners.
