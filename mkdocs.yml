@@ -33,7 +33,7 @@ extra:
     provider: google
     property: G-9QX6GHMSD7
 
-copyright: Copyright &copy; 2021-2023 iRobot Corporation. ​​All Rights Reserved.
+copyright: Copyright &copy; 2021-2024 iRobot Corporation. ​​All Rights Reserved.
 
 markdown_extensions:
   - admonition
@@ -74,6 +74,7 @@ nav:
         - Restart ntpd: webserver/restart-ntpd.md
         - Set Wired Subnet: webserver/set-wired-subnet.md
         - Override RMW Profile: webserver/rmw-profile-override.md
+        - Forget Wi-Fi Network: webserver/forget-wifi.md
       - About: webserver/about.md
     - Setup:
       - Connect to Wi-Fi: setup/provision.md
@@ -116,7 +117,7 @@ nav:
     - Firmware Releases:
       - Overview: releases/overview.md
       - Galactic:
-        - G.5.3: releases/g_5_3.md
+        - G.5.4: releases/g_5_4.md
         - Older:
           - G.1.1: releases/g_1_1.md
           - G.2.2: releases/g_2_2.md
@@ -127,8 +128,9 @@ nav:
           - G.4.5: releases/g_4_5.md
           - G.5.1: releases/g_5_1.md
           - G.5.2: releases/g_5_2.md
+          - G.5.3: releases/g_5_3.md
       - Humble:
-        - H.2.3: releases/h_2_3.md
+        - H.2.4: releases/h_2_4.md
         - Older:
           - H.0.0: releases/h_0_0.md
           - H.1.0: releases/h_1_0.md
@@ -136,3 +138,4 @@ nav:
           - H.1.2: releases/h_1_2.md
           - H.2.1: releases/h_2_1.md
           - H.2.2: releases/h_2_2.md
+          - H.2.3: releases/h_2_3.md
