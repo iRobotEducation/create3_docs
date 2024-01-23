@@ -100,6 +100,7 @@ nav:
       - Fast DDS Discovery Server: setup/discovery-server.md
     - APIs:
       - ROS 2 Interface: api/ros2.md
+      - Moving the Robot: api/moving-the-robot.md
       - Docking: api/docking.md
       - Drive Goals: api/drive-goals.md
       - Hazards: api/hazards.md

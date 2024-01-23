@@ -9,7 +9,7 @@ Through the ROS 2[^1] APIs users can command docking and undocking autonomous be
 
 In order for the robot to detect the dock, determine its location, and understand when it is succesfully docked, it is necessary that the docking station is connected to a power source.
 
-## Built-in docking behaviors
+## Autonomous behaviors
 
 #### Undocking
 
