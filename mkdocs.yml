@@ -75,6 +75,7 @@ nav:
         - Set Wired Subnet: webserver/set-wired-subnet.md
         - Override RMW Profile: webserver/rmw-profile-override.md
         - Forget Wi-Fi Network: webserver/forget-wifi.md
+        - Override wpa_supplicant: webserver/wpa-supp-override.md
       - About: webserver/about.md
     - Setup:
       - Connect to Wi-Fi: setup/provision.md
@@ -131,7 +132,7 @@ nav:
           - G.5.2: releases/g_5_2.md
           - G.5.3: releases/g_5_3.md
       - Humble:
-        - H.2.4: releases/h_2_4.md
+        - H.2.5: releases/h_2_5.md
         - Older:
           - H.0.0: releases/h_0_0.md
           - H.1.0: releases/h_1_0.md
@@ -140,3 +141,4 @@ nav:
           - H.2.1: releases/h_2_1.md
           - H.2.2: releases/h_2_2.md
           - H.2.3: releases/h_2_3.md
+          - H.2.4: releases/h_2_4.md
