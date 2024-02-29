@@ -29,7 +29,8 @@ Downloads of a particular version can be found on each individual release page.
 ## Releases
 
 ### Humble
-* [H.2.5](../h_2_5) (humble-latest, latest)
+* [H.2.6](../h_2_6) (humble-latest, latest)
+* [H.2.5](../h_2_5)
 * [H.2.4](../h_2_4)
 * [H.2.3](../h_2_3)
 * [H.2.2](../h_2_2)
