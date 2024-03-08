@@ -1,8 +1,5 @@
 # Install ROS 2 Humble with Create 3 Messages on an Ubuntu 22.04 Machine
 
-!!! note
-    As of March 2023, use of Galactic is recommended, as it is more performant than Humble on Create 3.
-
 ## Before you start
 These directions should work on a machine natively running Ubuntu[^1] 22.04, as well as in a virtualized container within another operating system.
 Note that there might be some network setup required if in a virtualized container; for example, RMWs seem to like running in a bridged network configuration rather than a NATted one.
