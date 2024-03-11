@@ -1,15 +1,12 @@
 # Connect Create® 3 to Raspberry Pi® 4 and set up ROS 2 Humble
 
-!!! note
-    As of March 2023, use of Galactic is recommended, as it is more performant than Humble on Create 3.
-
 ## Before you start
 !!! attention
     **These directions are written for someone with experience with embedded Linux and basic embedded computers.**
 It is highly recommended to read through the following documents before beginning:
 
 * [How to install Ubuntu Server on your Raspberry Pi](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi)[^1] - official Canonical documentation
-* [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html)[^1] - official Open Robotics documentation
+* [Installing ROS 2 on Ubuntu Linux](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)[^1] - official Open Robotics documentation
 
 ## Step-by-step
 
@@ -19,10 +16,12 @@ It is highly recommended to read through the following documents before beginnin
 
 1. Insert your microSD card into your computer and under storage in the Raspberry Pi Imager, select your microSD card.
 
-1. Select the gear icon to optionally customize advanced options including enabling SSH, setting a unique username and password, and configuring a wireless LAN.
+1. It's recommended to customize advanced options for the image before flashing it.
+To do it, either click on the gear icon, if visible, or press "ctrl + shift + x" keyboard shortcut ("command + shift + x" on MacOS).
+Advanced options include enabling SSH, setting a unique username and password, and configuring a wireless LAN.
 It is recommended to uncheck the "Eject media when finished" box in advanced options so you can edit the necessary files in the following steps without re-inserting the SD card.
 
-1. Once all options have been selected, click the "WRITE" button to write the image to your SD card.
+1. Once all options have been selected, click the "WRITE" (or "NEXT") button to write the image to your SD card.
 
 1. In the system-boot partition, edit config.txt and add `dtoverlay=dwc2,dr_mode=peripheral` at the end of the file.
 

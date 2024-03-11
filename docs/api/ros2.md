@@ -17,7 +17,7 @@ $ ros2 topic list -t
 /cmd_audio [irobot_create_msgs/msg/AudioNoteVector]
 /cmd_lightring [irobot_create_msgs/msg/LightringLeds]
 /cmd_vel [geometry_msgs/msg/Twist]
-/dock [irobot_create_msgs/msg/Dock]
+/dock_status [irobot_create_msgs/msg/DockStatus]
 /hazard_detection [irobot_create_msgs/msg/HazardDetectionVector]
 /imu [sensor_msgs/msg/Imu]
 /interface_buttons [irobot_create_msgs/msg/InterfaceButtons]
@@ -93,7 +93,7 @@ You can see the ROS 2 action servers exposed by the Create® 3 robot running the
 ```bash
 $ ros2 action list -t
 /audio_note_sequence [irobot_create_msgs/action/AudioNoteSequence]
-/dock [irobot_create_msgs/action/DockServo]
+/dock [irobot_create_msgs/action/Dock]
 /drive_arc [irobot_create_msgs/action/DriveArc]
 /drive_distance [irobot_create_msgs/action/DriveDistance]
 /led_animation [irobot_create_msgs/action/LedAnimation]
