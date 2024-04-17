@@ -112,6 +112,26 @@ nav:
       - Wall Follow: api/wall-follow.md
     - Simulator:
       - Using the Simulator: sim/setup.md
+    - Lessons:
+      - Create 3 Basics: lessons/getting-started.md
+      - Getting started with ROS 2:
+        - Overview: lessons/ros2/overview.md
+        - Teleop Twist: lessons/ros2/teleop-twist.md
+        - Intro to ROS 2:
+          - Working with the CLI: lessons/ros2/intro/working-with-the-cli.md
+          - Writing Pubs and Subs: lessons/ros2/intro/writing-pubs-and-subs.md
+          - Writing Action Clients: lessons/ros2/intro/writing-action-clients.md
+          - Creating Packages: lessons/ros2/intro/creating-packages.md
+          - Serial Communication: lessons/ros2/intro/serial-communication.md
+      - Using BLE with Python:
+        - Overview: lessons/pwp/overview.md
+        - Python Web Playground: lessons/pwp/web-playground.md
+        - Robot Dance Recital: lessons/pwp/robot-dance-recital.md
+        - Light Painting: lessons/pwp/light-painting.md
+        - Sound Off, 1-2: lessons/pwp/sound-off-1-2.md
+        - C3, Phone Home: lessons/pwp/c3-phone-home.md
+        - Integrating AirTable: lessons/pwp/integrating-airtable.md
+        - Python Cheat Sheets: lessons/pwp/cheat-sheets.md
     - Software Examples:
       - Actuators via CLI: examples/actuators-cli.md
       - Sensors via CLI: examples/sensors-cli.md
