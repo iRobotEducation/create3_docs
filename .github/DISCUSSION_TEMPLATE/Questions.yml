@@ -16,9 +16,9 @@ body:
         - Wi-Fi (ROS 2)
         - USB Ethernet (ROS 2)
         - Wi-Fi and USB Ethernet (ROS 2)
-        - Bluetooth (iRobot Coding)
         - Bluetooth (Python Playground)
         - Bluetooth (Python SDK)
+        - Bluetooth (Other)
         - I'm not sure
     validations:
       required: true

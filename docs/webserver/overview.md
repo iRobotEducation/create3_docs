@@ -11,7 +11,7 @@ The robot will get an IP address over DHCP as served by your network on its `wla
 The webserver is available over http (port 80) in a browser by navigating to its IP address on whichever interface is active.
 
 !!! attention
-    It is not recommended to run the robot's access point while also controlling the robot via ROS 2 or iRobot Coding.
+    It is not recommended to run the robot's access point while also controlling the robot via ROS 2 or the iRobot Education Bluetooth®[^2] protocol.
 
 Please use the menu to navigate between sections of the webserver, or else navigate directly to the sections below:
 
@@ -30,4 +30,5 @@ Please use the menu to navigate between sections of the webserver, or else navig
 - [About](../webserver/about.md)
 
 [^1]: ROS 2 is governed by Open Robotics
-[^2]: All other trademarks mentioned are the property of their respective owners.
+[^2]: The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by iRobot is under license.
+[^3]: All other trademarks mentioned are the property of their respective owners.

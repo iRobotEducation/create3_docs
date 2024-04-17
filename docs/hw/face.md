@@ -10,12 +10,12 @@ Button 1 (to the left of center) is marked with a single dot (•).
 If held for ten seconds, the robot will go into "standby" mode, keeping its charging circuitry active, and continuing to power the payload.
 The robot can be placed on the dock to charge or to keep the payload alive in this mode.
 To wake the robot from standby, hold the center button for one second.
-Button presses can be accessed by the user in both ROS 2 and iRobot Coding / Bluetooth[^1] modes.
+Button presses can be accessed by the user in both ROS 2 and iRobot Education Bluetooth[^1] modes.
 
 ### Button 2
 Button 2 (to the right of center) is marked with two dots (••).
 This button is a user button only.
-Button presses can be accessed by the user in both ROS 2 and iRobot Coding / Bluetooth[^1] modes.
+Button presses can be accessed by the user in both ROS 2 and iRobot Education Bluetooth[^1] modes.
 
 ### Center Button
 The center button is marked with a power (⏻) icon.
