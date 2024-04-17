@@ -3,7 +3,7 @@
 Reference resources to support coding in the iRobot Education Python Web Playground.
 
 ### Downloads and Resources
-* [PDF: Syntax Cheat Sheets](./sdk_commands.pdf)
+* [PDF: Syntax Cheat Sheets](./pwp-sdk_commands.pdf)
 
 ## Get Started
 1. Visit python.irobot.com in a Bluetooth®-supported web browser, such as Google Chrome.

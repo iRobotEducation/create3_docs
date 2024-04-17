@@ -4,7 +4,7 @@ In this project, you'll build the Create 3 Examples repository from GitHub and d
 
 ### Downloads and Resources
 * [Create 3 Examples GitHub](https://github.com/iRobotEducation/create3_examples)
-* [Tutorial Video](https://players.brightcove.net/6055873617001/rwlsgJjMH_default/index.html?videoId=6312881862112)
+* [Tutorial Video](https://bcove.video/3BOpW9D)
 
 ## Build the Create® 3 Examples Repository
 Example nodes to drive the iRobot® Create® 3 Educational Robot.
