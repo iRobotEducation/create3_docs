@@ -1,6 +1,6 @@
-# Create 3 Robot Dance Recital
+# Create® 3 Robot Dance Recital
 ## Details
-Use the Create 3 and the iRobot Education Python Web Playground to code your robot to dance the Hokey Pokey. Looking for more? Take your new choreography skills to new heights and code a dance to your own song!
+Use the Create® 3 and the iRobot Education Python Web Playground to code your robot to dance the Hokey Pokey. Looking for more? Take your new choreography skills to new heights and code a dance to your own song!
 
 ### Downloads and Resources
 * [PDF: Robot Dance Recital](./Create3-Robot_Dance_Recital.pdf)

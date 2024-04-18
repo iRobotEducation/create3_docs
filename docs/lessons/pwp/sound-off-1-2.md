@@ -1,6 +1,6 @@
 # Sound Off, 1-2
 ## Details
-Code your Create 3 Robot to play musical tones and respond to button presses and other sensor input.
+Code your Create® 3 Robot to play musical tones and respond to button presses and other sensor input.
 ### Downloads and Resources
 * [PDF: Sound Off, 1-2 Activity Sheet](./Create3-Sound_Off.pdf)
 
@@ -8,7 +8,7 @@ Code your Create 3 Robot to play musical tones and respond to button presses and
 Robots can play musical notes by emitting sounds of different frequencies and durations. These notes can be strung together in a sequence to play simple melodies, which are used to help the robot communicate its status. A “Happy Sound” can communicate “I am ready to run,” while an “Angry Sound” can mean “I am experiencing a problem.” Explore programming different notes and melodies to give your robot its own voice!
 
 ## Project Steps
-1. Locate Button 1 and Button 2 in the Create 3 button suite. In the code, trigger an event for Button 1 and 2 press with these commands:
+1. Locate Button 1 and Button 2 in the Create® 3 button suite. In the code, trigger an event for Button 1 and 2 press with these commands:
 ```
 @event(robot.when_touched, [True, False]
 async def when_touch_fl(robot):

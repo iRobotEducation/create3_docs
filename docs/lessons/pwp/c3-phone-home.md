@@ -5,7 +5,7 @@ Use a coordinate system to command your robot to return to its starting position
 * [PDF: C3, Phone Home Activity Sheet](./Create3-C3_Phone_Home.pdf)
 
 ## The Main Idea
-The Create 3 keeps track of its position on an invisible coordinate grid as it moves around. This feature can be particularly handy when you’d like to tell your robot to drive to a specific set of coordinates, landmark, etc. Here we will use the invisible coordinate system to tell your robot to return to its starting position after roaming around a room.
+The Create® 3 robot keeps track of its position on an invisible coordinate grid as it moves around. This feature can be particularly handy when you’d like to tell your robot to drive to a specific set of coordinates, landmark, etc. Here we will use the invisible coordinate system to tell your robot to return to its starting position after roaming around a room.
 
 ## Project Steps
 1. Remove your robot from the Home Base™ Charging Dock and place it on an empty space on the floor. This starting position will be registered as (0, 0) by the robot when you press “Play” on your program.
@@ -28,6 +28,6 @@ robot.play()
 ## Going Further
 Can you use the command await robot.get_position() to program your robot to list the coordinates of the obstacles it bumps into? How might you turn that list into a basic map?
 
-Try combining the navigate_to() commands with the Create 3 Light Painting Activity to create precise drawings from a coordinate grid.
+Try combining the navigate_to() commands with the Create® 3 Light Painting Activity to create precise drawings from a coordinate grid.
 
 Try measuring out your robot’s arena in centimeters and placing stickers or other flat landmarks down on specific coordinates. Program your robot to drive to each of the coordinates. How similar are you measurements?

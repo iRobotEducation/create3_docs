@@ -67,7 +67,7 @@ robot.play()
 ```
 
 ### Editing Your Python Playground Project
-1. If you are using the Root Coding Robot, you can leave the template as-is. However, if you are using the Create 3 Educational Robot, change lines 14 and 15 to the following code snippet:
+1. If you are using the Root Coding Robot, you can leave the template as-is. However, if you are using the Create® 3 Educational Robot, change lines 14 and 15 to the following code snippet:
 ```
 #robot = Root(Bluetooth()) # Will connect to the first Root Robot found.
 robot = Create3(Bluetooth()) # Will connect to the first Create Robot found.

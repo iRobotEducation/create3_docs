@@ -1,6 +1,6 @@
-# Intro to ROS 2: Serial Communication with Create 3
+# Intro to ROS 2: Serial Communication with the Create® 3 Robot
 ## Details
-In this tutorial video, review the basics of communicating over a serial port with the Create 3 robot in order to connect external hardware and other attachments!
+In this tutorial video, review the basics of communicating over a serial port with the Create® 3 robot in order to connect external hardware and other attachments!
 
 ### Downloads and Resources
 * [Video: Serial Communication Tutorial](https://bcove.video/3TyfQ3K)
