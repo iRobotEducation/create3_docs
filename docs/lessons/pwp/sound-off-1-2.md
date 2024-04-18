@@ -19,7 +19,7 @@ async def when_touch_fr(robot):
     pass
 ```
 
-2. Use the command await robot.play_note(440, 0.25) to play an A4 quarter note. The first parameter determines the note frequency and the second parameter determines note duration (in seconds). Explore playing different notes with our Python Note Frequencies Guide.
+2. Use the command await robot.play_note(440, 0.25) to play an A4 quarter note. The first parameter determines the note frequency and the second parameter determines note duration (in seconds). Explore playing different notes with our Python[^1] Note Frequencies Guide.
 
 3. Under a Button 1 event, list at least three notes together in a sequence to create a “happy sound” melody. Our example snippet is below:
 ```
@@ -38,3 +38,6 @@ Take your robot’s personality to new heights by programming it to “grumble�
 OR
 
 Transform your robot into a random guess machine! Create a program that will randomly play a happy or angry sound when a button is pressed. Use the robot to answer Yes or No questions randomly.
+
+[^1]: Python is governed by the Python Software Foundation.
+[^2]: All trademarks mentioned are the property of their respective owners.

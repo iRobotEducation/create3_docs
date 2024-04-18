@@ -1,6 +1,6 @@
 # Python Cheat Sheets
 ## Details
-Reference resources to support coding in the iRobot Education Python Web Playground.
+Reference resources to support coding in the iRobot Education Python[^1] Web Playground.
 
 ### Downloads and Resources
 * [PDF: Syntax Cheat Sheets](./pwp-sdk_commands.pdf)
@@ -88,3 +88,6 @@ await robot.set_wheel_speeds(speed, speed)
 * def and async def can have return values, but not when tagged by an event
 * events happen simultaneously
 * event functions don't use return values
+
+[^1]: Python is governed by the Python Software Foundation.
+[^2]: All trademarks mentioned are the property of their respective owners.

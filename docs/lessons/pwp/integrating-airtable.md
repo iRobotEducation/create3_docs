@@ -1,6 +1,6 @@
 # Integrating AirTable with the Python Web Playground
 ## Details
-Reference resources to support coding in the iRobot Education Python Web Playground.
+Reference resources to support coding in the iRobot Education Python[^1] Web Playground.
 
 ### Downloads and Resources
 * [Link: Python Web Playground](http://python.irobot.com/)
@@ -86,3 +86,6 @@ robot = Create3(Bluetooth()) # Will connect to the first Create Robot found.
 
 ### Going Further
 You can take this project further by integrating your Airtable with other internet-connected tools. For example, on Thunkable.com, you can use drag-and-drop block code to create a mobile app that updates the values in your Airtable. From there, you can turn your phone into a remote control for your robot!
+
+[^1]: Python is governed by the Python Software Foundation.
+[^2]: All trademarks mentioned are the property of their respective owners.

@@ -1,4 +1,4 @@
-# Light Paint with Create® 3
+# Light Paint with the Create® 3 Robot
 ## Details
 Use long-exposure light photography, paired with the Create® 3 Robot, to create EPIC robot-infused light paintings.
 

@@ -1,6 +1,6 @@
 # Create® 3 Robot + Web Playground for Python
 ## Details
-You can connect to the Create® 3 Educational Robot via Bluetooth and run your first program in a browser through the Python Web Playground. Follow the instructions to connect, run and explore!
+You can connect to the Create® 3 Educational Robot via Bluetooth[^1] and run your first program in a browser through the Python[^2] Web Playground. Follow the instructions to connect, run and explore!
 
 ### Downloads and Resources
 * [PDF: Python Web Playground First Project](./Python-Web-Playground_First-Project.pdf)
@@ -35,3 +35,7 @@ Press play to run the example code project. Try pressing your robot’s bumpers.
 
 ### Step 7
 Congratulations, you have run your first python web program! To go further, explore our example code snippets and the Python Web Playground glossary to learn more about all of the available commands. Happy Coding!
+
+[^1]: The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by iRobot is under license.
+[^2]: Python is governed by the Python Software Foundation.
+[^3]: All trademarks mentioned are the property of their respective owners.
