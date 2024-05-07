@@ -21,7 +21,7 @@ It is an advanced platform intended for college and professional learners.
 
 ### How do I know the Create® 3 educational robot is right for me or my students?
 The Create® 3 educational robot is an advanced STEM development platform intended for upper high school students, college students, or lifelong learners.
-The Create® 3 robot works as a node in a ROS 2[^1] graph over Wi-Fi or via its USB-C[^2] host port.
+The Create® 3 robot exposes ROS 2[^1] nodes over Wi-Fi or via its USB-C[^2] host port.
 
 ----
 
