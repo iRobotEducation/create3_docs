@@ -43,7 +43,7 @@ a)	To ensure your robot is up to date, download the latest firmware package avai
 b)	Press and hold Buttons 1 & 2 to activate your robot's hotspot.
 When successful, your robot's light ring will show a spinning blue light.
 <br> ![An illustration showing how the light ring will change from a cyan swirl to solid cyan once the robot is connected to the computer](data/setup-2-2.png "Connect to robot AP") <br>
-c)	Open your computer's Wi-Fi manager and connect to your robot listed as Create-[xxx].
+c)	Open your computer's Wi-Fi manager and connect to the Wi-Fi network exposed by your robot listed as Create-[xxx].
 Once connected, your robot's light ring will show a solid cyan glow.
 <br> ![An illustration showing this guide and the robot's webserver side by side on your computer screen](data/setup-2-3.png "Connect to robot webserver") <br>
 d)	Once your computer is connected to your robot's Wi-Fi network, open a NEW internet browser window and navigate to: 192.168.10.1 (Note: This page is hosted on the Create 3 robot, so it will not need Internet access to open).
