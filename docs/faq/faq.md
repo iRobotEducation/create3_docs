@@ -20,8 +20,9 @@ It is an advanced platform intended for college and professional learners.
 ----
 
 ### How do I know the Create® 3 educational robot is right for me or my students?
-The Create® 3 educational robot is an advanced STEM development platform intended for upper high school students, college students, or lifelong learners.
-The Create® 3 robot exposes ROS 2[^1] nodes over Wi-Fi or via its USB-C[^2] host port.
+The Create® 3 educational robot is a STEM resource for educators, students, and developers.
+It is an advanced platform intended for college and professional learners.
+The Create® 3 robot works as a node in a ROS 2[^1] graph over Wi-Fi or via its USB-C[^2] host port.
 
 ----
 
@@ -33,8 +34,10 @@ The Create® 3 robot exposes ROS 2[^1] nodes over Wi-Fi or via its USB-C[^2] hos
 ![An illustration showing the Create® 3 robot being placed on its dock](data/setup-1-1.png "Placing the robot on the dock")
 ![An illustration showing the Create® 3 charging, with the percentage of its ring glowing white indicating the charge level](data/setup-1-2.png "Charging Indicators")<br>
 To power your robot on, plug your charging dock in and place the robot on the dock.
+The green LED on the dock will turn on for a few seconds to indicate that charging has begun.
 It may take your robot several minutes to charge.
 While charging, the Create® 3 light ring will show a spinning, bright white light.
+If the battery was dead, the robot will show a red spinning light until it reaches the minimum threshold.
 When fully charged, the light ring will glow a dim white.
 
 #### Part 2: Update the Robot
@@ -45,6 +48,7 @@ When successful, your robot's light ring will show a spinning blue light.
 <br> ![An illustration showing how the light ring will change from a cyan swirl to solid cyan once the robot is connected to the computer](data/setup-2-2.png "Connect to robot AP") <br>
 c)	Open your computer's Wi-Fi manager and connect to the Wi-Fi network exposed by your robot listed as Create-[xxx].
 Once connected, your robot's light ring will show a solid cyan glow.
+Note: connecting to the robot's Wi-Fi network may cause your computer to lose its Internet connection.
 <br> ![An illustration showing this guide and the robot's webserver side by side on your computer screen](data/setup-2-3.png "Connect to robot webserver") <br>
 d)	Once your computer is connected to your robot's Wi-Fi network, open a NEW internet browser window and navigate to: 192.168.10.1 (Note: This page is hosted on the Create 3 robot, so it will not need Internet access to open).
 <br> ![An illustration showing the update firmware page loaded on the robot webserver](data/setup-2-4.png "Update firmware") <br>
