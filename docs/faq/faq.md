@@ -4,7 +4,7 @@
 
 ### What is the Create® 3 educational robot?
 The Create® 3 robot is a programmable robot based on the iRobot® Roomba® i3 vacuum robot.
-Users can program this robot using ROS 2 or Python.
+Users can interact with this robot using ROS 2 or Python.
 There have been three versions of the Create® robot series:
 
 - The original Create® robot, released in 2007. This robot was based on the Roomba® Discovery series robots. It is all-white.
