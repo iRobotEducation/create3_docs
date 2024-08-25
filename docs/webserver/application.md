@@ -26,6 +26,8 @@ Further details on these settings can be found in the official ROS 2 documentati
 For robots running Galactic >= G.4 and Humble >= H.1, when Fast-DDS is selected as the RMW, it is possible to direct the robot to use an offboard Fast-DDS Discovery server, as well.
 Further details on the Fast-DDS Discovery Server can be found [here](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/discovery_server/ros2_discovery_server.html).
 
+When running Create 3 firmware for Iron, only one middleware selection is available at a time; to switch middleware, it is necessary to install the matching firmware.
+
 ### Application ROS 2 Parameters File
 This is a raw yaml file used for configuring ROS 2 parameters.
 The web server will not validate this yaml file; setting it incorrectly may cause the application to fail to start properly.
