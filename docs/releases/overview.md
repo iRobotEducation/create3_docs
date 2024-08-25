@@ -19,6 +19,8 @@ One exception is that beta features may be added in minor releases.
 The latest stable release can be found at
 [http://edu.irobot.com/create3-latest-fw](http://edu.irobot.com/create3-latest-fw).
 
+The latest stable Iron release can be found at
+[http://edu.irobot.com/create3-iron-latest-fw](http://edu.irobot.com/create3-iron-latest-fw).
 The latest stable Humble release can be found at
 [http://edu.irobot.com/create3-humble-latest-fw](http://edu.irobot.com/create3-humble-latest-fw).
 The latest stable Galactic release can be found at
@@ -28,8 +30,11 @@ Downloads of a particular version can be found on each individual release page.
 
 ## Releases
 
+### Iron
+* [I.0.0](../i_0_0) (iron-latest, latest)
+
 ### Humble
-* [H.2.6](../h_2_6) (humble-latest, latest)
+* [H.2.6](../h_2_6) (humble-latest)
 * [H.2.5](../h_2_5)
 * [H.2.4](../h_2_4)
 * [H.2.3](../h_2_3)
