@@ -2,6 +2,8 @@
 
 ROS 2[^1] is built on top of DDS/RTPS as its middleware, which provides advanced networking features such as: discovery, serialization and transportation.  This **R**OS 2 **m**iddle**w**are is abbreviated **RMW** for short.
 
+The middleware running on the robot can be selected using the [Application Configuration](../webserver/application.md) page on the webserver. Note that the choice of middleware available may be restricted by the firmware installed on your robot; check the [releases](https://github.com/iRobotEducation/create3_docs/releases) for more details on available firmware.
+
 This page contains some examples that may be useful when interacting with the iRobot® Create® 3.
 
 !!! important

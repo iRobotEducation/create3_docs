@@ -162,4 +162,6 @@ nav:
           - H.2.3: releases/h_2_3.md
           - H.2.4: releases/h_2_4.md
           - H.2.5: releases/h_2_5.md
+      - Iron:
+        - I.0.0: releases/i_0_0.md
     - FAQ: faq/faq.md
